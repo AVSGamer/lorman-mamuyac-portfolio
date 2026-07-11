@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://bao48vvmyqmov"]
+
+[ext_resource type="Script" uid="uid://da8xepgvtuw2g" path="res://scenes/comp_rig.gd" id="1_iu3um"]
+
+[node name="PersistentMainFrame" type="Control" unique_id=1494762705]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iu3um")
+
+[node name="StaticUIOverlay" type="CanvasLayer" parent="." unique_id=2010287763]
+follow_viewport_enabled = true
+
+[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="CompRigScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 650.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 120
+
+[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/CompRigScreen" unique_id=1725320745]
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "My Current Computer Rig & Devices"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/CompRigScreen/bs_lblTitle" unique_id=2008069880]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
+
+[node name="ItemList" type="ItemList" parent="StaticUIOverlay/CompRigScreen" unique_id=1360044390]
+custom_maximum_size = Vector2(-1, 426)
+layout_mode = 2
+size_flags_vertical = 4
+auto_width = true
+auto_height = true
+item_count = 70
+max_columns = 2
+same_column_width = true
+item_0/text = "Casing"
+item_1/text = "Inplay Meteor 02 White"
+item_2/text = "Central Processing Unit"
+item_3/text = "Ryzen 5 5500"
+item_4/text = "Graphical Processing Unit"
+item_5/text = "Zotac Mini GTX 1070 8GB"
+item_6/text = "Random Access Memory"
+item_7/text = "DDR4-3200MHz Kingston HyperX Fury RGB-8GB(Samsung Die) x 2"
+item_8/text = "Motherboard"
+item_9/text = "ASRock B450M Steel Legend White Bios: P??"
+item_10/text = "Read Only Memory / Storage"
+item_11/text = "ADATA SX8100NP 1TB M.2 NVMe SSD"
+item_12/text = "SSD Shield"
+item_13/text = "Coolmoon ARGB Thingy"
+item_14/text = "Case Internal Lightbar"
+item_15/text = "Coolmoon 30cm Light Bar"
+item_16/text = "Front Case Fans"
+item_17/text = "Cooler Master 140 ARGB SickleFlow x 2"
+item_18/text = "Top Case Fans"
+item_19/text = "ID-COOLING DF-12025-ARGB Snow x 3"
+item_20/text = "Rear Case Fan"
+item_21/text = "ID-COOLING XF-12025-RGB Black x1"
+item_22/text = "Fan Cabling / Power Cable Splitter / RGB Header Cables"
+item_23/text = "ID-COOLING FS04 ARGB"
+item_24/text = "Power Supply Unit"
+item_25/text = "FSP Dagger PRO Gold 80+ SFX 650W Full Modular"
+item_26/text = "Monitor"
+item_27/text = "Samsung SyncMaster 24\" SA450"
+item_28/text = "Monitor Cabling"
+item_29/text = "HDMI to DVI-D"
+item_30/text = "Main Gamepad / Controller"
+item_31/text = "Wireless XBox 360 Controller with Chatpad"
+item_32/text = "Secondary Gamepad"
+item_33/text = "8BitDo 2.4Ghz/Wired Ultimate Controller"
+item_34/text = "Speakers / Sounds"
+item_35/text = "Creative SBS A60"
+item_36/text = "Mechanical Keyboard"
+item_37/text = "Rakk Lam-Ang PRO PBT - Zilents Switches"
+item_38/text = "Keycap Set #1"
+item_39/text = "Ahegao Anime Girls"
+item_40/text = "Keycap Set #2"
+item_41/text = "Black on White Backlit Pudding"
+item_42/text = "Keycap Set #3"
+item_43/text = "Frosted White Backlit"
+item_44/text = "Mouse / Pointer / Cursor"
+item_45/text = "Brandless 3$ 2.4G Modified with Huano Switches"
+item_46/text = "Headphones"
+item_47/text = "ThinkPlus TH30 (Damaged)"
+item_48/text = "Earphones"
+item_49/text = "Baseus Encok WM01 (Failing)"
+item_50/text = "Mousepad"
+item_51/text = "Felt & Cork by MD Custom 800x300mm"
+item_52/text = "Microphone"
+item_53/text = "Cheap but Very Sensitive Lapel Mic"
+item_54/text = "Video Capture Card"
+item_55/text = "EZCAP284 HD Video Capture (selling)"
+item_56/text = "Router"
+item_57/text = "MikroTik HomeAP AC Lite"
+item_58/text = "Bluetooth/Wifi Adapter"
+item_59/text = "TPLink Nano"
+item_60/text = "Webcam"
+item_61/text = "Some inexpensive Low Quality USB Cam"
+item_62/text = "Cellphone"
+item_63/text = "Xiaomi Poco M4 Pro 5G"
+item_64/text = "Main Appliance"
+item_65/text = "Tube Ice Maker"
+item_66/text = "Water Heater for Coffee"
+item_67/text = "Hydrolyzing Thermos"
+item_68/text = "Prefers Electric Fan over AC"
+item_69/text = "Some DTI Certified Safe Mini Clip Fan"
+
+[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen" unique_id=1277995864]
+z_index = 1
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_vertical = 8
+text = ">>Return to Main Menu<<"
+
+[connection signal="pressed" from="StaticUIOverlay/CompRigScreen/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

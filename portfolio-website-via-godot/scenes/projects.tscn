@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://b2lp55px4rdks"]
+
+[ext_resource type="Script" uid="uid://buk605hs46tln" path="res://scenes/projects.gd" id="1_fvhhr"]
+[ext_resource type="Texture2D" uid="uid://gg0g76de6jh1" path="res://assets/ESOAddon.png" id="2_a72lm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
+bg_color = Color(0.06469653, 0.064696535, 0.06469648, 1)
+
+[node name="PersistentMainFrame" type="Control" unique_id=1494762705]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fvhhr")
+
+[node name="StaticUIOverlay" type="CanvasLayer" parent="." unique_id=2010287763]
+follow_viewport_enabled = true
+
+[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="ProjectsScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -36.0
+offset_top = 1.0
+offset_right = 36.0
+offset_bottom = 651.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 120
+
+[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/ProjectsScreen" unique_id=1725320745]
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Projects from College and Outside/Online"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/ProjectsScreen/bs_lblTitle" unique_id=2008069880]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="StaticUIOverlay/ProjectsScreen" unique_id=1239224619]
+custom_minimum_size = Vector2(0, 426)
+custom_maximum_size = Vector2(-1, 426)
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer" unique_id=1208313614]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+
+[node name="GridContainer" type="GridContainer" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer" unique_id=1732669160]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+
+[node name="img_icon" type="TextureRect" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=299627452]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+
+[node name="lbl_date" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=763339570]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+text = "Time of Creation"
+horizontal_alignment = 1
+
+[node name="lbl_status" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=1223936444]
+layout_mode = 2
+text = "Status"
+horizontal_alignment = 1
+
+[node name="lbl_description" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=984782061]
+layout_mode = 2
+text = "Description"
+horizontal_alignment = 1
+
+[node name="img_icon2" type="TextureRect" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=461057354]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+texture = ExtResource("2_a72lm")
+
+[node name="lbl_date2" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=162554222]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+text = "May 13, 2021"
+
+[node name="lbl_status2" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=1845227780]
+layout_mode = 2
+text = "Surprised it's still holding up
+through game patches despite
+last update time. That was intentional.
+Needs updating for Console Players."
+horizontal_alignment = 1
+
+[node name="lbl_description2" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=1469757423]
+layout_mode = 2
+text = "A highly customizable and simplistic
+Experience Points Tracking Visual
+Indicator that the player can place
+anywhere on their HUD."
+horizontal_alignment = 1
+
+[node name="img_icon3" type="TextureRect" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=1014313540]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+
+[node name="lbl_date3" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=759568057]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+text = "To be added.."
+
+[node name="lbl_status3" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=1941641516]
+layout_mode = 2
+text = "To be added.."
+horizontal_alignment = 1
+
+[node name="lbl_description3" type="Label" parent="StaticUIOverlay/ProjectsScreen/ScrollContainer/PanelContainer/GridContainer" unique_id=2134711176]
+layout_mode = 2
+text = "To be added.."
+horizontal_alignment = 1
+
+[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/ProjectsScreen" unique_id=1277995864]
+z_index = 1
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_vertical = 8
+text = ">>Return to Main Menu<<"
+
+[connection signal="pressed" from="StaticUIOverlay/ProjectsScreen/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
