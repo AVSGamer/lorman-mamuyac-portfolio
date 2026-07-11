@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://bao48vvmyqmov"]
 
 [ext_resource type="Script" uid="uid://da8xepgvtuw2g" path="res://scenes/comp_rig.gd" id="1_iu3um"]
+[ext_resource type="FontFile" uid="uid://bkti7yyrpm5gu" path="res://assets/fonts/arcade/Arcade.ttf" id="2_iu3um"]
+[ext_resource type="Script" uid="uid://gnxgr8gkb825" path="res://scenes/pcRigDevices.gd" id="3_rg6nd"]
+[ext_resource type="PackedScene" uid="uid://f40hvxj8kk4b" path="res://scenes/pcRigModal.tscn" id="4_k7w2o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font = ExtResource("2_iu3um")
+font_size = 35
 
 [node name="PersistentMainFrame" type="Control" unique_id=1494762705]
 layout_mode = 3
@@ -42,20 +49,11 @@ propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-text = "My Current Computer Rig & Devices"
+text = "My Current Computer Rig and Devices"
+label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/CompRigScreen/bs_lblTitle" unique_id=2008069880]
-show_behind_parent = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
-
-[node name="ItemList" type="ItemList" parent="StaticUIOverlay/CompRigScreen" unique_id=1360044390]
+[node name="itlst_Table" type="ItemList" parent="StaticUIOverlay/CompRigScreen" unique_id=1360044390]
 custom_maximum_size = Vector2(-1, 426)
 layout_mode = 2
 size_flags_vertical = 4
@@ -134,6 +132,8 @@ item_66/text = "Water Heater for Coffee"
 item_67/text = "Hydrolyzing Thermos"
 item_68/text = "Prefers Electric Fan over AC"
 item_69/text = "Some DTI Certified Safe Mini Clip Fan"
+script = ExtResource("3_rg6nd")
+modal_scene = ExtResource("4_k7w2o")
 
 [node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen" unique_id=1277995864]
 z_index = 1
@@ -142,4 +142,5 @@ layout_mode = 2
 size_flags_vertical = 8
 text = ">>Return to Main Menu<<"
 
+[connection signal="item_clicked" from="StaticUIOverlay/CompRigScreen/itlst_Table" to="StaticUIOverlay/CompRigScreen/itlst_Table" method="_on_item_list_clicked"]
 [connection signal="pressed" from="StaticUIOverlay/CompRigScreen/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

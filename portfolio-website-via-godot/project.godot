@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="PortfolioWebsiteViaGodot"
+config/name="Lorman Domingo Mamuyac"
+config/description="Portfolio/C.V. Website created with Godot 4.7 hosted for free on GitHub and connected to custom domain name. Technically Microsoft has control over this since they own GitHub... In the mean time, it will served here. Until if conditions improve..."
 run/main_scene="uid://un7pvkrkdlpb"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
+config/icon="uid://dv7ctj27hmrp5"
 
 [display]
 

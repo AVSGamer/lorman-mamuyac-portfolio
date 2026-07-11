@@ -4,11 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://s3jujqospqhy" path="res://assets/cropped-images-cta2-0-1553765911156.jpg" id="2_bqqt6"]
 [ext_resource type="Script" uid="uid://b7vpkuiqngie2" path="res://scenes/matrix_background.gd" id="2_mob6k"]
 [ext_resource type="FontFile" uid="uid://dgysufm3mf70a" path="res://assets/fonts/blox/Blox2.ttf" id="4_oa1go"]
-[ext_resource type="Script" uid="uid://b0el660k2uqnw" path="res://scenes/labelGradientAnim.gd" id="5_jk1qb"]
 [ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="5_tbmy8"]
 [ext_resource type="FontFile" uid="uid://dmb5y1ksnxlqs" path="res://assets/fonts/karmatic-arcade/ka1.ttf" id="6_jk1qb"]
 [ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="7_5dd4i"]
-[ext_resource type="Script" uid="uid://btfillcct7ac4" path="res://scenes/labelHoverLinkRed.gd" id="8_jk1qb"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mob6k"]
 particles_animation = true
@@ -119,33 +117,69 @@ size_flags_horizontal = 4
 text = "][][][ Under Construction ][][]["
 label_settings = SubResource("LabelSettings_xhs4j")
 horizontal_alignment = 1
-script = ExtResource("5_jk1qb")
 
-[node name="mm_lblFacebookProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1792040164]
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/mm_lblTitle" unique_id=2008069880]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
+
+[node name="mm_lblTitle2" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1792040164]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/line_spacing = -15
 text = "made by: Lorman Domingo Mamuyac (ᜎᜓᜇ᜔ᜋᜈ᜔ ᜇᜓᜋᜒᜅ᜔ᜄᜓ ᜋᜋᜓᜌᜃ᜔)
 Pen Names:"
 horizontal_alignment = 1
-script = ExtResource("8_jk1qb")
 
-[node name="mm_lblGithubProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=2004720029]
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/mm_lblTitle2" unique_id=1537851954]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
+
+[node name="mm_lblTitle3" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=2004720029]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Khayeel(Programming)
 PapiRES(Program Publishing)"
 label_settings = SubResource("LabelSettings_aw8sc")
 horizontal_alignment = 1
-script = ExtResource("8_jk1qb")
 
-[node name="mm_lblGameProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1665782337]
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/mm_lblTitle3" unique_id=1281975301]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
+
+[node name="mm_lblTitle4" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1665782337]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "VSGamer i PapiRE -(Gaming)"
 label_settings = SubResource("LabelSettings_sw5ci")
 horizontal_alignment = 1
-script = ExtResource("8_jk1qb")
+
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/mm_lblTitle4" unique_id=697117653]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
 
 [node name="mm_lblTitle5" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1396275455]
 layout_mode = 2
@@ -174,41 +208,32 @@ theme_override_constants/separation = 20
 [node name="FutureFeatureMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=267455785]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 text = "??????"
-flat = true
 
 [node name="MiniBiographyMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=1915940473]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_hover_color = Color(1.0588765e-06, 0.5871421, 1.92523e-06, 1)
 theme_override_fonts/font = ExtResource("7_5dd4i")
 theme_override_font_sizes/font_size = 25
 text = "Curriculum Vitae / Related Biography"
-flat = true
 
 [node name="ComputerRigMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=2137570515]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 theme_override_fonts/font = ExtResource("7_5dd4i")
 theme_override_font_sizes/font_size = 26
 text = "My Current Devices"
-flat = true
 
 [node name="ProjectsMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=570062991]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 theme_override_fonts/font = ExtResource("7_5dd4i")
 theme_override_font_sizes/font_size = 38
 text = "Projects"
-flat = true
 
 [node name="ToBeReplacedMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=757932440]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 text = ">>ToBeReplacedWithLatestFBPost<<"
 
 [node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
