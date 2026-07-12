@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://dgysufm3mf70a" path="res://assets/fonts/blox/Blox2.ttf" id="4_oa1go"]
 [ext_resource type="Script" uid="uid://b0el660k2uqnw" path="res://scenes/labelGradientAnim.gd" id="5_jk1qb"]
 [ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="5_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://d3xx6s38e0cs8" path="res://assets/Baybayin.png" id="6_5dd4i"]
 [ext_resource type="FontFile" uid="uid://dmb5y1ksnxlqs" path="res://assets/fonts/karmatic-arcade/ka1.ttf" id="6_jk1qb"]
 [ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="7_5dd4i"]
 [ext_resource type="Script" uid="uid://btfillcct7ac4" path="res://scenes/labelHoverLinkRed.gd" id="8_jk1qb"]
@@ -110,7 +111,7 @@ theme_override_constants/margin_bottom = 200
 
 [node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/MainMenuScreen" unique_id=2143123533]
 layout_mode = 2
-theme_override_constants/separation = 5
+theme_override_constants/separation = 1
 
 [node name="mm_lblTitle" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
@@ -121,12 +122,25 @@ label_settings = SubResource("LabelSettings_xhs4j")
 horizontal_alignment = 1
 script = ExtResource("5_jk1qb")
 
-[node name="mm_lblFacebookProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1792040164]
+[node name="tr_BaybayinPNG" type="TextureRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1956879925]
+custom_minimum_size = Vector2(300, 35)
+custom_maximum_size = Vector2(300, 35)
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/line_spacing = -15
-text = "made by: Lorman Domingo Mamuyac (ᜎᜓᜇ᜔ᜋᜈ᜔ ᜇᜓᜋᜒᜅ᜔ᜄᜓ ᜋᜋᜓᜌᜃ᜔)
-Pen Names:"
+size_flags_vertical = 4
+texture = ExtResource("6_5dd4i")
+expand_mode = 1
+
+[node name="mm_lblFacebookProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1792040164]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/line_spacing = 2
+text = "made by: Lorman Domingo Mamuyac
+[:Pen Names:]"
 horizontal_alignment = 1
 script = ExtResource("8_jk1qb")
 

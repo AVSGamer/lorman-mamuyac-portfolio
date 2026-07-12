@@ -136,7 +136,6 @@ script = ExtResource("3_rg6nd")
 modal_scene = ExtResource("4_k7w2o")
 
 [node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen" unique_id=1277995864]
-z_index = 1
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 8

@@ -2,13 +2,31 @@
 
 [ext_resource type="Script" uid="uid://cd8ccmqmhi65c" path="res://scenes/pcRigModal.gd" id="1_pq7pn"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8unq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 2.0
+bg_color = Color(0.2665752, 0.26657522, 0.26657507, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfhh8"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.26666668, 0.26666668, 0.26666668, 1)
+
 [node name="PcRigModal" type="Control" unique_id=2048980479]
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_pq7pn")
 
 [node name="OutsideClickDetector" type="Control" parent="." unique_id=2079407292]
@@ -25,8 +43,8 @@ grow_vertical = 2
 
 [node name="ModalBody" type="Control" parent="." unique_id=1131382640]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(400, 250)
-custom_maximum_size = Vector2(400, 250)
+custom_minimum_size = Vector2(750, 450)
+custom_maximum_size = Vector2(750, 450)
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 1
@@ -42,33 +60,44 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ModalBody" unique_id=2139764031]
+[node name="HBoxContainer" type="HBoxContainer" parent="ModalBody" unique_id=1040856675]
+clip_contents = true
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -32.5
-offset_top = -13.5
-offset_right = 32.5
-offset_bottom = 13.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-alignment = 1
 
-[node name="PartTitleLabel" type="Label" parent="ModalBody/VBoxContainer" unique_id=317161761]
-unique_name_in_owner = true
+[node name="TextureRect" type="TextureRect" parent="ModalBody/HBoxContainer" unique_id=1024386916]
+custom_minimum_size = Vector2(350, 0)
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-size_flags_vertical = 1
-text = "TITLE"
+size_flags_horizontal = 3
 
-[node name="PartDescription" type="RichTextLabel" parent="ModalBody/VBoxContainer" unique_id=1774963068]
+[node name="VBoxContainer" type="VBoxContainer" parent="ModalBody/HBoxContainer" unique_id=2139764031]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="PartTitleLabel" type="Label" parent="ModalBody/HBoxContainer/VBoxContainer" unique_id=317161761]
 unique_name_in_owner = true
 propagate_maximum_size = true
 layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_e8unq")
+text = "TITLE"
+vertical_alignment = 3
+autowrap_mode = 3
+
+[node name="PartDescription" type="RichTextLabel" parent="ModalBody/HBoxContainer/VBoxContainer" unique_id=1774963068]
+unique_name_in_owner = true
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_nfhh8")
 bbcode_enabled = true
 text = "Description"
 fit_content = true
