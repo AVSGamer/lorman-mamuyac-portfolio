@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://f40hvxj8kk4b"]
 
 [ext_resource type="Script" uid="uid://cd8ccmqmhi65c" path="res://scenes/pcRigModal.gd" id="1_pq7pn"]
+[ext_resource type="Script" uid="uid://cdwn86q2xsydv" path="res://scenes/part_description.gd" id="2_e8unq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8unq"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
-content_margin_bottom = 2.0
+content_margin_bottom = 4.0
 bg_color = Color(0.2665752, 0.26657522, 0.26657507, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfhh8"]
@@ -101,3 +102,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_nfhh8")
 bbcode_enabled = true
 text = "Description"
 fit_content = true
+script = ExtResource("2_e8unq")
+
+[connection signal="meta_clicked" from="ModalBody/HBoxContainer/VBoxContainer/PartDescription" to="ModalBody/HBoxContainer/VBoxContainer/PartDescription" method="_on_meta_clicked"]
