@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bao48vvmyqmov"]
 
-[ext_resource type="Script" uid="uid://da8xepgvtuw2g" path="res://scenes/comp_rig.gd" id="1_iu3um"]
 [ext_resource type="FontFile" uid="uid://bkti7yyrpm5gu" path="res://assets/fonts/arcade/Arcade.ttf" id="2_iu3um"]
+[ext_resource type="Script" uid="uid://yvie2i51hq5e" path="res://scenes/comp_rig_main.gd" id="2_xvsy1"]
 [ext_resource type="Script" uid="uid://gnxgr8gkb825" path="res://scenes/pcRigDevices.gd" id="3_rg6nd"]
 [ext_resource type="PackedScene" uid="uid://f40hvxj8kk4b" path="res://scenes/pcRigModal.tscn" id="4_k7w2o"]
 
@@ -9,19 +9,11 @@
 font = ExtResource("2_iu3um")
 font_size = 35
 
-[node name="PersistentMainFrame" type="Control" unique_id=1494762705]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_iu3um")
-
-[node name="StaticUIOverlay" type="CanvasLayer" parent="." unique_id=2010287763]
+[node name="StaticUIOverlay" type="CanvasLayer" unique_id=2010287763]
 follow_viewport_enabled = true
+script = ExtResource("2_xvsy1")
 
-[node name="CompRigScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+[node name="CompRigScreen" type="MarginContainer" parent="." unique_id=1762885522]
 clip_contents = true
 anchors_preset = 10
 anchor_right = 1.0
@@ -36,11 +28,11 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 120
 
-[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/CompRigScreen" unique_id=580606549]
+[node name="VBoxContainer" type="VBoxContainer" parent="CompRigScreen" unique_id=580606549]
 clip_contents = true
 layout_mode = 2
 
-[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=1725320745]
+[node name="bs_lblTitle" type="Label" parent="CompRigScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -49,13 +41,13 @@ text = "My Current Computer Rig and Devices"
 label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=860070389]
+[node name="ScrollContainer" type="ScrollContainer" parent="CompRigScreen/VBoxContainer" unique_id=860070389]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="itlst_Table" type="ItemList" parent="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer" unique_id=1360044390]
+[node name="itlst_Table" type="ItemList" parent="CompRigScreen/VBoxContainer/ScrollContainer" unique_id=1360044390]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -140,13 +132,13 @@ item_71/text = "Some DTI Certified Safe Mini Clip Fan"
 script = ExtResource("3_rg6nd")
 modal_scene = ExtResource("4_k7w2o")
 
-[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=1277995864]
+[node name="btn_backToMenu" type="Button" parent="CompRigScreen/VBoxContainer" unique_id=1277995864]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 8
 text = ">>Return to Main Menu<<"
 
-[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
+[node name="AdContainer" type="MarginContainer" parent="." unique_id=1671254161]
 custom_minimum_size = Vector2(0, 100)
 anchors_preset = 12
 anchor_top = 1.0
@@ -157,5 +149,5 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
-[connection signal="item_clicked" from="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]
-[connection signal="pressed" from="StaticUIOverlay/CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[connection signal="item_clicked" from="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]
+[connection signal="pressed" from="CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

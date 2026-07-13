@@ -57,19 +57,28 @@ font = ExtResource("5_tbmy8")
 font_size = 11
 
 [node name="PersistentMainFrame" type="Control" unique_id=1494762705]
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_rm437")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=256084334]
 z_index = 1
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_bqqt6")
 expand_mode = 2
 stretch_mode = 2
@@ -78,6 +87,8 @@ stretch_mode = 2
 position = Vector2(741, 343)
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=708548497]
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -97,24 +108,30 @@ visibility_rect = Rect2(-1000, -500, 3000, 3000)
 process_material = SubResource("ParticleProcessMaterial_rkeyg")
 script = ExtResource("2_mob6k")
 
-[node name="StaticUIOverlay" type="CanvasLayer" parent="." unique_id=2010287763]
+[node name="StaticUIOverlayMain" type="CanvasLayer" parent="." unique_id=2010287763]
+unique_name_in_owner = true
+follow_viewport_enabled = true
 
-[node name="MainMenuScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+[node name="MainMenuScreen" type="MarginContainer" parent="StaticUIOverlayMain" unique_id=1762885522]
+unique_name_in_owner = true
+clip_contents = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 100
+theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
-theme_override_constants/margin_bottom = 200
+theme_override_constants/margin_bottom = 110
 
-[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/MainMenuScreen" unique_id=2143123533]
+[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlayMain/MainMenuScreen" unique_id=2143123533]
 layout_mode = 2
 theme_override_constants/separation = 1
 
-[node name="mm_lblTitle" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1725320745]
+[node name="mm_lblTitle" type="Label" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -123,7 +140,7 @@ label_settings = SubResource("LabelSettings_xhs4j")
 horizontal_alignment = 1
 script = ExtResource("5_jk1qb")
 
-[node name="tr_BaybayinPNG" type="TextureRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1956879925]
+[node name="tr_BaybayinPNG" type="TextureRect" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=1956879925]
 custom_minimum_size = Vector2(300, 35)
 custom_maximum_size = Vector2(300, 35)
 propagate_maximum_size = true
@@ -135,7 +152,7 @@ texture = ExtResource("6_5dd4i")
 expand_mode = 1
 script = ExtResource("7_lgwnu")
 
-[node name="mm_lblLinkdinProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1792040164]
+[node name="mm_lblLinkdinProfile" type="Label" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=1792040164]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -146,7 +163,7 @@ text = "made by: Lorman Domingo Mamuyac
 horizontal_alignment = 1
 script = ExtResource("8_jk1qb")
 
-[node name="mm_lblGithubProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=2004720029]
+[node name="mm_lblGithubProfile" type="Label" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=2004720029]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Khayeel(Programming)
@@ -155,7 +172,7 @@ label_settings = SubResource("LabelSettings_aw8sc")
 horizontal_alignment = 1
 script = ExtResource("8_jk1qb")
 
-[node name="mm_lblGameProfile" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1665782337]
+[node name="mm_lblGameProfile" type="Label" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=1665782337]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "VSGamer i PapiRE -(Gaming)"
@@ -163,7 +180,7 @@ label_settings = SubResource("LabelSettings_sw5ci")
 horizontal_alignment = 1
 script = ExtResource("8_jk1qb")
 
-[node name="mm_lblTitle5" type="Label" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=1396275455]
+[node name="mm_lblTitle5" type="Label" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=1396275455]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "using: Godot 4.7(Stable-Steam)
@@ -173,7 +190,7 @@ little Google AI Help(Free-Tier-July-2026)"
 label_settings = SubResource("LabelSettings_mm824")
 horizontal_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/mm_lblTitle5" unique_id=1654252875]
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblTitle5" unique_id=1654252875]
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
@@ -183,18 +200,18 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer" unique_id=903427396]
+[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer" unique_id=903427396]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="FutureFeatureMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=267455785]
+[node name="FutureFeatureMM" type="Button" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=267455785]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 text = "??????"
 flat = true
 
-[node name="MiniBiographyMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=1915940473]
+[node name="MiniBiographyMM" type="Button" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=1915940473]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(1.0588765e-06, 0.5871421, 1.92523e-06, 1)
@@ -203,7 +220,7 @@ theme_override_font_sizes/font_size = 25
 text = "Curriculum Vitae / Related Biography"
 flat = true
 
-[node name="ComputerRigMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=2137570515]
+[node name="ComputerRigMM" type="Button" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=2137570515]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
@@ -212,7 +229,7 @@ theme_override_font_sizes/font_size = 26
 text = "My Current Devices"
 flat = true
 
-[node name="ProjectsMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=570062991]
+[node name="ProjectsMM" type="Button" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=570062991]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
@@ -221,13 +238,14 @@ theme_override_font_sizes/font_size = 38
 text = "Projects"
 flat = true
 
-[node name="ToBeReplacedMM" type="Button" parent="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=757932440]
+[node name="ToBeReplacedMM" type="Button" parent="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer" unique_id=757932440]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 text = ">>ToBeReplacedWithLatestFBPost<<"
 
-[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
+[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlayMain" unique_id=1671254161]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 anchors_preset = 12
 anchor_top = 1.0
@@ -237,10 +255,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
-[node name="GameLevelContainer" type="Node2D" parent="." unique_id=642957650]
-
-[connection signal="pressed" from="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer/FutureFeatureMM" to="." method="_on_future_feature_mm_pressed"]
-[connection signal="pressed" from="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM" to="." method="_on_mini_biography_mm_pressed"]
-[connection signal="pressed" from="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM" to="." method="_on_computer_rig_mm_pressed"]
-[connection signal="pressed" from="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_pressed"]
-[connection signal="pressed" from="StaticUIOverlay/MainMenuScreen/VBoxContainer/VBoxContainer/ToBeReplacedMM" to="." method="_on_to_be_replaced_mm_pressed"]
+[connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/FutureFeatureMM" to="." method="_on_future_feature_mm_pressed"]
+[connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM" to="." method="_on_mini_biography_mm_pressed"]
+[connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM" to="." method="_on_computer_rig_mm_pressed"]
+[connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_pressed"]
+[connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ToBeReplacedMM" to="." method="_on_to_be_replaced_mm_pressed"]

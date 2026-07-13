@@ -1,4 +1,4 @@
-extends Control
+extends MarginContainer
 
 # --- Unique Node Name Fallbacks ---
 # Godot 4.x uses '%' to find unique nodes anywhere in the current scene tree
