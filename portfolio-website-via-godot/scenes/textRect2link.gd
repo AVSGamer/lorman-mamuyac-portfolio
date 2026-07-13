@@ -1,7 +1,5 @@
-extends Label
+extends TextureRect
 
-# --- Configuration Settings ---
-# Default fallback URL if the label's name isn't recognized in our list
 @export var fallback_url: String = "https://www.bcs-ldm-code-lab.space/"
 
 # Interactive UI Swatch Configurations
@@ -33,12 +31,10 @@ func _assign_url_by_self_name() -> void:
 	# Match checking conditions mapping label names to web links
 	# CHANGE THESE STRINGS TO MATCH YOUR LABEL NAMES IN THE SCENE TREE!
 	match node_name:
-		"mm_lblGameProfile":
-			active_url = "https://www.exophase.com/user/VSGamer/"
-		"mm_lblGithubProfile":
-			active_url = "https://github.com/AVSGamer"
-		"mm_lblLinkdinProfile":
-			active_url = "https://www.linkedin.com/in/lorman-mamuyac/"
+		"tr_BaybayinPNG":
+			active_url = "https://www.facebook.com/lorman.d.mamuyac/"
+		#"mm_lblLinkdinProfile":
+		#	active_url = "https://www.linkedin.com/in/lorman-mamuyac/"
 		_:
 			# Default path handler if label name doesn't match any profiles above
 			active_url = fallback_url

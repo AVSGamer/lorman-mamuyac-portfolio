@@ -7,7 +7,6 @@ extends ItemList
 func _ready() -> void:
 	max_columns = 2
 	same_column_width = true
-	
 
 func _on_item_list_clicked(index: int, _at_position: Vector2, _mouse_button_index: int) -> void:
 	if not modal_scene:
