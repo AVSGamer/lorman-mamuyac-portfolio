@@ -19,7 +19,6 @@ bg_color = Color(0.26666668, 0.26666668, 0.26666668, 1)
 
 [node name="PcRigModal" type="Control" unique_id=2048980479]
 propagate_maximum_size = true
-clip_contents = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,18 +28,6 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_pq7pn")
-
-[node name="OutsideClickDetector" type="Control" parent="." unique_id=2079407292]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 200)
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="ModalBody" type="Control" parent="." unique_id=1131382640]
 unique_name_in_owner = true
@@ -70,8 +57,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="ModalBody/HBoxContainer" unique_id=1024386916]
-custom_minimum_size = Vector2(350, 0)
+[node name="PartTextureRect" type="TextureRect" parent="ModalBody/HBoxContainer" unique_id=1024386916]
+unique_name_in_owner = true
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2

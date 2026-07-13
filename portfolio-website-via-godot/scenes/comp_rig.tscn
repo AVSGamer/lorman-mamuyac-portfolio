@@ -21,20 +21,12 @@ script = ExtResource("1_iu3um")
 [node name="StaticUIOverlay" type="CanvasLayer" parent="." unique_id=2010287763]
 follow_viewport_enabled = true
 
-[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
-custom_minimum_size = Vector2(0, 100)
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -100.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/margin_bottom = 20
-
 [node name="CompRigScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+clip_contents = true
 anchors_preset = 10
 anchor_right = 1.0
+offset_left = -36.0
+offset_right = 36.0
 offset_bottom = 650.0
 grow_horizontal = 2
 size_flags_horizontal = 3
@@ -44,7 +36,11 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 120
 
-[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/CompRigScreen" unique_id=1725320745]
+[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/CompRigScreen" unique_id=580606549]
+clip_contents = true
+layout_mode = 2
+
+[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -53,11 +49,17 @@ text = "My Current Computer Rig and Devices"
 label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 
-[node name="itlst_Table" type="ItemList" parent="StaticUIOverlay/CompRigScreen" unique_id=1360044390]
-custom_maximum_size = Vector2(-1, 426)
+[node name="ScrollContainer" type="ScrollContainer" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=860070389]
 propagate_maximum_size = true
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="itlst_Table" type="ItemList" parent="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer" unique_id=1360044390]
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 auto_width = true
 auto_height = true
 item_count = 72
@@ -74,7 +76,7 @@ item_7/text = "Zotac Mini GTX 1070 8GB"
 item_8/text = "Random Access Memory"
 item_9/text = "DDR4-3200MHz Kingston HyperX Fury RGB-8GB(Samsung Die) x 2"
 item_10/text = "Motherboard"
-item_11/text = "ASRock B450M Steel Legend White Bios: P??"
+item_11/text = "ASRock B450M Steel Legend White Bios: P10.6"
 item_12/text = "Read Only Memory / Storage"
 item_13/text = "ADATA SX8100NP 1TB M.2 NVMe SSD"
 item_14/text = "SSD Shield"
@@ -138,11 +140,22 @@ item_71/text = "Some DTI Certified Safe Mini Clip Fan"
 script = ExtResource("3_rg6nd")
 modal_scene = ExtResource("4_k7w2o")
 
-[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen" unique_id=1277995864]
+[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/CompRigScreen/VBoxContainer" unique_id=1277995864]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 8
 text = ">>Return to Main Menu<<"
 
-[connection signal="item_clicked" from="StaticUIOverlay/CompRigScreen/itlst_Table" to="StaticUIOverlay/CompRigScreen/itlst_Table" method="_on_item_list_clicked"]
-[connection signal="pressed" from="StaticUIOverlay/CompRigScreen/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 20
+
+[connection signal="item_clicked" from="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="StaticUIOverlay/CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]
+[connection signal="pressed" from="StaticUIOverlay/CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

@@ -19,6 +19,7 @@ follow_viewport_enabled = true
 
 [node name="AdContainer" type="MarginContainer" parent="StaticUIOverlay" unique_id=1671254161]
 custom_minimum_size = Vector2(0, 100)
+clip_contents = true
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -29,6 +30,7 @@ grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
 [node name="BiographyScreen" type="MarginContainer" parent="StaticUIOverlay" unique_id=1762885522]
+clip_contents = true
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 650.0
@@ -40,7 +42,13 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 120
 
-[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/BiographyScreen" unique_id=1725320745]
+[node name="VBoxContainer" type="VBoxContainer" parent="StaticUIOverlay/BiographyScreen" unique_id=1933952406]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="bs_lblTitle" type="Label" parent="StaticUIOverlay/BiographyScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
@@ -48,7 +56,7 @@ size_flags_vertical = 0
 text = "C.V. / Summarized Biography"
 horizontal_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/BiographyScreen/bs_lblTitle" unique_id=2008069880]
+[node name="ColorRect" type="ColorRect" parent="StaticUIOverlay/BiographyScreen/VBoxContainer/bs_lblTitle" unique_id=2008069880]
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
@@ -58,22 +66,28 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
 
-[node name="cv_containerRtl" type="RichTextLabel" parent="StaticUIOverlay/BiographyScreen" unique_id=706637971]
-custom_minimum_size = Vector2(0, 426)
-custom_maximum_size = Vector2(-1, 426)
+[node name="ScrollContainer" type="ScrollContainer" parent="StaticUIOverlay/BiographyScreen/VBoxContainer" unique_id=872796662]
 propagate_maximum_size = true
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="cv_containerRtl" type="RichTextLabel" parent="StaticUIOverlay/BiographyScreen/VBoxContainer/ScrollContainer" unique_id=706637971]
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_5e015")
 bbcode_enabled = true
 text = "TESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXTTESTINGLONGTEXT"
 fit_content = true
+scroll_active = false
 
-[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/BiographyScreen" unique_id=1277995864]
+[node name="btn_backToMenu" type="Button" parent="StaticUIOverlay/BiographyScreen/VBoxContainer" unique_id=1277995864]
 z_index = 1
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 8
 text = ">>Return to Main Menu<<"
 
-[connection signal="pressed" from="StaticUIOverlay/BiographyScreen/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[connection signal="pressed" from="StaticUIOverlay/BiographyScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

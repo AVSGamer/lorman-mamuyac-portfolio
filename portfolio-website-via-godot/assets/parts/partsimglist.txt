@@ -1,0 +1,33 @@
+[TODO]
+KCap1_category <- Anime Ahegao
+my_KCap1
+KCap2_category <- Black on White Pudding
+my_KCap2
+KCap3_category
+my_KCap3
+mouse_category
+my_mouse
+hphones_category
+my_hphones
+ephones_category
+my_ephones
+mousepad_category
+my_mousepad
+microphone_category
+my_microphone
+vccard_category
+my_vccard
+router_category
+my_router
+networking_category
+my_networking
+webcam_category
+my_webcam
+cellphone_category
+my_cellphone
+mappliance_category
+my_mappliance
+sappliance_category
+my_sappliance
+tappliance_category
+my_tappliance
