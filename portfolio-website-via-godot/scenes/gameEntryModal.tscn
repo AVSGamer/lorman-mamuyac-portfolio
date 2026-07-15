@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://deg3p1wy6igq4"]
+
+[ext_resource type="Script" uid="uid://gn8j31b5ader" path="res://scenes/game_entry_modal.gd" id="1_3pxl5"]
+[ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="1_8qwos"]
+
+[node name="GameEntryModal" type="AspectRatioContainer" unique_id=1538530493]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_3pxl5")
+
+[node name="mc_ModalGameEntry" type="MarginContainer" parent="." unique_id=1413449408]
+clip_contents = true
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 200
+
+[node name="ColorRect" type="ColorRect" parent="mc_ModalGameEntry" unique_id=754177985]
+layout_mode = 2
+color = Color(1, 1, 1, 0.6431373)
+
+[node name="mc_MModalWindow" type="MarginContainer" parent="mc_ModalGameEntry" unique_id=1628849044]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="mc_ModalGameEntry/mc_MModalWindow" unique_id=538552518]
+layout_mode = 2
+
+[node name="btn_future_feature" type="Button" parent="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer" unique_id=270887963]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.101960786, 0.9019608, 0.3019608, 1)
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 28
+text = "?????????"
+
+[node name="btn_MiniGames" type="Button" parent="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer" unique_id=1306340338]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.101960786, 0.9019608, 0.3019608, 1)
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 28
+text = "Mini Games"
+
+[node name="btn_Tools" type="Button" parent="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer" unique_id=1188556250]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.101960786, 0.9019608, 0.3019608, 1)
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 28
+text = "Tools"
+
+[connection signal="button_up" from="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer/btn_MiniGames" to="." method="_on_btn_mini_games_button_up"]

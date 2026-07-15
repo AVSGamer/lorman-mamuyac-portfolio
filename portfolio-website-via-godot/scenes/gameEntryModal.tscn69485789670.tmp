@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://deg3p1wy6igq4"]
+
+[ext_resource type="Script" uid="uid://gn8j31b5ader" path="res://scenes/game_entry_modal.gd" id="1_3pxl5"]
+[ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="1_8qwos"]
+
+[node name="GameEntryModal" type="AspectRatioContainer" unique_id=1538530493]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_3pxl5")
+
+[node name="mc_ModalGameEntry" type="MarginContainer" parent="." unique_id=1413449408]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 200
+
+[node name="TextureRect" type="TextureRect" parent="mc_ModalGameEntry" unique_id=88392313]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="mc_ModalGameEntry" unique_id=1223318728]
+layout_mode = 2
+color = Color(0, 0, 0, 0.6392157)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="mc_ModalGameEntry" unique_id=538552518]
+layout_mode = 2
+
+[node name="lbl_future_feature" type="Label" parent="mc_ModalGameEntry/VBoxContainer" unique_id=1636573814]
+unique_name_in_owner = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 30
+text = "?????????"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_MiniGames" type="Label" parent="mc_ModalGameEntry/VBoxContainer" unique_id=405119430]
+unique_name_in_owner = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 30
+text = "Mini Games"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_Tools" type="Label" parent="mc_ModalGameEntry/VBoxContainer" unique_id=1144108032]
+unique_name_in_owner = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_8qwos")
+theme_override_font_sizes/font_size = 30
+text = "Tools"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="mc_ModalGameEntry/VBoxContainer/lbl_future_feature" to="." method="_on_lbl_future_feature_mouse_entered"]
+[connection signal="mouse_exited" from="mc_ModalGameEntry/VBoxContainer/lbl_future_feature" to="." method="_on_lbl_future_feature_mouse_exited"]
+[connection signal="mouse_entered" from="mc_ModalGameEntry/VBoxContainer/lbl_MiniGames" to="." method="_on_lbl_mini_games_mouse_entered"]
+[connection signal="mouse_exited" from="mc_ModalGameEntry/VBoxContainer/lbl_MiniGames" to="." method="_on_lbl_mini_games_mouse_exited"]
+[connection signal="mouse_entered" from="mc_ModalGameEntry/VBoxContainer/lbl_Tools" to="." method="_on_lbl_tools_mouse_entered"]
+[connection signal="mouse_exited" from="mc_ModalGameEntry/VBoxContainer/lbl_Tools" to="." method="_on_lbl_tools_mouse_exited"]

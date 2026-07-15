@@ -6,14 +6,17 @@ extends Control
 const BIOGRAPHY_SCENE = preload("res:///scenes/mini_biography.tscn")
 const COMP_RIG_SCENE = preload("res:///scenes/comp_rig.tscn")
 const PROJECTS_SCENE = preload("res://scenes/projects.tscn")
-const FUTURE_FEATURE_SCENE = preload("res://scenes/futurefeature.tscn")
+const FUTURE_FEATURE_SCENE = preload("res://scenes/gameEntryModal.tscn")
+const MINI_GAME_1_SCENE = preload("res://scenes/game_WordNumberMaster.tscn")
 
 func _ready() -> void:
 	pass
 
 # ─── BUTTONS ROUTING ───
 func _on_future_feature_mm_pressed() -> void:
-	$%MainMenuScreen.hide()
+	var scene_instance = FUTURE_FEATURE_SCENE.instantiate()
+	$%StaticUIOverlayMain.add_child(scene_instance)
+	scene_instance.miniGame1Start.connect(_on_mini_game1_start)
 
 func _on_mini_biography_mm_pressed() -> void:
 	$%MainMenuScreen.hide()
@@ -40,11 +43,15 @@ func _on_return_to_menu() -> void:
 	_clear_current_container()
 	$%MainMenuScreen.show()
 	
+func _on_mini_game1_start() -> void:
+	$%MainMenuScreen.hide()
+	var scene_instance = MINI_GAME_1_SCENE.instantiate()
+	$%StaticUIOverlayMain.add_child(scene_instance)
+	
 func _clear_current_container() -> void:
 	for child in $%StaticUIOverlayMain.get_children():
 		if not child == $%MainMenuScreen:
 			child.queue_free()
-
 
 func _on_mini_biography_mm_mouse_entered() -> void:
 	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM.text = ">> Curriculum Vitae / Related Biography <<"

@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://cgda3sloi60sg"]
+
+[ext_resource type="Script" uid="uid://ceeemx8asuns" path="res://scenes/game_word_number_master.gd" id="1_gosy5"]
+[ext_resource type="Script" uid="uid://i2x1nqr5tfjm" path="res://scenes/game_board.gd" id="2_lgw48"]
+[ext_resource type="Script" uid="uid://b0jg1x4oa2vt3" path="res://scenes/feedback_effects.gd" id="3_42gas"]
+[ext_resource type="Script" uid="uid://cslc4buj2d3et" path="res://scenes/AudioGenerator.gd" id="4_lgw48"]
+
+[node name="WordNumberMaster" type="Node2D" unique_id=1237225501]
+script = ExtResource("1_gosy5")
+
+[node name="GameBoard" type="Node2D" parent="." unique_id=310246334]
+script = ExtResource("2_lgw48")
+
+[node name="GridBackground" type="Sprite2D" parent="GameBoard" unique_id=1945204670]
+
+[node name="SpawnPositions" type="Node2D" parent="GameBoard" unique_id=2085256990]
+
+[node name="markers0" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=972354295]
+
+[node name="markers1" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1624193330]
+
+[node name="markers2" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=71366942]
+
+[node name="markers3" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=2041913018]
+
+[node name="markers4" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=146577150]
+
+[node name="GameUI" type="CanvasLayer" parent="." unique_id=2096054690]
+
+[node name="Control" type="Control" parent="GameUI" unique_id=38893226]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GameUI/Control" unique_id=178789550]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameUI/Control/MarginContainer" unique_id=1765874217]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=1901887734]
+layout_mode = 2
+
+[node name="TimerLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1799609938]
+layout_mode = 2
+text = "TIME: 60s"
+
+[node name="ScoreLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1623311288]
+layout_mode = 2
+text = "SCORE: 0"
+
+[node name="Spacer" type="Control" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=966514924]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InputBar" type="HBoxContainer" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=311963326]
+layout_mode = 2
+
+[node name="TypingInput" type="LineEdit" parent="GameUI/Control/MarginContainer/VBoxContainer/InputBar" unique_id=2075586846]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Type numerical value..."
+
+[node name="NextWordPreview" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=1759785310]
+layout_mode = 2
+
+[node name="FeedbackEffects" type="AnimationPlayer" parent="." unique_id=1687418373]
+script = ExtResource("3_42gas")
+
+[node name="AudioPlayers" type="Node" parent="." unique_id=2016398089]
+script = ExtResource("4_lgw48")
+
+[node name="ErrorSound" type="AudioStreamPlayer" parent="AudioPlayers" unique_id=1946162506]
+
+[node name="SuccessSound" type="AudioStreamPlayer" parent="AudioPlayers" unique_id=1240971701]
