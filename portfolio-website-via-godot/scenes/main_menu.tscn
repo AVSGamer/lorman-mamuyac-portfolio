@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://un7pvkrkdlpb"]
 
 [ext_resource type="Script" uid="uid://dyk1lpkdp2ur4" path="res://scenes/main_menu.gd" id="1_rm437"]
-[ext_resource type="Texture2D" uid="uid://s3jujqospqhy" path="res://assets/cropped-images-cta2-0-1553765911156.jpg" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://v201vesjd3ar" path="res://assets/MainBG2.png" id="2_lgwnu"]
 [ext_resource type="Script" uid="uid://b7vpkuiqngie2" path="res://scenes/matrix_background.gd" id="2_mob6k"]
 [ext_resource type="FontFile" uid="uid://dgysufm3mf70a" path="res://assets/fonts/blox/Blox2.ttf" id="4_oa1go"]
 [ext_resource type="Script" uid="uid://b0el660k2uqnw" path="res://scenes/labelGradientAnim.gd" id="5_jk1qb"]
@@ -79,9 +79,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_bqqt6")
-expand_mode = 2
-stretch_mode = 2
+texture = ExtResource("2_lgwnu")
 
 [node name="BeaconFlare" type="Sprite2D" parent="TextureRect" unique_id=727052271]
 position = Vector2(741, 343)
