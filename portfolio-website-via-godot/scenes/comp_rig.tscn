@@ -2,7 +2,9 @@
 
 [ext_resource type="FontFile" uid="uid://bkti7yyrpm5gu" path="res://assets/fonts/arcade/Arcade.ttf" id="2_iu3um"]
 [ext_resource type="Script" uid="uid://yvie2i51hq5e" path="res://scenes/comp_rig_main.gd" id="2_xvsy1"]
+[ext_resource type="FontFile" uid="uid://b5gxsbu23gtvc" path="res://assets/fonts/checkbook/CHECKBK0.TTF" id="3_1og65"]
 [ext_resource type="Script" uid="uid://gnxgr8gkb825" path="res://scenes/pcRigDevices.gd" id="3_rg6nd"]
+[ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="4_ctvcw"]
 [ext_resource type="PackedScene" uid="uid://f40hvxj8kk4b" path="res://scenes/pcRigModal.tscn" id="4_k7w2o"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
@@ -47,7 +49,8 @@ propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
 size_flags_vertical = 0
-text = ">>Return to Main Menu<<"
+theme_override_fonts/font = ExtResource("3_1og65")
+text = ">>   Return to Main Menu   <<"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CompRigScreen/VBoxContainer" unique_id=606182470]
 propagate_maximum_size = true
@@ -59,6 +62,7 @@ horizontal_scroll_mode = 0
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_ctvcw")
 auto_width = true
 auto_height = true
 item_count = 72
@@ -150,5 +154,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
+[connection signal="mouse_entered" from="CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_mouse_entered"]
+[connection signal="mouse_exited" from="CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_mouse_exited"]
 [connection signal="pressed" from="CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
 [connection signal="item_clicked" from="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]

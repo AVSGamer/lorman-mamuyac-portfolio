@@ -44,3 +44,55 @@ func _clear_current_container() -> void:
 	for child in $%StaticUIOverlayMain.get_children():
 		if not child == $%MainMenuScreen:
 			child.queue_free()
+
+
+func _on_mini_biography_mm_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM.text = ">> Curriculum Vitae / Related Biography <<"
+
+
+func _on_mini_biography_mm_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM.text = "Curriculum Vitae / Related Biography"
+
+
+func _on_computer_rig_mm_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM.text = ">> My Current Devices <<"
+
+
+func _on_computer_rig_mm_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM.text = "My Current Devices"
+
+
+func _on_projects_mm_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM.text = ">> Projects <<"
+
+
+func _on_projects_mm_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM.text = "Projects"
+
+
+func _on_mm_lbl_game_profile_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile.text = "-- VSGamer i PapiRE - Gaming --"
+
+
+func _on_mm_lbl_game_profile_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile.text = "VSGamer i PapiRE - Gaming"
+
+
+func _on_mm_lbl_github_profile_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile.text = ">> Khayeel(Programming) <<
+>> PapiRES(Program Publishing) <<"
+
+
+func _on_mm_lbl_github_profile_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile.text = "Khayeel(Programming)
+PapiRES(Program Publishing)"
+
+
+func _on_mm_lbl_linkdin_profile_mouse_entered() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile.text = ">> made by: Lorman Domingo Mamuyac <<
+[:Pen Names:]"
+
+
+func _on_mm_lbl_linkdin_profile_mouse_exited() -> void:
+	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile.text = "made by: Lorman Domingo Mamuyac
+[:Pen Names:]"

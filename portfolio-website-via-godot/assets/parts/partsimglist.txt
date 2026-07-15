@@ -1,6 +1,0 @@
-[TODO]
-Coolmoon ARGB SSD Shield
-Coolmoon ARGB 30cm LightBar
-HPhones Name in ItemList entry
-TPLink T2UB Nano
-ElectricKettle

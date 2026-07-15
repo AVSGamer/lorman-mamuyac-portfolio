@@ -11,3 +11,11 @@ func _process(delta: float) -> void:
 
 func _on_btn_back_to_menu_pressed() -> void:
 	return_to_menu.emit()		
+
+
+func _on_btn_back_to_menu_mouse_entered() -> void:
+	$CompRigScreen/VBoxContainer/btn_backToMenu.text = ">> Return to Main Menu <<"
+
+
+func _on_btn_back_to_menu_mouse_exited() -> void:
+	$CompRigScreen/VBoxContainer/btn_backToMenu.text = ">>   Return to Main Menu   <<"

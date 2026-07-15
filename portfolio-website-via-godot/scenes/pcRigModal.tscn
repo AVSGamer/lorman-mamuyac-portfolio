@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cd8ccmqmhi65c" path="res://scenes/pcRigModal.gd" id="1_pq7pn"]
 [ext_resource type="Script" uid="uid://cdwn86q2xsydv" path="res://scenes/part_description.gd" id="2_e8unq"]
+[ext_resource type="FontFile" uid="uid://dmb5y1ksnxlqs" path="res://assets/fonts/karmatic-arcade/ka1.ttf" id="2_nfhh8"]
+[ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="3_g16mt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8unq"]
 content_margin_left = 4.0
@@ -9,6 +11,10 @@ content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
 bg_color = Color(0.2665752, 0.26657522, 0.26657507, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e8unq"]
+font = ExtResource("2_nfhh8")
+font_size = 12
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfhh8"]
 content_margin_left = 4.0
@@ -35,11 +41,21 @@ script = ExtResource("1_pq7pn")
 [node name="ModalBody" type="Control" parent="." unique_id=1131382640]
 unique_name_in_owner = true
 propagate_maximum_size = true
-clip_contents = true
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ModalBody" unique_id=1040856675]
+[node name="ColorRect" type="ColorRect" parent="ModalBody" unique_id=710854269]
+propagate_maximum_size = true
 clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 0.26666668)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ModalBody" unique_id=1040856675]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,33 +69,40 @@ propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ModalBody/HBoxContainer" unique_id=2139764031]
-clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
-alignment = 1
 
 [node name="PartTitleLabel" type="Label" parent="ModalBody/HBoxContainer/VBoxContainer" unique_id=317161761]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(12, 0)
 propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_e8unq")
 text = "TITLE"
+label_settings = SubResource("LabelSettings_e8unq")
 vertical_alignment = 3
-autowrap_mode = 3
 
-[node name="PartDescription" type="RichTextLabel" parent="ModalBody/HBoxContainer/VBoxContainer" unique_id=1774963068]
-unique_name_in_owner = true
+[node name="ScrollContainer" type="ScrollContainer" parent="ModalBody/HBoxContainer/VBoxContainer" unique_id=533120726]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="PartDescription" type="RichTextLabel" parent="ModalBody/HBoxContainer/VBoxContainer/ScrollContainer" unique_id=1774963068]
+unique_name_in_owner = true
+propagate_maximum_size = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("3_g16mt")
+theme_override_fonts/bold_font = ExtResource("3_g16mt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_nfhh8")
 bbcode_enabled = true
 text = "Description"
 fit_content = true
 script = ExtResource("2_e8unq")
 
-[connection signal="meta_clicked" from="ModalBody/HBoxContainer/VBoxContainer/PartDescription" to="ModalBody/HBoxContainer/VBoxContainer/PartDescription" method="_on_meta_clicked"]
+[connection signal="meta_clicked" from="ModalBody/HBoxContainer/VBoxContainer/ScrollContainer/PartDescription" to="ModalBody/HBoxContainer/VBoxContainer/ScrollContainer/PartDescription" method="_on_meta_clicked"]

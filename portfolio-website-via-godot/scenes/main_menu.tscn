@@ -255,8 +255,20 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile" to="." method="_on_mm_lbl_linkdin_profile_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile" to="." method="_on_mm_lbl_linkdin_profile_mouse_exited"]
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile" to="." method="_on_mm_lbl_github_profile_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile" to="." method="_on_mm_lbl_github_profile_mouse_exited"]
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile" to="." method="_on_mm_lbl_game_profile_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile" to="." method="_on_mm_lbl_game_profile_mouse_exited"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/FutureFeatureMM" to="." method="_on_future_feature_mm_pressed"]
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM" to="." method="_on_mini_biography_mm_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM" to="." method="_on_mini_biography_mm_mouse_exited"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM" to="." method="_on_mini_biography_mm_pressed"]
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM" to="." method="_on_computer_rig_mm_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM" to="." method="_on_computer_rig_mm_mouse_exited"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM" to="." method="_on_computer_rig_mm_pressed"]
+[connection signal="mouse_entered" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_mouse_entered"]
+[connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_mouse_exited"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_pressed"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ToBeReplacedMM" to="." method="_on_to_be_replaced_mm_pressed"]
