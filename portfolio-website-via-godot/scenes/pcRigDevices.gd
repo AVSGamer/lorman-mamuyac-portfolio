@@ -255,7 +255,7 @@ func _get_cell_data(row: int, column: int) -> Dictionary:
 		elif column == 1:
 			return {
 				"title": "My Main Gamepad/Controller: XBox 360 Wireless + Chatpad",
-				"desc": "I had Radial Nerve Palsy:\nFor some reason, I woke up one morning and I couldn't move my left hand. Using the keyboard and gaming with just one hand is kind of slow, hard and not that fun, then I got to try an XBox Layout Controller and loved it. Originally used the Playstation Controllers as my first hand at console controllers from PS1 era to PS4 and I now prefer the XBox Layout more. Also got the chatpad attachment for it. Also found a GitHub project to make them work together on modern PCs with some success until someone made a 2$ version of that on Steam then I just bought it instead to make setting it up next time easier. Here's a [url=https://shopee.ph/nslikey.ph?entryPoint=OrderDetail][b][color=blue]Shopee Store[/color][/b][/url] that sells replacement parts and cases for standard or popular controllers.",
+				"desc": "I had Radial Nerve Palsy:\nFor some reason, I woke up one morning and I couldn't move my left hand. Using the keyboard and gaming with just one hand is kind of slow, hard and not that fun, then I got to try an XBox Layout Controller and loved it. Originally used the Playstation Controllers as my first hand at console controllers from PS1 era to PS4 and I now prefer the XBox Layout more. Also got the chatpad attachment for it. Also found a GitHub project to make them work together on modern PCs with some success until someone made a 2$ version of that on Steam then I just bought it instead to make setting it up next time easier. Here's a [url=https://shopee.ph/nslikey.ph?entryPoint=OrderDetail][b][color=blue]Shopee Store[/color][/b][/url] that sells replacement parts and cases for standard or popular controllers. [url=https://shopee.ph/-Fast-delivery-33pcs-Tamper-Proof-CRV6150-Torx-Hex-Star-Bit-Set-with-Magnetic-Holder-for-Any-Drills-Screwdriver-Nutdrivers-Bits-Hand-Tools-with-Storage-Case-i.778753425.23420890136][b][color=blue]Bought the torx security screwbit from this shoppee link to be able to replace the casing.[/color][/b][/url]",
 				"image_path": "res://assets/parts/my_gamepad.png"
 			}
 	elif row == 17:
@@ -358,8 +358,8 @@ func _get_cell_data(row: int, column: int) -> Dictionary:
 			}
 		elif column == 1:
 			return {
-				"title": "Headphones: ThinkPlus TH30 (Damaged)",
-				"desc": "I don't even use this much anymore:\nCommon experience with headphones for me is that the band that connects the left and right drivers can be flimsy and break easily. The only brand of headphones I've had where that didn't happen is with Razer Krakens.",
+				"title": "Headphones: MS-B2 (Damaged)",
+				"desc": "I don't even use [url=https://shopee.ph/MS-B2-original-headphone-Bluetooth-wireless-high-quality-headset-with-folding-microphone-i.378859210.20456198353][b][color=blue]this[/color][/b][/url] much anymore:\nCommon experience with headphones for me is that the band that connects the left and right drivers can be flimsy and break easily. The only brand of headphones I've had where that didn't happen is with Razer Krakens.",
 				"image_path": "res://assets/parts/my_hphones.png"
 			}
 	elif row == 25:
@@ -437,7 +437,7 @@ func _get_cell_data(row: int, column: int) -> Dictionary:
 		elif column == 1:
 			return {
 				"title": "Network Adaptor: TP Link Nano UB Bluetooth + WiFi",
-				"desc": "They're fine and really small:\nWired is still king though... Having stuff in wireless today is still actually broadcasting your device to everyone around it and that can be a vulnerability. Hiding the SSID of your WiFi doesn't hide it from those with Kali Linux Kernels sniffing every WiFi in the coverage of their antennae.",
+				"desc": "[url=https://www.tp-link.com/ph/home-networking/adapter/archer-t2u-nano/][b][color=blue]They're[/color][/b][/url] fine and really small:\nWired is still king though... Having stuff in wireless today is still actually broadcasting your device to everyone around it and that can be a vulnerability. Hiding the SSID of your WiFi doesn't hide it from those with Kali Linux Kernels sniffing every WiFi in the coverage of their antennae.",
 				"image_path": "res://assets/parts/my_networking.png"
 			}
 	elif row == 31:

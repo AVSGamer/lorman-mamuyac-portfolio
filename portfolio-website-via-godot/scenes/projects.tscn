@@ -59,6 +59,14 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
 
+[node name="btn_backToMenu" type="Button" parent="ProjectsScreen/VBoxContainer" unique_id=1277995864]
+z_index = 1
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 8
+text = ">>Return to Main Menu<<"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="ProjectsScreen/VBoxContainer" unique_id=1239224619]
 propagate_maximum_size = true
 layout_mode = 2
@@ -149,13 +157,5 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "To be added.."
 horizontal_alignment = 1
-
-[node name="btn_backToMenu" type="Button" parent="ProjectsScreen/VBoxContainer" unique_id=1277995864]
-z_index = 1
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-size_flags_vertical = 8
-text = ">>Return to Main Menu<<"
 
 [connection signal="pressed" from="ProjectsScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]

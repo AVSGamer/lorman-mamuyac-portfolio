@@ -21,7 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 theme_override_constants/margin_left = 100
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
@@ -31,17 +31,25 @@ theme_override_constants/margin_bottom = 120
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+theme_override_constants/separation = 5
 
 [node name="bs_lblTitle" type="Label" parent="CompRigScreen/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
 size_flags_vertical = 0
 text = "My Current Computer Rig and Devices"
 label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CompRigScreen/VBoxContainer" unique_id=652792852]
+[node name="btn_backToMenu" type="Button" parent="CompRigScreen/VBoxContainer" unique_id=1277995864]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+text = ">>Return to Main Menu<<"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CompRigScreen/VBoxContainer" unique_id=606182470]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 3
@@ -51,7 +59,6 @@ horizontal_scroll_mode = 0
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 2
 auto_width = true
 auto_height = true
 item_count = 72
@@ -72,9 +79,9 @@ item_11/text = "ASRock B450M Steel Legend White Bios: P10.6"
 item_12/text = "Read Only Memory / Storage"
 item_13/text = "ADATA SX8100NP 1TB M.2 NVMe SSD"
 item_14/text = "SSD Shield"
-item_15/text = "Coolmoon ARGB Thingy"
+item_15/text = "Coolmoon ARGB SSD Shield"
 item_16/text = "Case Internal Lightbar"
-item_17/text = "Coolmoon 30cm Light Bar"
+item_17/text = "Coolmoon ARGB 30cm Light Bar"
 item_18/text = "Front Case Fans"
 item_19/text = "Cooler Master 140 ARGB SickleFlow x 2"
 item_20/text = "Top Case Fans"
@@ -102,11 +109,11 @@ item_41/text = "Ahegao Anime Girls"
 item_42/text = "Keycap Set #2"
 item_43/text = "Black on White Backlit Pudding"
 item_44/text = "Keycap Set #3"
-item_45/text = "Frosted White Backlit"
+item_45/text = "Frosted/Jelly White Backlit"
 item_46/text = "Mouse / Pointer / Cursor"
 item_47/text = "Brandless 3$ 2.4G Modified with Huano Switches"
 item_48/text = "Headphones"
-item_49/text = "ThinkPlus TH30 (Damaged)"
+item_49/text = "MS-B2 (Damaged)"
 item_50/text = "Earphones"
 item_51/text = "Baseus Encok WM01 (Failing)"
 item_52/text = "Mousepad"
@@ -118,26 +125,19 @@ item_57/text = "EZCAP284 HD Video Capture (selling)"
 item_58/text = "Router"
 item_59/text = "MikroTik HomeAP AC Lite"
 item_60/text = "Bluetooth/Wifi Adapter"
-item_61/text = "TPLink Nano"
+item_61/text = "TPLink T2UB Nano"
 item_62/text = "Webcam"
 item_63/text = "Some inexpensive Low Quality USB Cam"
 item_64/text = "Cellphone"
 item_65/text = "Xiaomi Poco M4 Pro 5G"
 item_66/text = "Main Appliance"
 item_67/text = "Tube Ice Maker"
-item_68/text = "Electric Kettle"
-item_69/text = "Hydrolyzing Thermos"
+item_68/text = "Secondary Appliance"
+item_69/text = "Electric Kettle"
 item_70/text = "Prefers Electric Fan over AC"
 item_71/text = "Some DTI Certified Safe Mini Clip Fan"
 script = ExtResource("3_rg6nd")
 modal_scene = ExtResource("4_k7w2o")
-
-[node name="btn_backToMenu" type="Button" parent="CompRigScreen/VBoxContainer" unique_id=1277995864]
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-size_flags_vertical = 0
-text = ">>Return to Main Menu<<"
 
 [node name="AdContainer" type="MarginContainer" parent="." unique_id=1671254161]
 custom_minimum_size = Vector2(0, 100)
@@ -150,5 +150,5 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
-[connection signal="item_clicked" from="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]
 [connection signal="pressed" from="CompRigScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[connection signal="item_clicked" from="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" to="CompRigScreen/VBoxContainer/ScrollContainer/itlst_Table" method="_on_item_list_clicked"]
