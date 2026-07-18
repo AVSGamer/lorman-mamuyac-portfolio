@@ -30,6 +30,7 @@ func _ready() -> void:
 	speed_modifier = 1.0
 	game_active = true
 
+	_update_score_display()
 	viewport_based_division = get_viewport_rect().size.x / 6
 	var local_counter: int = 1
 	for sp_markers in spawn_marker_root.get_children():
@@ -143,7 +144,7 @@ func _on_btn_submit_y_button_up() -> void:
 	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = true
 	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = true
 	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.disabled = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
 
 
 func _on_btn_submit_n_button_up() -> void:
