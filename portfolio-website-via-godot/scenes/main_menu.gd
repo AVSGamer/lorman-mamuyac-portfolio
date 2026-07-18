@@ -47,6 +47,7 @@ func _on_mini_game1_start() -> void:
 	$%MainMenuScreen.hide()
 	var scene_instance = MINI_GAME_1_SCENE.instantiate()
 	$%StaticUIOverlayMain.add_child(scene_instance)
+	scene_instance.return_to_menu.connect(_on_return_to_menu)
 	
 func _clear_current_container() -> void:
 	for child in $%StaticUIOverlayMain.get_children():

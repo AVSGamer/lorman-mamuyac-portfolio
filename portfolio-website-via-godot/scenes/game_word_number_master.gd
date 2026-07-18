@@ -3,6 +3,7 @@ extends Node2D
 # Global Signals
 signal game_over
 signal input_checked(is_match: bool, digit_count: int)
+signal return_to_menu
 
 # Game Variables
 @export var starting_time: float = 60.0
@@ -13,6 +14,7 @@ var score: int = 0
 var speed_modifier: float = 1.0
 var game_active: bool = true
 var viewport_based_division: int = 0
+var total_timer: int = 0
 
 @onready var timer_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/TimerLabel
 @onready var score_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/ScoreLabel
@@ -23,6 +25,7 @@ var viewport_based_division: int = 0
 
 func _ready() -> void:
 	current_time = starting_time
+	total_timer = starting_time
 	score = 0
 	speed_modifier = 1.0
 	game_active = true
@@ -47,10 +50,6 @@ func _ready() -> void:
 	# Hook code into our newly added generator architecture
 	if has_node("AudioPlayers"):
 		$AudioPlayers.set_script(preload("res://scenes/AudioGenerator.gd"))
-		
-	# Previous initialization sequences from Phase 3 stay intact below...
-	typing_input.text_submitted.connect(_on_text_submitted)
-	typing_input.grab_focus()
 
 func _process(delta: float) -> void:
 	if not game_active:
@@ -80,6 +79,7 @@ func _on_input_checked(is_match: bool, digit_count: int) -> void:
 		
 		# Extend timer proportionally to correct answer digit length (e.g., 1.5 seconds per digit)
 		current_time += digit_count * 1.5
+		total_timer += digit_count * 1.5
 		$AudioPlayers/SuccessSound.play()
 	else:
 		# Trigger audio feedback for error
@@ -90,8 +90,10 @@ func _trigger_game_over() -> void:
 	emit_signal("game_over")
 	typing_input.editable = false
 	#Call modal to show GameOver
-	print("Game Over triggered! Final Score: ", score)
-
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TScoreVal.text = NumberParser.int_to_words(score)
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TTimeSurvdVal.text = NumberParser.int_to_words(total_timer)
+	$GameEndModal.visible = true
+	
 func _on_text_submitted(submitted_text: String) -> void:
 	if not game_active:
 		return
@@ -103,9 +105,11 @@ func _on_text_submitted(submitted_text: String) -> void:
 	
 	# Clear field text UI immediately for subsequent rapid-fire attempts
 	typing_input.clear()
+	typing_input.grab_focus()
 	
 	if sanitized_text.is_empty():
 		_trigger_incorrect_state()
+		typing_input.grab_focus()
 		return
 		
 	# 2. Check game board list arrays for active element target matches
@@ -133,3 +137,45 @@ func _trigger_incorrect_state() -> void:
 	emit_signal("input_checked", false, 0)
 	if feedback_effects.has_method("trigger_error_feedback"):
 		feedback_effects.trigger_error_feedback()
+
+
+func _on_btn_submit_y_button_up() -> void:
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = true
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = true
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.disabled = true
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = false
+
+
+func _on_btn_submit_n_button_up() -> void:
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visible = true
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
+
+func _on_btn_submit_score_button_up() -> void:
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_SubmissionStatus.visible = true
+	#call api to store score and wait for a returned success or failed value
+	#show that status in the label above
+	#regardless show the Play Again Prompts
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visbile = true
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
+
+func _on_ledt_player_name_text_changed(new_text: String) -> void:
+	#use regex to filter/match what's inputted
+	#if a match is found then do not enable the submit button
+	#$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.disabled = false
+	pass
+
+func _on_btn_again_y_button_up() -> void:
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_SubmissionStatus.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visible = false
+	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = false
+	$GameEndModal.visible = false
+	typing_input.editable = true
+	#restart the game
+	self._ready()
+
+func _on_btn_again_n_button_up() -> void:
+	emit_signal('return_to_menu')

@@ -4,6 +4,37 @@
 [ext_resource type="Script" uid="uid://i2x1nqr5tfjm" path="res://scenes/game_board.gd" id="2_lgw48"]
 [ext_resource type="Script" uid="uid://b0jg1x4oa2vt3" path="res://scenes/feedback_effects.gd" id="3_42gas"]
 [ext_resource type="Script" uid="uid://cslc4buj2d3et" path="res://scenes/AudioGenerator.gd" id="4_lgw48"]
+[ext_resource type="FontFile" uid="uid://dmb5y1ksnxlqs" path="res://assets/fonts/karmatic-arcade/ka1.ttf" id="5_0mi74"]
+[ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="6_yhrks"]
+[ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="7_6cgvn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font = ExtResource("5_0mi74")
+font_size = 34
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font = ExtResource("6_yhrks")
+
+[sub_resource type="LabelSettings" id="LabelSettings_d0u6y"]
+font = ExtResource("6_yhrks")
+
+[sub_resource type="LabelSettings" id="LabelSettings_3gngh"]
+font = ExtResource("6_yhrks")
+
+[sub_resource type="LabelSettings" id="LabelSettings_fcnqv"]
+font = ExtResource("6_yhrks")
+
+[sub_resource type="LabelSettings" id="LabelSettings_7numd"]
+font = ExtResource("7_6cgvn")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_p1u0y"]
+font = ExtResource("7_6cgvn")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_5s0fj"]
+font = ExtResource("7_6cgvn")
+font_size = 29
 
 [node name="WordNumberMaster" type="Node2D" unique_id=1237225501]
 script = ExtResource("1_gosy5")
@@ -71,7 +102,11 @@ layout_mode = 2
 [node name="TypingInput" type="LineEdit" parent="GameUI/Control/MarginContainer/VBoxContainer/InputBar" unique_id=2075586846]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Type numerical value..."
+theme_override_font_sizes/font_size = 24
+placeholder_text = "Type numerical value..."
+keep_editing_on_text_submit = true
+context_menu_enabled = false
+emoji_menu_enabled = false
 
 [node name="NextWordPreview" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=1759785310]
 layout_mode = 2
@@ -85,3 +120,182 @@ script = ExtResource("4_lgw48")
 [node name="ErrorSound" type="AudioStreamPlayer" parent="AudioPlayers" unique_id=1946162506]
 
 [node name="SuccessSound" type="AudioStreamPlayer" parent="AudioPlayers" unique_id=1240971701]
+
+[node name="GameEndModal" type="CanvasLayer" parent="." unique_id=1960182242]
+visible = false
+
+[node name="Control" type="Control" parent="GameEndModal" unique_id=106126734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="GameEndModal/Control" unique_id=599375239]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GameEndModal/Control/AspectRatioContainer" unique_id=1960530888]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="MarginContainer" type="MarginContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer" unique_id=1188915110]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 100
+
+[node name="TextureRect" type="TextureRect" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=1038914547]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=665189955]
+layout_mode = 2
+color = Color(0.21950102, 0.21950102, 0.21950102, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=1635756822]
+layout_mode = 2
+
+[node name="lbl_GameFinished" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1814842841]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "!Game Finished!"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_TTimeSurvd" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1219078365]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Total Time Played:"
+label_settings = SubResource("LabelSettings_yf5fn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_TTimeSurvdVal" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1005577445]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0"
+label_settings = SubResource("LabelSettings_d0u6y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_TScore" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=777399155]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Total Score:"
+label_settings = SubResource("LabelSettings_3gngh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_TScoreVal" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=292335262]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0"
+label_settings = SubResource("LabelSettings_fcnqv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_SubmitQ" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=199979775]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Do you want to submit this for the leaderboards?"
+label_settings = SubResource("LabelSettings_7numd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1925744826]
+layout_mode = 2
+
+[node name="btn_SubmitY" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=426156182]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_0mi74")
+text = "Yes"
+
+[node name="btn_SubmitN" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1002646524]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_0mi74")
+text = "No"
+
+[node name="ledt_PlayerName" type="LineEdit" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=42324219]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_yhrks")
+placeholder_text = "Player Name: THIS FEATURE IS YET TO BE IMPLEMENTED"
+alignment = 1
+
+[node name="btn_SubmitScore" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1470938746]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_0mi74")
+text = "Submit it!"
+
+[node name="lbl_SubmissionStatus" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=668285110]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+text = "Submission Status"
+label_settings = SubResource("LabelSettings_p1u0y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_PlayAgain" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=714274387]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play Again?"
+label_settings = SubResource("LabelSettings_5s0fj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1138948645]
+visible = false
+layout_mode = 2
+
+[node name="btn_AgainY" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1769958702]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_0mi74")
+text = "Yes"
+
+[node name="btn_AgainN" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=25710025]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_0mi74")
+text = "No"
+
+[connection signal="editing_toggled" from="GameUI/Control/MarginContainer/VBoxContainer/InputBar/TypingInput" to="." method="_on_typing_input_editing_toggled"]
+[connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_SubmitY" to="." method="_on_btn_submit_y_button_up"]
+[connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_SubmitN" to="." method="_on_btn_submit_n_button_up"]
+[connection signal="text_changed" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName" to="." method="_on_ledt_player_name_text_changed"]
+[connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore" to="." method="_on_btn_submit_score_button_up"]
+[connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/btn_AgainY" to="." method="_on_btn_again_y_button_up"]
+[connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/btn_AgainN" to="." method="_on_btn_again_n_button_up"]
