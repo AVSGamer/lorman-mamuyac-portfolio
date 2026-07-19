@@ -1,6 +1,13 @@
 extends Control
 
 @onready var ad_container: MarginContainer = $%AdContainer
+@onready var cv_biography: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM
+@onready var comp_rig: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM
+@onready var projects: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM
+@onready var gaming_profile_label: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblGameProfile
+@onready var github_profile: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblGithubProfile
+@onready var linkdin_profile: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile
+@onready var root_scene: AspectRatioContainer = $%StaticUIOverlayMain/AspectRatioContainer
 
 # Preload core scenes
 const BIOGRAPHY_SCENE = preload("res:///scenes/mini_biography.tscn")
@@ -15,25 +22,25 @@ func _ready() -> void:
 # ─── BUTTONS ROUTING ───
 func _on_future_feature_mm_pressed() -> void:
 	var scene_instance = FUTURE_FEATURE_SCENE.instantiate()
-	$%StaticUIOverlayMain.add_child(scene_instance)
+	root_scene.add_child(scene_instance)
 	scene_instance.miniGame1Start.connect(_on_mini_game1_start)
 
 func _on_mini_biography_mm_pressed() -> void:
 	$%MainMenuScreen.hide()
 	var scene_instance = BIOGRAPHY_SCENE.instantiate()
-	$%StaticUIOverlayMain.add_child(scene_instance)
+	root_scene.add_child(scene_instance)
 	scene_instance.return_to_menu.connect(_on_return_to_menu)
 
 func _on_computer_rig_mm_pressed() -> void:
 	$%MainMenuScreen.hide()
 	var scene_instance = COMP_RIG_SCENE.instantiate()
-	$%StaticUIOverlayMain.add_child(scene_instance)
+	root_scene.add_child(scene_instance)
 	scene_instance.return_to_menu.connect(_on_return_to_menu)
 
 func _on_projects_mm_pressed() -> void:
 	$%MainMenuScreen.hide()
 	var scene_instance = PROJECTS_SCENE.instantiate()
-	$%StaticUIOverlayMain.add_child(scene_instance)
+	root_scene.add_child(scene_instance)
 	scene_instance.return_to_menu.connect(_on_return_to_menu)
 
 func _on_to_be_replaced_mm_pressed() -> void:
@@ -46,61 +53,61 @@ func _on_return_to_menu() -> void:
 func _on_mini_game1_start() -> void:
 	$%MainMenuScreen.hide()
 	var scene_instance = MINI_GAME_1_SCENE.instantiate()
-	$%StaticUIOverlayMain.add_child(scene_instance)
+	root_scene.add_child(scene_instance)
 	scene_instance.return_to_menu.connect(_on_return_to_menu)
 	
 func _clear_current_container() -> void:
-	for child in $%StaticUIOverlayMain.get_children():
-		if not child == $%MainMenuScreen:
+	for child in root_scene.get_children():
+		if not child == $%MainMenuScreen && not child == $%AdContainer:
 			child.queue_free()
 
 func _on_mini_biography_mm_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM.text = ">> Curriculum Vitae / Related Biography <<"
+	cv_biography.text = ">> Curriculum Vitae / Related Biography <<"
 
 
 func _on_mini_biography_mm_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM.text = "Curriculum Vitae / Related Biography"
+	cv_biography.text = "Curriculum Vitae / Related Biography"
 
 
 func _on_computer_rig_mm_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM.text = ">> My Current Devices <<"
+	comp_rig.text = ">> My Current Devices <<"
 
 
 func _on_computer_rig_mm_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM.text = "My Current Devices"
+	comp_rig.text = "My Current Devices"
 
 
 func _on_projects_mm_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM.text = ">> Projects <<"
+	projects.text = ">> Projects <<"
 
 
 func _on_projects_mm_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM.text = "Projects"
+	projects.text = "Projects"
 
 
 func _on_mm_lbl_game_profile_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile.text = "-- VSGamer i PapiRE - Gaming --"
+	gaming_profile_label.text = "-- VSGamer i PapiRE - Gaming --"
 
 
 func _on_mm_lbl_game_profile_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGameProfile.text = "VSGamer i PapiRE - Gaming"
+	gaming_profile_label.text = "VSGamer i PapiRE - Gaming"
 
 
 func _on_mm_lbl_github_profile_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile.text = ">> Khayeel(Programming) <<
+	github_profile.text = ">> Khayeel(Programming) <<
 >> PapiRES(Program Publishing) <<"
 
 
 func _on_mm_lbl_github_profile_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblGithubProfile.text = "Khayeel(Programming)
+	github_profile.text = "Khayeel(Programming)
 PapiRES(Program Publishing)"
 
 
 func _on_mm_lbl_linkdin_profile_mouse_entered() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile.text = ">> made by: Lorman Domingo Mamuyac <<
+	linkdin_profile.text = ">> made by: Lorman Domingo Mamuyac <<
 [:Pen Names:]"
 
 
 func _on_mm_lbl_linkdin_profile_mouse_exited() -> void:
-	$StaticUIOverlayMain/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile.text = "made by: Lorman Domingo Mamuyac
+	linkdin_profile.text = "made by: Lorman Domingo Mamuyac
 [:Pen Names:]"

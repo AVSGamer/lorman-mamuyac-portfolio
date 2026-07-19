@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="1_8qwos"]
 
 [node name="GameEntryModal" type="AspectRatioContainer" unique_id=1538530493]
+clip_contents = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -27,6 +28,7 @@ color = Color(1, 1, 1, 0.6431373)
 
 [node name="mc_MModalWindow" type="MarginContainer" parent="mc_ModalGameEntry" unique_id=1628849044]
 unique_name_in_owner = true
+clip_contents = true
 layout_mode = 2
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 20

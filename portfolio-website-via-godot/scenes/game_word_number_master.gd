@@ -18,11 +18,17 @@ var total_timer: int = 0
 
 @onready var timer_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/TimerLabel
 @onready var score_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/ScoreLabel
+@onready var play_again_lbl: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain
+@onready var submit_status: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_SubmissionStatus
 @onready var game_board: Node2D = $GameBoard
-@onready var typing_input: LineEdit = $GameUI/Control/MarginContainer/VBoxContainer/InputBar/TypingInput
-@onready var feedback_effects: Node = $FeedbackEffects
 @onready var spawn_marker_root: Node2D = $GameBoard/SpawnPositions
-
+@onready var typing_input: LineEdit = $GameUI/Control/MarginContainer/VBoxContainer/InputBar/TypingInput
+@onready var player_name_leaderboard: LineEdit = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName
+@onready var feedback_effects: Node = $FeedbackEffects
+@onready var submit_button: Button = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore
+@onready var play_again_HBox: HBoxContainer = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2
+@onready var game_end_modal_total_time: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TTimeSurvdVal
+@onready var game_end_score: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TScoreVal
 func _ready() -> void:
 	current_time = starting_time
 	total_timer = starting_time
@@ -42,6 +48,7 @@ func _ready() -> void:
 	typing_input.text_submitted.connect(_on_text_submitted)
 	
 	# Setup UI and give focus to input box immediately
+	typing_input.grab_focus()
 	typing_input.grab_focus()
 	
 	# Enforce engine to adapt beautifully to modern high DPI viewports
@@ -82,17 +89,19 @@ func _on_input_checked(is_match: bool, digit_count: int) -> void:
 		current_time += digit_count * 1.5
 		total_timer += digit_count * 1.5
 		$AudioPlayers/SuccessSound.play()
+		typing_input.grab_focus()
 	else:
 		# Trigger audio feedback for error
 		$AudioPlayers/ErrorSound.play()
+		typing_input.grab_focus()
 
 func _trigger_game_over() -> void:
 	game_active = false
 	emit_signal("game_over")
 	typing_input.editable = false
 	#Call modal to show GameOver
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TScoreVal.text = NumberParser.int_to_words(score)
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TTimeSurvdVal.text = NumberParser.int_to_words(total_timer)
+	game_end_score.text = str(score)
+	game_end_modal_total_time.text = str(total_timer)
 	$GameEndModal.visible = true
 	
 func _on_text_submitted(submitted_text: String) -> void:
@@ -141,25 +150,25 @@ func _trigger_incorrect_state() -> void:
 
 
 func _on_btn_submit_y_button_up() -> void:
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.disabled = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
+	player_name_leaderboard.visible = true
+	submit_button.visible = true
+	submit_button.disabled = true
+	play_again_HBox.visible = true
 
 
 func _on_btn_submit_n_button_up() -> void:
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visible = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
+	player_name_leaderboard.visible = false
+	submit_button.visible = false
+	play_again_lbl.visible = true
+	play_again_HBox.visible = true
 
 func _on_btn_submit_score_button_up() -> void:
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_SubmissionStatus.visible = true
+	submit_status.visible = true
 	#call api to store score and wait for a returned success or failed value
 	#show that status in the label above
 	#regardless show the Play Again Prompts
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visbile = true
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = true
+	play_again_lbl.visbile = true
+	play_again_HBox.visible = true
 
 func _on_ledt_player_name_text_changed(new_text: String) -> void:
 	#use regex to filter/match what's inputted
@@ -168,11 +177,11 @@ func _on_ledt_player_name_text_changed(new_text: String) -> void:
 	pass
 
 func _on_btn_again_y_button_up() -> void:
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/ledt_PlayerName.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_SubmissionStatus.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_PlayAgain.visible = false
-	$GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2.visible = false
+	player_name_leaderboard.visible = false
+	submit_button.visible = false
+	submit_status.visible = false
+	play_again_lbl.visible = false
+	play_again_HBox.visible = false
 	$GameEndModal.visible = false
 	typing_input.editable = true
 	#restart the game

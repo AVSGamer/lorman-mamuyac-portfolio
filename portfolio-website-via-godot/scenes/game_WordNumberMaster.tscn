@@ -17,12 +17,14 @@ font = ExtResource("6_yhrks")
 
 [sub_resource type="LabelSettings" id="LabelSettings_d0u6y"]
 font = ExtResource("6_yhrks")
+font_size = 28
 
 [sub_resource type="LabelSettings" id="LabelSettings_3gngh"]
 font = ExtResource("6_yhrks")
 
 [sub_resource type="LabelSettings" id="LabelSettings_fcnqv"]
 font = ExtResource("6_yhrks")
+font_size = 28
 
 [sub_resource type="LabelSettings" id="LabelSettings_7numd"]
 font = ExtResource("7_6cgvn")
@@ -107,6 +109,8 @@ placeholder_text = "Type numerical value..."
 keep_editing_on_text_submit = true
 context_menu_enabled = false
 emoji_menu_enabled = false
+clear_button_enabled = true
+virtual_keyboard_type = 2
 
 [node name="NextWordPreview" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=1759785310]
 layout_mode = 2
