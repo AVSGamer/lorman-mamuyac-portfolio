@@ -12,7 +12,7 @@ signal return_to_menu
 var current_time: float = 0.0
 var score: int = 0
 var speed_modifier: float = 1.0
-var game_active: bool = true
+var game_active: bool = false
 var viewport_based_division: int = 0
 var total_timer: int = 0
 
@@ -29,49 +29,35 @@ var total_timer: int = 0
 @onready var play_again_HBox: HBoxContainer = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2
 @onready var game_end_modal_total_time: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TTimeSurvdVal
 @onready var game_end_score: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TScoreVal
-func _ready() -> void:
-	current_time = starting_time
-	total_timer = starting_time
-	score = 0
-	speed_modifier = 1.0
-	game_active = true
 
-	_update_score_display()
-	viewport_based_division = get_viewport_rect().size.x / 6
-	var local_counter: int = 1
-	for sp_markers in spawn_marker_root.get_children():
-		sp_markers.set("position", Vector2(viewport_based_division*local_counter,0))
-		local_counter+=1
-	
-	# Connect local signals
-	input_checked.connect(_on_input_checked)
-	typing_input.text_submitted.connect(_on_text_submitted)
-	
-	# Setup UI and give focus to input box immediately
-	typing_input.grab_focus()
-	typing_input.grab_focus()
-	
-	# Enforce engine to adapt beautifully to modern high DPI viewports
-	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
-	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
-	
+func _ready() -> void:
+	$%btn_OwnVirtualKeyb.toggle_mode = true
+	$%btn_VirtualKeyb.toggle_mode = true
 	# Hook code into our newly added generator architecture
 	if has_node("AudioPlayers"):
 		$AudioPlayers.set_script(preload("res://scenes/AudioGenerator.gd"))
+		
+	# Connect local signals
+	input_checked.connect(_on_input_checked)
+	typing_input.text_submitted.connect(_on_text_submitted)
+		
+	# Enforce engine to adapt beautifully to modern high DPI viewports		
+	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
+	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 
 func _process(delta: float) -> void:
 	if not game_active:
 		return
-		
+	else:
 	# 1. Handle Game Countdown Timer
-	current_time -= delta
-	if current_time <= 0.0:
-		current_time = 0.0
-		_trigger_game_over()
-	_update_timer_display()
-	
-	# 2. Smoothly scale difficulty modifier over time
-	speed_modifier += difficulty_scale_rate * delta
+		current_time -= delta
+		if current_time <= 0.0:
+			current_time = 0.0
+			_trigger_game_over()
+		_update_timer_display()
+		
+		# 2. Smoothly scale difficulty modifier over time
+		speed_modifier += difficulty_scale_rate * delta
 
 func _update_timer_display() -> void:
 	timer_label.text = "TIME: %d" % ceil(current_time)
@@ -148,13 +134,11 @@ func _trigger_incorrect_state() -> void:
 	if feedback_effects.has_method("trigger_error_feedback"):
 		feedback_effects.trigger_error_feedback()
 
-
 func _on_btn_submit_y_button_up() -> void:
 	player_name_leaderboard.visible = true
 	submit_button.visible = true
 	submit_button.disabled = true
 	play_again_HBox.visible = true
-
 
 func _on_btn_submit_n_button_up() -> void:
 	player_name_leaderboard.visible = false
@@ -185,7 +169,105 @@ func _on_btn_again_y_button_up() -> void:
 	$GameEndModal.visible = false
 	typing_input.editable = true
 	#restart the game
-	self._ready()
+	self._start_game()
 
 func _on_btn_again_n_button_up() -> void:
 	emit_signal('return_to_menu')
+
+func _start_game() -> void:
+	current_time = starting_time
+	total_timer = starting_time
+	score = 0
+	speed_modifier = 1.0
+	game_active = true
+
+	_update_score_display()
+	viewport_based_division = get_viewport_rect().size.x / 6
+	var local_counter: int = 1
+	for sp_markers in spawn_marker_root.get_children():
+		sp_markers.set("position", Vector2(viewport_based_division*local_counter,0))
+		local_counter+=1
+	
+	# Setup UI and give focus to input box immediately
+	typing_input.editable = true
+	typing_input.grab_focus()	
+
+func _on_btn_start_gy_button_up() -> void:
+	$%SettingsModal.hide()
+	$GameEndModal.hide()
+	_start_game()
+
+func _on_btn_start_gn_button_up() -> void:
+	emit_signal('return_to_menu')
+
+func _on_btn_exit_button_button_up() -> void:
+	emit_signal('return_to_menu')
+
+func _on_btn_show_exit_btn_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		$%btn_ExitButton.show()
+	else:
+		$%btn_ExitButton.hide()
+
+func _on_btn_virtual_keyb_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		$%btn_OwnVirtualKeyb.button_pressed = false
+		$%gc_VKeyb.show()
+	else:
+		$%gc_VKeyb.hide()
+
+func _on_btn_own_virtual_keyb_toggled(toggled_on: bool) -> void:
+	typing_input.virtual_keyboard_enabled = toggled_on
+	if toggled_on == true:
+		$%btn_VirtualKeyb.button_pressed = false
+		
+func _on_btn_1_button_up() -> void:
+	typing_input.insert_text_at_caret('1')
+	typing_input.grab_focus()
+
+func _on_btn_2_button_up() -> void:
+	typing_input.insert_text_at_caret('2')
+	typing_input.grab_focus()
+
+func _on_btn_3_button_up() -> void:
+	typing_input.insert_text_at_caret('3')
+	typing_input.grab_focus()
+	
+func _on_btn_4_button_up() -> void:
+	typing_input.insert_text_at_caret('4')
+	typing_input.grab_focus()
+
+func _on_btn_5_button_up() -> void:
+	typing_input.insert_text_at_caret('5')
+	typing_input.grab_focus()
+	
+func _on_btn_6_button_up() -> void:
+	typing_input.insert_text_at_caret('6')
+	typing_input.grab_focus()
+	
+func _on_btn_7_button_up() -> void:
+	typing_input.insert_text_at_caret('7')
+	typing_input.grab_focus()
+	
+func _on_btn_8_button_up() -> void:
+	typing_input.insert_text_at_caret('8')
+	typing_input.grab_focus()
+	
+func _on_btn_9_button_up() -> void:
+	typing_input.insert_text_at_caret('9')
+	typing_input.grab_focus()
+
+func _on_btn_0_button_up() -> void:
+	typing_input.insert_text_at_caret('0')
+	typing_input.grab_focus()
+
+func _on_btn_send_button_up() -> void:
+	_on_text_submitted(typing_input.text)
+	typing_input.grab_focus()
+
+func _on_btn_backspace_button_up() -> void:
+	typing_input.delete_char_at_caret()
+	typing_input.grab_focus()
+
+func _on_btn_settings_page_button_up() -> void:
+	$%SettingsModal.show()
