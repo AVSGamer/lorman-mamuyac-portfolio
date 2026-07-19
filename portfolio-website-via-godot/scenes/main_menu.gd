@@ -1,13 +1,13 @@
 extends Control
 
 @onready var ad_container: MarginContainer = $%AdContainer
-@onready var cv_biography: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/MiniBiographyMM
-@onready var comp_rig: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/ComputerRigMM
-@onready var projects: Button = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/VBoxContainer/ProjectsMM
-@onready var gaming_profile_label: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblGameProfile
-@onready var github_profile: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblGithubProfile
-@onready var linkdin_profile: Label = $StaticUIOverlayMain/AspectRatioContainer/MainMenuScreen/VBoxContainer/mm_lblLinkdinProfile
-@onready var root_scene: AspectRatioContainer = $%StaticUIOverlayMain/AspectRatioContainer
+@onready var cv_biography: Button = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/MiniBiographyMM
+@onready var comp_rig: Button = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/ComputerRigMM
+@onready var projects: Button = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/ProjectsMM
+@onready var gaming_profile_label: Label = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/mm_lblGameProfile
+@onready var github_profile: Label = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/mm_lblGithubProfile
+@onready var linkdin_profile: Label = $StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/mm_lblLinkdinProfile
+@onready var root_scene: CanvasLayer = $%StaticUIOverlayMain
 
 # Preload core scenes
 const BIOGRAPHY_SCENE = preload("res:///scenes/mini_biography.tscn")

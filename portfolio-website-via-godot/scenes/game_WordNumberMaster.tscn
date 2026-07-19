@@ -94,10 +94,12 @@ layout_mode = 2
 
 [node name="TimerLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1799609938]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "TIME: 60s"
 
 [node name="ScoreLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1623311288]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "SCORE: 0"
 
 [node name="Spacer" type="Control" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=966514924]
@@ -110,7 +112,7 @@ layout_mode = 2
 [node name="TypingInput" type="LineEdit" parent="GameUI/Control/MarginContainer/VBoxContainer/InputBar" unique_id=2075586846]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 35
 placeholder_text = "Type numerical value..."
 keep_editing_on_text_submit = true
 context_menu_enabled = false
@@ -248,9 +250,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -50.0
-offset_bottom = 50.0
+offset_left = -18.0
+offset_bottom = 31.0
 grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
 text = "X"
 
 [node name="FeedbackEffects" type="AnimationPlayer" parent="." unique_id=1687418373]

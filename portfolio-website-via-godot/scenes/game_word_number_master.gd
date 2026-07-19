@@ -15,6 +15,15 @@ var speed_modifier: float = 1.0
 var game_active: bool = false
 var viewport_based_division: int = 0
 var total_timer: int = 0
+var v_scaler: float = 0
+var h_scaler: float = 0
+var v_pos: float = 0
+var h_pos: float = 0
+var f_scaler: int = 0
+
+@onready var viewport_size: Vector2 = get_viewport().get_visible_rect().size
+@onready var vp_width: float = viewport_size.x
+@onready var vp_height: float = viewport_size.y
 
 @onready var timer_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/TimerLabel
 @onready var score_label: Label = $GameUI/Control/MarginContainer/VBoxContainer/TopBar/ScoreLabel
@@ -33,6 +42,7 @@ var total_timer: int = 0
 func _ready() -> void:
 	$%btn_OwnVirtualKeyb.toggle_mode = true
 	$%btn_VirtualKeyb.toggle_mode = true
+	
 	# Hook code into our newly added generator architecture
 	if has_node("AudioPlayers"):
 		$AudioPlayers.set_script(preload("res://scenes/AudioGenerator.gd"))
@@ -44,6 +54,23 @@ func _ready() -> void:
 	# Enforce engine to adapt beautifully to modern high DPI viewports		
 	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
+
+	v_scaler = vp_height/(1080/100)
+	h_scaler = vp_width/(1920/177)
+	f_scaler = vp_width/(1080/40)
+	$%btn_ExitButton.custom_minimum_size = Vector2(h_scaler, v_scaler)
+	$%btn_ExitButton.set_position(Vector2(vp_width,0),false)
+	$%btn_ExitButton.add_theme_font_size_override('scaler',f_scaler)
+	v_scaler = vp_height/(1920/480)
+	$%gc_VKeyb.custom_minimum_size = Vector2(0, v_scaler)
+	f_scaler = vp_width/(1080/47)
+	for numPad in $%gc_VKeyb.get_children():
+		numPad.add_theme_font_size_override('scalerNumpad',f_scaler)
+	f_scaler = vp_width/(1080/30)
+	$GameUI/Control/MarginContainer/VBoxContainer/TopBar/TimerLabel.add_theme_font_size_override('scalerTopBar1',f_scaler)
+	$GameUI/Control/MarginContainer/VBoxContainer/TopBar/ScoreLabel.add_theme_font_size_override('scalerTopBar2',f_scaler)
+	f_scaler = vp_width/(1080/35)
+	typing_input.add_theme_font_size_override('scalerInput',f_scaler)
 
 func _process(delta: float) -> void:
 	if not game_active:
