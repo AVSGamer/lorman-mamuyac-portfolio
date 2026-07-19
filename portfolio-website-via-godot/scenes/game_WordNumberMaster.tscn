@@ -14,17 +14,19 @@ font_size = 34
 
 [sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
 font = ExtResource("6_yhrks")
+font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_d0u6y"]
 font = ExtResource("6_yhrks")
-font_size = 28
+font_size = 46
 
 [sub_resource type="LabelSettings" id="LabelSettings_3gngh"]
 font = ExtResource("6_yhrks")
+font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_fcnqv"]
 font = ExtResource("6_yhrks")
-font_size = 28
+font_size = 46
 
 [sub_resource type="LabelSettings" id="LabelSettings_7numd"]
 font = ExtResource("7_6cgvn")
@@ -32,11 +34,11 @@ font_size = 46
 
 [sub_resource type="LabelSettings" id="LabelSettings_p1u0y"]
 font = ExtResource("7_6cgvn")
-font_size = 20
+font_size = 25
 
 [sub_resource type="LabelSettings" id="LabelSettings_5s0fj"]
 font = ExtResource("7_6cgvn")
-font_size = 29
+font_size = 47
 
 [sub_resource type="LabelSettings" id="LabelSettings_57qmd"]
 font = ExtResource("6_yhrks")
@@ -215,14 +217,14 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 47
 text = "9"
 
-[node name="btn_Send" type="Button" parent="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb" unique_id=1068736089]
+[node name="btn_Backspace" type="Button" parent="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb" unique_id=1068736089]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 47
-text = "Send/Enter"
+text = "Backspace"
 
 [node name="btn_0" type="Button" parent="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb" unique_id=1704837145]
 propagate_maximum_size = true
@@ -233,14 +235,14 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 47
 text = "0"
 
-[node name="btn_Backspace" type="Button" parent="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb" unique_id=124292355]
+[node name="btn_Send" type="Button" parent="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb" unique_id=124292355]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 47
-text = "Backspace"
+text = "Send/Enter"
 
 [node name="btn_ExitButton" type="Button" parent="GameUI/Control" unique_id=1553054888]
 unique_name_in_owner = true
@@ -287,10 +289,10 @@ grow_vertical = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="GameEndModal/Control/AspectRatioContainer" unique_id=1960530888]
 layout_mode = 2
-theme_override_constants/margin_left = 80
-theme_override_constants/margin_top = 100
-theme_override_constants/margin_right = 80
-theme_override_constants/margin_bottom = 100
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 5
 
 [node name="TextureRect" type="TextureRect" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer" unique_id=1038914547]
 layout_mode = 2
@@ -301,10 +303,10 @@ color = Color(0.21950102, 0.21950102, 0.21950102, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer" unique_id=1188915110]
 layout_mode = 2
-theme_override_constants/margin_left = 25
-theme_override_constants/margin_top = 75
-theme_override_constants/margin_right = 25
-theme_override_constants/margin_bottom = 75
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=1635756822]
 layout_mode = 2
@@ -370,7 +372,7 @@ clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("6_yhrks")
-theme_override_font_sizes/font_size = 27
+theme_override_font_sizes/font_size = 40
 text = "Click Here to Pop Up Settings Page"
 
 [node name="lbl_SubmitQ" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=199979775]
@@ -391,18 +393,21 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "Yes"
 
 [node name="btn_SubmitN" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1002646524]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "No"
 
 [node name="ledt_PlayerName" type="LineEdit" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=42324219]
 visible = false
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_yhrks")
+theme_override_font_sizes/font_size = 35
 placeholder_text = "Player Name: THIS FEATURE IS YET TO BE IMPLEMENTED"
 alignment = 1
 
@@ -410,6 +415,7 @@ alignment = 1
 visible = false
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 37
 text = "Submit it!"
 
 [node name="lbl_SubmissionStatus" type="Label" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=668285110]
@@ -438,12 +444,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "Yes"
 
 [node name="btn_AgainN" type="Button" parent="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=25710025]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "No"
 
 [node name="SettingsModal" type="CanvasLayer" parent="." unique_id=1497953349]
@@ -465,38 +473,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="SettingsModal/Control/AspectRatioContainer" unique_id=1009984614]
-layout_mode = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="MarginContainer" type="MarginContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer" unique_id=966103047]
+[node name="MarginContainer" type="MarginContainer" parent="SettingsModal/Control/AspectRatioContainer" unique_id=966103047]
 layout_mode = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 100
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 100
 
-[node name="TextureRect" type="TextureRect" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=520217339]
+[node name="TextureRect" type="TextureRect" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer" unique_id=520217339]
 layout_mode = 2
 
-[node name="ColorRect" type="ColorRect" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=1770452549]
+[node name="ColorRect" type="ColorRect" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer" unique_id=1770452549]
 layout_mode = 2
 color = Color(0.21950102, 0.21950102, 0.21950102, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=2103549955]
+[node name="MarginContainer" type="MarginContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer" unique_id=2103549955]
 layout_mode = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer" unique_id=157393307]
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer" unique_id=157393307]
 layout_mode = 2
 
-[node name="lbl_SettingsModal" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=366421278]
+[node name="lbl_SettingsModal" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=366421278]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -507,10 +508,10 @@ label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="hbc_GameMode" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=2079549273]
+[node name="hbc_GameMode" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=2079549273]
 layout_mode = 2
 
-[node name="lbl_GameMode" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_GameMode" unique_id=1703591761]
+[node name="lbl_GameMode" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_GameMode" unique_id=1703591761]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -518,7 +519,7 @@ size_flags_horizontal = 0
 text = "Game Mode: "
 label_settings = SubResource("LabelSettings_57qmd")
 
-[node name="opbtn_GameMode" type="OptionButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_GameMode" unique_id=794494878]
+[node name="opbtn_GameMode" type="OptionButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_GameMode" unique_id=794494878]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -534,10 +535,10 @@ popup/item_1/id = 1
 popup/item_2/text = "Word + Numeric"
 popup/item_2/id = 2
 
-[node name="hbc_FallDirection" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=309922305]
+[node name="hbc_FallDirection" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=309922305]
 layout_mode = 2
 
-[node name="lbl_FDirection" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallDirection" unique_id=852351839]
+[node name="lbl_FDirection" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallDirection" unique_id=852351839]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -545,7 +546,7 @@ size_flags_horizontal = 0
 text = "Falling Direction: "
 label_settings = SubResource("LabelSettings_33x8s")
 
-[node name="opbtn_FDirection" type="OptionButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallDirection" unique_id=1451545169]
+[node name="opbtn_FDirection" type="OptionButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallDirection" unique_id=1451545169]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -563,30 +564,30 @@ popup/item_2/id = 2
 popup/item_3/text = "Random"
 popup/item_3/id = 3
 
-[node name="hbc_VirtualKeyb" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=878351677]
+[node name="hbc_VirtualKeyb" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=878351677]
 layout_mode = 2
 
-[node name="btn_VirtualKeyb" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb" unique_id=1328363345]
+[node name="btn_VirtualKeyb" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb" unique_id=1328363345]
 unique_name_in_owner = true
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 10
 text = "Virtual Keyboard"
 
-[node name="btn_OwnVirtualKeyb" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb" unique_id=1595976987]
+[node name="btn_OwnVirtualKeyb" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb" unique_id=1595976987]
 unique_name_in_owner = true
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 2
 button_pressed = true
 text = "Own Virtual Keyboard ( Mobile/Cellphone )"
 
-[node name="hbc_ShowExitBtn" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=681257153]
+[node name="hbc_ShowExitBtn" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=681257153]
 layout_mode = 2
 
-[node name="btn_ShowExitBtn" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_ShowExitBtn" unique_id=1765429955]
+[node name="btn_ShowExitBtn" type="CheckButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_ShowExitBtn" unique_id=1765429955]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -594,7 +595,7 @@ size_flags_horizontal = 6
 button_pressed = true
 text = "Show Exit Button"
 
-[node name="lbl_StartGameQ" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1192155848]
+[node name="lbl_StartGameQ" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1192155848]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -605,19 +606,21 @@ label_settings = SubResource("LabelSettings_7numd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1544023588]
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1544023588]
 layout_mode = 2
 
-[node name="btn_StartGY" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1516512295]
+[node name="btn_StartGY" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1516512295]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "Yes"
 
-[node name="btn_StartGN" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=634730706]
+[node name="btn_StartGN" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=634730706]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_0mi74")
+theme_override_font_sizes/font_size = 27
 text = "No"
 
 [connection signal="editing_toggled" from="GameUI/Control/MarginContainer/VBoxContainer/InputBar/TypingInput" to="." method="_on_typing_input_editing_toggled"]
@@ -630,9 +633,9 @@ text = "No"
 [connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_7" to="." method="_on_btn_7_button_up"]
 [connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_8" to="." method="_on_btn_8_button_up"]
 [connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_9" to="." method="_on_btn_9_button_up"]
-[connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_Send" to="." method="_on_btn_send_button_up"]
-[connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_0" to="." method="_on_btn_0_button_up"]
 [connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_Backspace" to="." method="_on_btn_backspace_button_up"]
+[connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_0" to="." method="_on_btn_0_button_up"]
+[connection signal="button_up" from="GameUI/Control/MarginContainer/VBoxContainer/gc_VKeyb/btn_Send" to="." method="_on_btn_send_button_up"]
 [connection signal="button_up" from="GameUI/Control/btn_ExitButton" to="." method="_on_btn_exit_button_button_up"]
 [connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SettingsPage" to="." method="_on_btn_settings_page_button_up"]
 [connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_SubmitY" to="." method="_on_btn_submit_y_button_up"]
@@ -641,8 +644,8 @@ text = "No"
 [connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/btn_SubmitScore" to="." method="_on_btn_submit_score_button_up"]
 [connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/btn_AgainY" to="." method="_on_btn_again_y_button_up"]
 [connection signal="button_up" from="GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2/btn_AgainN" to="." method="_on_btn_again_n_button_up"]
-[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_VirtualKeyb" to="." method="_on_btn_virtual_keyb_toggled"]
-[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_OwnVirtualKeyb" to="." method="_on_btn_own_virtual_keyb_toggled"]
-[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_ShowExitBtn/btn_ShowExitBtn" to="." method="_on_btn_show_exit_btn_toggled"]
-[connection signal="button_up" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_StartGY" to="." method="_on_btn_start_gy_button_up"]
-[connection signal="button_up" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_StartGN" to="." method="_on_btn_start_gn_button_up"]
+[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_VirtualKeyb" to="." method="_on_btn_virtual_keyb_toggled"]
+[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_OwnVirtualKeyb" to="." method="_on_btn_own_virtual_keyb_toggled"]
+[connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_ShowExitBtn/btn_ShowExitBtn" to="." method="_on_btn_show_exit_btn_toggled"]
+[connection signal="button_up" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_StartGY" to="." method="_on_btn_start_gy_button_up"]
+[connection signal="button_up" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/btn_StartGN" to="." method="_on_btn_start_gn_button_up"]
