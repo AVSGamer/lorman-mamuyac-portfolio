@@ -58,30 +58,43 @@ script = ExtResource("2_lgw48")
 [node name="SpawnPositions" type="Node2D" parent="GameBoard" unique_id=2085256990]
 
 [node name="markers0" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=972354295]
+position = Vector2(192, 0)
 
 [node name="markers1" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1624193330]
+position = Vector2(384, 0)
 
 [node name="markers2" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=71366942]
+position = Vector2(576, 0)
 
 [node name="markers3" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=2041913018]
+position = Vector2(768, 0)
 
 [node name="markers4" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=146577150]
+position = Vector2(958, 0)
 
 [node name="markers5" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=147861243]
+position = Vector2(0, 129.6)
 
 [node name="markers6" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=110249910]
+position = Vector2(0, 259.2)
 
 [node name="markers7" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=205704601]
+position = Vector2(0, 388.8)
 
 [node name="markers8" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1647964888]
+position = Vector2(0, 518.4)
 
 [node name="markers9" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1702035299]
+position = Vector2(1152, 129.6)
 
 [node name="markers10" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1256317210]
+position = Vector2(1152, 259.2)
 
 [node name="markers11" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=413350077]
+position = Vector2(1152, 388.8)
 
 [node name="markers12" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=747645710]
+position = Vector2(1152, 518.4)
 
 [node name="GameUI" type="CanvasLayer" parent="." unique_id=2096054690]
 
@@ -110,11 +123,25 @@ layout_mode = 2
 
 [node name="TopBar" type="HBoxContainer" parent="GameUI/Control/MarginContainer/VBoxContainer" unique_id=1901887734]
 layout_mode = 2
+theme_override_constants/separation = 27
 
 [node name="TimerLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1799609938]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "TIME: 60s"
+text = "TIME: 60"
+
+[node name="Control" type="Control" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1214902036]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar/Control" unique_id=1323239071]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
 
 [node name="ScoreLabel" type="Label" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1623311288]
 layout_mode = 2

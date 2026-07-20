@@ -33,28 +33,20 @@ func _process(delta: float) -> void:
 
 func _spawn_random_element() -> void:
 	var markers = spawn_positions.get_children()
+	var extras
 	if markers.is_empty():
 		return
 	match fallDirection:
 		0:
-			var extras = markers.slice(5)
-			for node in extras:
-				node.queue_free()
-		1:
-			var extras = markers.slice(9)
-			for node in extras:
-				node.queue_free()
 			extras = markers.slice(0,5)
-			for node in extras:
-				node.queue_free()
+		1:
+			extras = markers.slice(5,9)
 		2:
-			var extras = markers.slice(0,9)
-			for node in extras:
-				node.queue_free()
+			extras = markers.slice(9)
 		_:
-			pass
+			extras = markers
 	
-	var chosen_marker: Marker2D = markers[randi() % markers.size()]
+	var chosen_marker: Marker2D = extras[randi() % extras.size()]
 	
 	# Determine difficulty tier based on current game speed modifier
 	# Modifier starts at 1.0 and goes up. Every 0.5 step unlocks a higher digit tier.

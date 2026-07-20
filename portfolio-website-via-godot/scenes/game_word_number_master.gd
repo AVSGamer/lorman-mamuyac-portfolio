@@ -14,7 +14,6 @@ var current_time: float = 0.0
 var score: int = 0
 var speed_modifier: float = 1.0
 var game_active: bool = false
-var viewport_based_division: int = 0
 var total_timer: int = 0
 var v_scaler: float = 0
 var h_scaler: float = 0
@@ -217,12 +216,6 @@ func _start_game() -> void:
 	game_active = true
 
 	_update_score_display()
-	#Add conditionals here for gameVariant and fallDirections
-	viewport_based_division = get_viewport_rect().size.x / 6
-	var local_counter: int = 1
-	for sp_markers in spawn_marker_root.get_children():
-		sp_markers.set("position", Vector2(viewport_based_division*local_counter,0))
-		local_counter+=1
 	
 	# Setup UI and give focus to input box immediately
 	typing_input.editable = true
