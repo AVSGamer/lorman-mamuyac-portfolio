@@ -69,3 +69,4 @@ theme_override_font_sizes/font_size = 28
 text = "Tools"
 
 [connection signal="button_up" from="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer/btn_MiniGames" to="." method="_on_btn_mini_games_button_up"]
+[connection signal="button_up" from="mc_ModalGameEntry/mc_MModalWindow/VBoxContainer/btn_Tools" to="." method="_on_btn_tools_button_up"]

@@ -4,6 +4,7 @@ extends Node2D
 signal game_over
 signal input_checked(is_match: bool, digit_count: int)
 signal return_to_menu
+signal fallingElementChanged(size: int, font: Font, fD: int)
 
 # Game Variables
 @export var starting_time: float = 60.0
@@ -20,6 +21,10 @@ var h_scaler: float = 0
 var v_pos: float = 0
 var h_pos: float = 0
 var f_scaler: int = 0
+var gameVariant: int = 0
+var fallDirection: int = 0
+var fallingFontSize: int = 24
+var fallingFontName: Font = preload("res://assets/fonts/data-control/data-latin.ttf")
 
 @onready var viewport_size: Vector2 = get_viewport().get_visible_rect().size
 @onready var vp_width: float = viewport_size.x
@@ -38,6 +43,7 @@ var f_scaler: int = 0
 @onready var play_again_HBox: HBoxContainer = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2
 @onready var game_end_modal_total_time: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TTimeSurvdVal
 @onready var game_end_score: Label = $GameEndModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/lbl_TScoreVal
+@onready var font_selection: PanelContainer = $SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer
 
 func _ready() -> void:
 	$%btn_OwnVirtualKeyb.toggle_mode = true
@@ -56,10 +62,10 @@ func _ready() -> void:
 	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_EXPAND
 
 	v_scaler = vp_height/(1080/100)
-	h_scaler = vp_width/(1920/177)
+	h_scaler = v_scaler
 	f_scaler = vp_width/(1080/40)
 	$%btn_ExitButton.custom_minimum_size = Vector2(h_scaler, v_scaler)
-	$%btn_ExitButton.set_position(Vector2(vp_width,0),false)
+	#$%btn_ExitButton.set_position(Vector2(vp_width,0),false)
 	$%btn_ExitButton.add_theme_font_size_override('scaler',f_scaler)
 	v_scaler = vp_height/(1920/480)
 	$%gc_VKeyb.custom_minimum_size = Vector2(0, v_scaler)
@@ -71,6 +77,7 @@ func _ready() -> void:
 	$GameUI/Control/MarginContainer/VBoxContainer/TopBar/ScoreLabel.add_theme_font_size_override('scalerTopBar2',f_scaler)
 	f_scaler = vp_width/(1080/35)
 	typing_input.add_theme_font_size_override('scalerInput',f_scaler)
+	font_selection.font_selected.connect(_on_opbtn_f_font_item_selected)
 
 func _process(delta: float) -> void:
 	if not game_active:
@@ -165,6 +172,7 @@ func _on_btn_submit_y_button_up() -> void:
 	player_name_leaderboard.visible = true
 	submit_button.visible = true
 	submit_button.disabled = true
+	play_again_lbl.visible = true
 	play_again_HBox.visible = true
 
 func _on_btn_submit_n_button_up() -> void:
@@ -209,6 +217,7 @@ func _start_game() -> void:
 	game_active = true
 
 	_update_score_display()
+	#Add conditionals here for gameVariant and fallDirections
 	viewport_based_division = get_viewport_rect().size.x / 6
 	var local_counter: int = 1
 	for sp_markers in spawn_marker_root.get_children():
@@ -298,3 +307,44 @@ func _on_btn_backspace_button_up() -> void:
 
 func _on_btn_settings_page_button_up() -> void:
 	$%SettingsModal.show()
+
+func _on_opbtn_game_mode_item_selected(index: int) -> void:
+	gameVariant = index
+
+func _on_opbtn_f_direction_item_selected(index: int) -> void:
+	fallDirection = index
+	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+
+func _on_opbtn_f_font_size_value_changed(value: float) -> void:
+	fallingFontSize = value
+	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+
+func _on_opbtn_f_font_item_selected(index: int) -> void:
+	match index:
+		0:
+			fallingFontName = preload("res://assets/fonts/data-control/data-latin.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		1:
+			fallingFontName = preload("res://assets/fonts/pixelic-war/Pixelic War.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		2:
+			fallingFontName = preload("res://assets/fonts/karmatic-arcade/ka1.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		3:
+			fallingFontName = preload("res://assets/fonts/blox/Blox2.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		4:
+			fallingFontName = preload("res://assets/fonts/arcade/Arcade.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		5:
+			fallingFontName = preload("res://assets/fonts/where-my-keys/Where My Keys.otf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		6:
+			fallingFontName = preload("res://assets/fonts/park-tech-cg/Park Tech CG Light.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		7:
+			fallingFontName = preload("res://assets/fonts/checkbook/CHECKBK0.TTF")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+		8:
+			fallingFontName = preload("res://assets/fonts/chintzy-cpu/chintzy.ttf")
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)

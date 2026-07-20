@@ -14,6 +14,8 @@ const BIOGRAPHY_SCENE = preload("res:///scenes/mini_biography.tscn")
 const COMP_RIG_SCENE = preload("res:///scenes/comp_rig.tscn")
 const PROJECTS_SCENE = preload("res://scenes/projects.tscn")
 const FUTURE_FEATURE_SCENE = preload("res://scenes/gameEntryModal.tscn")
+const MINI_GAME_SELECT_SCENE = preload("res://scenes/miniGSelect.tscn")
+const TOOL_SELECT_SCENE = preload("res://scenes/toolSelect.tscn")
 const MINI_GAME_1_SCENE = preload("res://scenes/game_WordNumberMaster.tscn")
 
 func _ready() -> void:
@@ -23,7 +25,8 @@ func _ready() -> void:
 func _on_future_feature_mm_pressed() -> void:
 	var scene_instance = FUTURE_FEATURE_SCENE.instantiate()
 	root_scene.add_child(scene_instance)
-	scene_instance.miniGame1Start.connect(_on_mini_game1_start)
+	scene_instance.miniGSelectShow.connect(_on_mini_game_select)
+	scene_instance.toolSelectShow.connect(_on_tool_select)
 
 func _on_mini_biography_mm_pressed() -> void:
 	$%MainMenuScreen.hide()
@@ -49,6 +52,15 @@ func _on_to_be_replaced_mm_pressed() -> void:
 func _on_return_to_menu() -> void:
 	_clear_current_container()
 	$%MainMenuScreen.show()
+
+func _on_tool_select() -> void:
+	var scene_instance = TOOL_SELECT_SCENE.instantiate()
+	root_scene.add_child(scene_instance)
+	
+func _on_mini_game_select() -> void:
+	var scene_instance = MINI_GAME_SELECT_SCENE.instantiate()
+	root_scene.add_child(scene_instance)
+	scene_instance.miniGame1Start.connect(_on_mini_game1_start)
 	
 func _on_mini_game1_start() -> void:
 	$%MainMenuScreen.hide()

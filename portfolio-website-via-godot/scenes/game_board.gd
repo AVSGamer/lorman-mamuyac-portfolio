@@ -5,9 +5,20 @@ extends Node2D
 
 var spawn_timer: float = 0.0
 var active_elements: Array[FallingElement] = []
+var userSetFontSize: int = 24
+var userSetFont: Font = preload("res://assets/fonts/data-control/data-latin.ttf")
+var fallDirection: int = 0
 
 @onready var main_root: Node = get_parent()
 @onready var spawn_positions: Node2D = $SpawnPositions
+
+func _ready() -> void:
+	main_root.fallingElementChanged.connect(_on_falling_element_changed)
+
+func _on_falling_element_changed(size: int, font: Font, fD: int) -> void:
+	userSetFontSize = size
+	userSetFont = font
+	fallDirection = fD
 
 func _process(delta: float) -> void:
 	if not main_root.game_active:
@@ -24,6 +35,25 @@ func _spawn_random_element() -> void:
 	var markers = spawn_positions.get_children()
 	if markers.is_empty():
 		return
+	match fallDirection:
+		0:
+			var extras = markers.slice(5)
+			for node in extras:
+				node.queue_free()
+		1:
+			var extras = markers.slice(9)
+			for node in extras:
+				node.queue_free()
+			extras = markers.slice(0,5)
+			for node in extras:
+				node.queue_free()
+		2:
+			var extras = markers.slice(0,9)
+			for node in extras:
+				node.queue_free()
+		_:
+			pass
+	
 	var chosen_marker: Marker2D = markers[randi() % markers.size()]
 	
 	# Determine difficulty tier based on current game speed modifier
@@ -42,6 +72,7 @@ func _spawn_random_element() -> void:
 	
 	# Instantiate element node into the game world branch
 	var element_instance: FallingElement = falling_element_scene.instantiate() as FallingElement
+	element_instance.init(userSetFontSize, userSetFont, fallDirection)
 	element_instance.word_text = dynamic_data["word"]
 	element_instance.target_number = dynamic_data["num"]
 	

@@ -1,5 +1,6 @@
 extends AspectRatioContainer
-signal miniGame1Start
+signal miniGSelectShow
+signal toolSelectShow
 
 @onready var outside_click_detector: Control = self
 @onready var modal_window_body: Control = $%mc_MModalWindow
@@ -54,7 +55,10 @@ func _on_btn_tools_mouse_exited() -> void:
 	tools.text = "Tools"
 	tools.add_theme_font_size_override("font_size",28)
 
-
 func _on_btn_mini_games_button_up() -> void:
-	emit_signal("miniGame1Start")
+	emit_signal('miniGSelectShow')
+	self.queue_free()
+
+func _on_btn_tools_button_up() -> void:
+	emit_signal('toolSelectShow')
 	self.queue_free()

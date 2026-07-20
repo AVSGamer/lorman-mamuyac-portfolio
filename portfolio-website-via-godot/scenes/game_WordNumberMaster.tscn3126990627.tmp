@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://dmb5y1ksnxlqs" path="res://assets/fonts/karmatic-arcade/ka1.ttf" id="5_0mi74"]
 [ext_resource type="FontFile" uid="uid://b3lgwf2hudxao" path="res://assets/fonts/data-control/data-latin.ttf" id="6_yhrks"]
 [ext_resource type="FontFile" uid="uid://blt430adqkf02" path="res://assets/fonts/pixelic-war/Pixelic War.ttf" id="7_6cgvn"]
-[ext_resource type="Script" uid="uid://cyb4duq7fu6ml" path="res://scenes/menu_container.gd" id="9_6cgvn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
 font = ExtResource("5_0mi74")
@@ -49,9 +48,14 @@ font = ExtResource("6_yhrks")
 
 [node name="WordNumberMaster" type="Node2D" unique_id=1237225501]
 script = ExtResource("1_gosy5")
+starting_time = null
+difficulty_scale_rate = null
+falling_element_scene = null
 
 [node name="GameBoard" type="Node2D" parent="." unique_id=310246334]
 script = ExtResource("2_lgw48")
+falling_element_scene = null
+spawn_cooldown_base = null
 
 [node name="GridBackground" type="Sprite2D" parent="GameBoard" unique_id=1945204670]
 
@@ -66,22 +70,6 @@ script = ExtResource("2_lgw48")
 [node name="markers3" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=2041913018]
 
 [node name="markers4" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=146577150]
-
-[node name="markers5" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=147861243]
-
-[node name="markers6" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=110249910]
-
-[node name="markers7" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=205704601]
-
-[node name="markers8" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1647964888]
-
-[node name="markers9" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1702035299]
-
-[node name="markers10" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1256317210]
-
-[node name="markers11" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=413350077]
-
-[node name="markers12" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=747645710]
 
 [node name="GameUI" type="CanvasLayer" parent="." unique_id=2096054690]
 
@@ -623,7 +611,6 @@ text = "Falling Element Font: "
 label_settings = SubResource("LabelSettings_33x8s")
 
 [node name="opbtn_FFont" type="OptionButton" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont" unique_id=1258331409]
-visible = false
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
@@ -651,41 +638,6 @@ popup/item_7/text = "Checkbook"
 popup/item_7/id = 7
 popup/item_8/text = "Chintzy"
 popup/item_8/id = 8
-
-[node name="MenuContainer" type="PanelContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont" unique_id=1715908360]
-z_index = 1
-clip_contents = true
-layout_mode = 2
-size_flags_horizontal = 3
-script = ExtResource("9_6cgvn")
-
-[node name="SelectedTextLabel" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1344564462]
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-size_flags_vertical = 1
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ToggleButton" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1645045610]
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-toggle_mode = true
-flat = true
-
-[node name="DropdownScroll" type="ScrollContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1486647687]
-visible = false
-custom_minimum_size = Vector2(0, 200)
-propagate_maximum_size = true
-layout_mode = 2
-horizontal_scroll_mode = 0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer/DropdownScroll" unique_id=1616672507]
-clip_contents = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [node name="hbc_VirtualKeyb" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=878351677]
 layout_mode = 2
@@ -770,6 +722,7 @@ text = "No"
 [connection signal="item_selected" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_GameMode/opbtn_GameMode" to="." method="_on_opbtn_game_mode_item_selected"]
 [connection signal="item_selected" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallDirection/opbtn_FDirection" to="." method="_on_opbtn_f_direction_item_selected"]
 [connection signal="value_changed" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFontSize/opbtn_FFontSize" to="." method="_on_opbtn_f_font_size_value_changed"]
+[connection signal="item_selected" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/opbtn_FFont" to="." method="_on_opbtn_f_font_item_selected"]
 [connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_VirtualKeyb" to="." method="_on_btn_virtual_keyb_toggled"]
 [connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_VirtualKeyb/btn_OwnVirtualKeyb" to="." method="_on_btn_own_virtual_keyb_toggled"]
 [connection signal="toggled" from="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_ShowExitBtn/btn_ShowExitBtn" to="." method="_on_btn_show_exit_btn_toggled"]

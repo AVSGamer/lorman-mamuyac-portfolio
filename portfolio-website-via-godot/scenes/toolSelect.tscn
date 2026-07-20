@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://dtpxqak7qe1o1"]
+
+[ext_resource type="Script" uid="uid://1hfylo5rnjae" path="res://scenes/tool_select.gd" id="1_2r7a3"]
+[ext_resource type="Texture2D" uid="uid://dpo5we2detr38" path="res://assets/minigameLater.png" id="3_tfd31"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dxa5"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+corner_detail = 20
+
+[node name="ToolsSelect" type="AspectRatioContainer" unique_id=834160418]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2r7a3")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1488785050]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer" unique_id=1447220571]
+propagate_maximum_size = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1dxa5")
+horizontal_scroll_mode = 0
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/ScrollContainer" unique_id=1652755367]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1375450595]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=408420235]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=320235020]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Button1" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=2066324066]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button2" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=897033766]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button3" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1552138440]
+layout_mode = 2
+text = "To be added.."
+
+[node name="TextureRect4" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1217043098]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1094986411]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=591156683]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Button4" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=263440677]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button5" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1240227873]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button6" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=260649774]
+layout_mode = 2
+text = "To be added.."
+
+[node name="TextureRect7" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1043129046]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=143414299]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="TextureRect9" type="TextureRect" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=272961409]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_tfd31")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Button7" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=1964180061]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button8" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=663887399]
+layout_mode = 2
+text = "To be added.."
+
+[node name="Button9" type="Button" parent="MarginContainer/ScrollContainer/GridContainer" unique_id=753694656]
+layout_mode = 2
+text = "To be added.."

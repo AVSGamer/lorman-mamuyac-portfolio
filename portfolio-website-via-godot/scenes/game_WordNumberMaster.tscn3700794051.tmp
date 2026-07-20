@@ -67,22 +67,6 @@ script = ExtResource("2_lgw48")
 
 [node name="markers4" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=146577150]
 
-[node name="markers5" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=147861243]
-
-[node name="markers6" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=110249910]
-
-[node name="markers7" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=205704601]
-
-[node name="markers8" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1647964888]
-
-[node name="markers9" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1702035299]
-
-[node name="markers10" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=1256317210]
-
-[node name="markers11" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=413350077]
-
-[node name="markers12" type="Marker2D" parent="GameBoard/SpawnPositions" unique_id=747645710]
-
 [node name="GameUI" type="CanvasLayer" parent="." unique_id=2096054690]
 
 [node name="Control" type="Control" parent="GameUI" unique_id=38893226]
@@ -653,39 +637,20 @@ popup/item_8/text = "Chintzy"
 popup/item_8/id = 8
 
 [node name="MenuContainer" type="PanelContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont" unique_id=1715908360]
-z_index = 1
-clip_contents = true
 layout_mode = 2
-size_flags_horizontal = 3
 script = ExtResource("9_6cgvn")
 
 [node name="SelectedTextLabel" type="Label" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1344564462]
-propagate_maximum_size = true
-clip_contents = true
 layout_mode = 2
-size_flags_vertical = 1
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="ToggleButton" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1645045610]
-propagate_maximum_size = true
-clip_contents = true
+[node name="CheckButton" type="Button" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1645045610]
 layout_mode = 2
-toggle_mode = true
-flat = true
 
-[node name="DropdownScroll" type="ScrollContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1486647687]
-visible = false
-custom_minimum_size = Vector2(0, 200)
-propagate_maximum_size = true
+[node name="OptionButton" type="ScrollContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer" unique_id=1486647687]
 layout_mode = 2
-horizontal_scroll_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer/DropdownScroll" unique_id=1616672507]
-clip_contents = true
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer/hbc_FallFont/MenuContainer/OptionButton" unique_id=1616672507]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [node name="hbc_VirtualKeyb" type="HBoxContainer" parent="SettingsModal/Control/AspectRatioContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=878351677]
 layout_mode = 2
