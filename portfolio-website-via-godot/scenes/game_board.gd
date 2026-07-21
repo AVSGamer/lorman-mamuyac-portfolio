@@ -8,6 +8,7 @@ var active_elements: Array[FallingElement] = []
 var userSetFontSize: int = 24
 var userSetFont: Font = preload("res://assets/fonts/data-control/data-latin.ttf")
 var fallDirection: int = 0
+var gameVariant:int = 0
 
 @onready var main_root: Node = get_parent()
 @onready var spawn_positions: Node2D = $SpawnPositions
@@ -15,10 +16,11 @@ var fallDirection: int = 0
 func _ready() -> void:
 	main_root.fallingElementChanged.connect(_on_falling_element_changed)
 
-func _on_falling_element_changed(size: int, font: Font, fD: int) -> void:
+func _on_falling_element_changed(size: int, font: Font, fD: int, gV: int) -> void:
 	userSetFontSize = size
 	userSetFont = font
 	fallDirection = fD
+	gameVariant = gV
 
 func _process(delta: float) -> void:
 	if not main_root.game_active:
@@ -64,9 +66,35 @@ func _spawn_random_element() -> void:
 	
 	# Instantiate element node into the game world branch
 	var element_instance: FallingElement = falling_element_scene.instantiate() as FallingElement
-	element_instance.init(userSetFontSize, userSetFont, fallDirection)
-	element_instance.word_text = dynamic_data["word"]
-	element_instance.target_number = dynamic_data["num"]
+	element_instance.init(userSetFontSize, userSetFont, fallDirection, gameVariant)
+	
+	match gameVariant:
+		0:
+			element_instance.word_text = dynamic_data["word"]
+			element_instance.target_number = dynamic_data["num"]
+		1:
+			element_instance.word_text = dynamic_data["word"]
+			element_instance.target_number = dynamic_data["num"]
+		2:
+			element_instance.word_text = dynamic_data["num"]
+			element_instance.target_number = dynamic_data["num"]
+		3:
+			element_instance.word_text = dynamic_data["num"]
+			element_instance.target_number = dynamic_data["num"]
+		4:
+			if randi() % 2 == 0:
+				element_instance.word_text = dynamic_data["word"]
+				element_instance.target_number = dynamic_data["num"]
+			else:
+				element_instance.word_text = dynamic_data["num"]
+				element_instance.target_number = dynamic_data["num"]
+		5:
+			if randi() % 2 == 0:
+				element_instance.word_text = dynamic_data["word"]
+				element_instance.target_number = dynamic_data["num"]
+			else:
+				element_instance.word_text = dynamic_data["num"]
+				element_instance.target_number = dynamic_data["num"]
 	
 	# Elements fall faster as game progresses
 	element_instance.speed_modifier = current_modifier

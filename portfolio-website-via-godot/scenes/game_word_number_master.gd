@@ -4,7 +4,7 @@ extends Node2D
 signal game_over
 signal input_checked(is_match: bool, digit_count: int)
 signal return_to_menu
-signal fallingElementChanged(size: int, font: Font, fD: int)
+signal fallingElementChanged(size: int, font: Font, fD: int, gV: int)
 
 # Game Variables
 @export var starting_time: float = 60.0
@@ -110,6 +110,9 @@ func _on_input_checked(is_match: bool, digit_count: int) -> void:
 		$AudioPlayers/SuccessSound.play()
 		typing_input.grab_focus()
 	else:
+		if gameVariant == 1 or gameVariant == 3 or gameVariant == 5:
+			score -= digit_count * 10
+			_update_score_display()
 		# Trigger audio feedback for error
 		$AudioPlayers/ErrorSound.play()
 		typing_input.grab_focus()
@@ -137,6 +140,7 @@ func _on_text_submitted(submitted_text: String) -> void:
 	typing_input.grab_focus()
 	
 	if sanitized_text.is_empty():
+		emit_signal("input_checked", false, 0)
 		_trigger_incorrect_state()
 		typing_input.grab_focus()
 		return
@@ -160,10 +164,10 @@ func _on_text_submitted(submitted_text: String) -> void:
 	if match_found:
 		emit_signal("input_checked", true, matching_digit_count)
 	else:
+		emit_signal("input_checked", false, sanitized_text.length())
 		_trigger_incorrect_state()
 
 func _trigger_incorrect_state() -> void:
-	emit_signal("input_checked", false, 0)
 	if feedback_effects.has_method("trigger_error_feedback"):
 		feedback_effects.trigger_error_feedback()
 
@@ -303,41 +307,42 @@ func _on_btn_settings_page_button_up() -> void:
 
 func _on_opbtn_game_mode_item_selected(index: int) -> void:
 	gameVariant = index
+	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 
 func _on_opbtn_f_direction_item_selected(index: int) -> void:
 	fallDirection = index
-	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 
 func _on_opbtn_f_font_size_value_changed(value: float) -> void:
 	fallingFontSize = value
-	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+	fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 
 func _on_opbtn_f_font_item_selected(index: int) -> void:
 	match index:
 		0:
 			fallingFontName = preload("res://assets/fonts/data-control/data-latin.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		1:
 			fallingFontName = preload("res://assets/fonts/pixelic-war/Pixelic War.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		2:
 			fallingFontName = preload("res://assets/fonts/karmatic-arcade/ka1.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		3:
 			fallingFontName = preload("res://assets/fonts/blox/Blox2.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		4:
 			fallingFontName = preload("res://assets/fonts/arcade/Arcade.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		5:
 			fallingFontName = preload("res://assets/fonts/where-my-keys/Where My Keys.otf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		6:
 			fallingFontName = preload("res://assets/fonts/park-tech-cg/Park Tech CG Light.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		7:
 			fallingFontName = preload("res://assets/fonts/checkbook/CHECKBK0.TTF")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)
 		8:
 			fallingFontName = preload("res://assets/fonts/chintzy-cpu/chintzy.ttf")
-			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection)
+			fallingElementChanged.emit(fallingFontSize,fallingFontName,fallDirection,gameVariant)

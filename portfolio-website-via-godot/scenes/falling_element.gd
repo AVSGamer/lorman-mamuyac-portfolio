@@ -9,6 +9,7 @@ var speed_modifier: float = 1.0
 var fallDirection: int = 0
 var xstartpos: float = 0.0
 var ystartpos: float = 0.0
+var gameVariant: int = 0
 
 @onready var word_label: Label = $VisualContainer/WordLabel
 
@@ -17,12 +18,13 @@ func _ready() -> void:
 	xstartpos = position.x
 	ystartpos = position.y
 
-func init(new_font_size: int, new_font: Font, fD: int) -> void:
+func init(new_font_size: int, new_font: Font, fD: int, gV: int) -> void:
 	if not is_node_ready():
 		await ready 
 	word_label.label_settings.font = new_font
 	word_label.label_settings.font_size = new_font_size
 	fallDirection = fD
+	gameVariant = gV
 
 func _process(delta: float) -> void:
 	var current_velocity = base_speed * speed_modifier
