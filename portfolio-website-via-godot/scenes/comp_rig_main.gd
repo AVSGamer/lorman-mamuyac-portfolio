@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends MarginContainer
 signal return_to_menu
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,8 +12,7 @@ func _on_btn_back_to_menu_pressed() -> void:
 	return_to_menu.emit()		
 
 func _on_btn_back_to_menu_mouse_entered() -> void:
-	$CompRigScreen/VBoxContainer/btn_backToMenu.text = ">> Return to Main Menu <<"
-
+	$VBoxContainer/btn_backToMenu.text = ">> Return to Main Menu <<"
 
 func _on_btn_back_to_menu_mouse_exited() -> void:
-	$CompRigScreen/VBoxContainer/btn_backToMenu.text = ">>   Return to Main Menu   <<"
+	$VBoxContainer/btn_backToMenu.text = ">>   Return to Main Menu   <<"

@@ -39,6 +39,24 @@ func _assign_url_by_self_name() -> void:
 			active_url = "https://github.com/AVSGamer"
 		"mm_lblLinkdinProfile":
 			active_url = "https://www.linkedin.com/in/lorman-mamuyac/"
+		"lbl_proj_title3":
+			active_url = "https://vsgamer57.itch.io/endlessly-overflowing-palette-by-papire"
+		"lbl_proj_title4":
+			active_url = "https://www.youtube.com/live/GH5HDL_AgRs?t=21301s"
+		"lbl_proj_title5":
+			active_url = "http://54.39.131.171:3000/home"
+		"lbl_proj_title6":
+			active_url = "https://genso.game/en/"
+		"lbl_proj_title7":
+			active_url = "https://docs.google.com/spreadsheets/d/1AoOrVXtKCoIY5Fv1FS4sY9G4hTHnqmfLGumQazG5KLI/"
+		"lbl_proj_title8":
+			active_url = "https://facebook.com/share/p/14b1ib4Ap6w/"
+		"lbl_proj_title9":
+			active_url = "https://www.facebook.com/marketplace/profile/100055752107854/?product_id=5493322714025670"
+		"lbl_proj_title10":
+			active_url = "https://www.esoui.com/downloads/info3072-XPTracker.html"
+		"lbl_proj_title11":
+			active_url = "https://facebook.com/photo/?fbid=222921229576279"
 		_:
 			# Default path handler if label name doesn't match any profiles above
 			active_url = fallback_url

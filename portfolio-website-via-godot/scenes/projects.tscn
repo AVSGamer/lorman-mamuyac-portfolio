@@ -1,27 +1,27 @@
 [gd_scene format=3 uid="uid://b2lp55px4rdks"]
 
 [ext_resource type="Script" uid="uid://buk605hs46tln" path="res://scenes/projects.gd" id="1_fvhhr"]
+[ext_resource type="FontFile" uid="uid://bkti7yyrpm5gu" path="res://assets/fonts/arcade/Arcade.ttf" id="2_2abot"]
 [ext_resource type="Texture2D" uid="uid://gg0g76de6jh1" path="res://assets/ESOAddon.png" id="2_a72lm"]
+[ext_resource type="FontFile" uid="uid://b5gxsbu23gtvc" path="res://assets/fonts/checkbook/CHECKBK0.TTF" id="3_7mfu5"]
+[ext_resource type="Texture2D" uid="uid://2mrcalgvunnq" path="res://assets/PampangaRepairService.png" id="4_phygx"]
+[ext_resource type="Texture2D" uid="uid://dpwm8c3tcltxc" path="res://assets/EOPalette.png" id="5_03i5a"]
+[ext_resource type="Script" uid="uid://btfillcct7ac4" path="res://scenes/labelHoverLinkRed.gd" id="5_7mfu5"]
+[ext_resource type="Texture2D" uid="uid://inioauyf0dy" path="res://assets/GameJam.png" id="7_52cm5"]
+[ext_resource type="Texture2D" uid="uid://cclvyk515dxj" path="res://assets/NewMoonImagineSMT.png" id="8_8vdnq"]
+[ext_resource type="Texture2D" uid="uid://dmbptwb0kvpvx" path="res://assets/Web3P2E.png" id="9_btgkm"]
+[ext_resource type="Texture2D" uid="uid://b6pg7kpu5tve0" path="res://assets/GensoCompendium.png" id="10_8vdnq"]
+[ext_resource type="Texture2D" uid="uid://shs1r5mlkqjy" path="res://assets/GooglePlayApp.png" id="11_btgkm"]
+[ext_resource type="Texture2D" uid="uid://bmm6tm4eib406" path="res://assets/FBMarketBNS.png" id="12_sxdlu"]
+[ext_resource type="Texture2D" uid="uid://u2ojwgerg28u" path="res://assets/myBooks.png" id="14_2rei6"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
-bg_color = Color(0.06469653, 0.064696535, 0.06469648, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_a72lm"]
+font = ExtResource("2_2abot")
+font_size = 35
 
-[node name="StaticUIOverlay" type="CanvasLayer" unique_id=2010287763]
-follow_viewport_enabled = true
-script = ExtResource("1_fvhhr")
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g4v7s"]
 
-[node name="AdContainer" type="MarginContainer" parent="." unique_id=1671254161]
-custom_minimum_size = Vector2(0, 100)
-clip_contents = true
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -100.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="ProjectsScreen" type="MarginContainer" parent="." unique_id=1762885522]
+[node name="ProjectsScreen" type="MarginContainer" unique_id=1762885522]
 clip_contents = true
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,128 +34,1328 @@ theme_override_constants/margin_left = 100
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 120
+script = ExtResource("1_fvhhr")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ProjectsScreen" unique_id=856198235]
-clip_contents = true
-layout_mode = 2
-
-[node name="bs_lblTitle" type="Label" parent="ProjectsScreen/VBoxContainer" unique_id=1725320745]
-custom_minimum_size = Vector2(12, 0)
+[node name="Control" type="Control" parent="." unique_id=954694818]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-size_flags_vertical = 0
-text = "Projects from College and Outside/Online"
-horizontal_alignment = 1
-autowrap_mode = 3
 
-[node name="ColorRect" type="ColorRect" parent="ProjectsScreen/VBoxContainer/bs_lblTitle" unique_id=2008069880]
-show_behind_parent = true
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=856198235]
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.019607844, 0.2, 0.28627452, 0.6431373)
 
-[node name="btn_backToMenu" type="Button" parent="ProjectsScreen/VBoxContainer" unique_id=1277995864]
-z_index = 1
+[node name="bs_lblTitle" type="Label" parent="Control/VBoxContainer" unique_id=1725320745]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-size_flags_vertical = 8
+size_flags_vertical = 0
+text = "Projects from College and Outside/Online"
+label_settings = SubResource("LabelSettings_a72lm")
+horizontal_alignment = 1
+
+[node name="btn_backToMenu" type="Button" parent="Control/VBoxContainer" unique_id=1277995864]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_7mfu5")
+theme_override_font_sizes/font_size = 23
 text = ">>Return to Main Menu<<"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="ProjectsScreen/VBoxContainer" unique_id=1239224619]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/VBoxContainer" unique_id=1239224619]
+material = SubResource("CanvasItemMaterial_g4v7s")
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="ProjectsScreen/VBoxContainer/ScrollContainer" unique_id=1208313614]
+[node name="GridContainer" type="GridContainer" parent="Control/VBoxContainer/ScrollContainer" unique_id=1732669160]
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+columns = 5
 
-[node name="GridContainer" type="GridContainer" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer" unique_id=1732669160]
+[node name="lbl_proj_imageHeader" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1918487424]
+custom_minimum_size = Vector2(1, 12)
+propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
-columns = 4
-
-[node name="img_icon" type="TextureRect" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=299627452]
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-
-[node name="lbl_date" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=763339570]
-propagate_maximum_size = true
-clip_contents = true
-layout_mode = 2
-text = "Time of Creation"
+size_flags_vertical = 0
+text = "Preview Image"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="lbl_status" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=1223936444]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_imageHeader" unique_id=1801865139]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1932854711]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 0
+text = "Project Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title" unique_id=1320783912]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=763339570]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 0
+text = "Published Date"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date" unique_id=1583164873]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1223936444]
+custom_minimum_size = Vector2(1, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
 text = "Status"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="lbl_description" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=984782061]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status" unique_id=1780299224]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=984782061]
+custom_minimum_size = Vector2(1, 12)
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
 text = "Description"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="img_icon2" type="TextureRect" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=461057354]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description" unique_id=367406565]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon2" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1014313540]
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_phygx")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon2" unique_id=1206623091]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title2" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=776320056]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Computer & Cellphone Servicing"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title2" unique_id=545390909]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date2" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=759568057]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Sept 15,
+2025 - Present"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date2" unique_id=1845149674]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status2" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1941641516]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Not a registered business here. Living under my aunt's residence whom have a business permit here. Latest job was installing Linux on a ChromeOS 32 Bit Device."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status2" unique_id=422015411]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description2" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=2134711176]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "This side job only started earning me some money since moving here. Mostly just Screen/Battery replacements and some software side like teaching how to reduce lag on phones livestreaming creation of this website."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description2" unique_id=569183578]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon3" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1716656656]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("5_03i5a")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon3" unique_id=1386821934]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title3" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=935235571]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Endlessly Overflowing Palette"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title3" unique_id=2109162864]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date3" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=209514846]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Aug 25,
+2025 - Present"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date3" unique_id=2125393000]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status3" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=2098177627]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Still in development, just migrated/restructured in Godot, the same engine used to make this website."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status3" unique_id=1292239539]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description3" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=185861334]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "This is supposedly a enhanced version of Wuthering Waves' Color Puzzle Game via adding endless play mode, totally randomized stages and import/exportable custom stages."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description3" unique_id=1566086920]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon4" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1627261655]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("7_52cm5")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon4" unique_id=951683531]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title4" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=833232132]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "YPS GameJam Programming Competition"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title4" unique_id=1779022358]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date4" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=220216375]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Nov 20, 2024
+- Dec 2, 2024"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date4" unique_id=976126781]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status4" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1816175622]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "3rd Placer on the Professional Track. Thanks so much to the Filipino+ Web3 Community, my guild and guildmates there under YGG."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status4" unique_id=637292929]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description4" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1691409785]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "The project idea was from my only partner in this endeavor who was a university/college student at the time so we split the prize. It's supposedly a 2D version of the online 3D event hosting platform Edison made with RPGMakerMV. Which I used for our Thesis (Terra-Ken). More details on that further down this list."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description4" unique_id=964503318]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon5" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=883105286]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("8_8vdnq")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon5" unique_id=1575120067]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title5" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=427297170]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Intern at
+NewMoon:Imagine
+Private Server"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title5" unique_id=136986428]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date5" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1640116049]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Sept 26, 2024
+- Present(NotSoActive)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date5" unique_id=396318190]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status5" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=438034628]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Applied and was accepted to join the developer team, was part of 1 patch. And then went to do other stuff like make some money and play other games. Game is still thankfully alive."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status5" unique_id=1790507911]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description5" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=560989108]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "This is a private server of an MMORPG related to Shin Megamit Tensei Games like Persona. I used to play this back when it was still published by Aeria Games. Original Publishers of the game haven't brought the game back since then so community hosted it."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description5" unique_id=1047643861]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon6" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=113293775]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_btgkm")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon6" unique_id=1719088138]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title6" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=620534216]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Web3 or Games Utilizing Blockchain Technology"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title6" unique_id=375411183]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date6" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=2052572828]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Dec 19, 2022
+- Mar 9, 2025"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date6" unique_id=1934547736]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status6" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=447787334]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Got a good deal of income from this while it lasted. But now I have stepped back a bit to go back to my usual Web2 Games."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status6" unique_id=275076156]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description6" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=747685949]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "I was skeptical at first when I heard about Axies back in college but after graduating I found GensoKishi, a Japanese Web3 game and got blessed with a solid amount of funds just by participating and making content on it even without being asked. Got a USB Flash Drive with their beautiful logo ingrained in glass with it as memorabilia."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description6" unique_id=549505989]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon7" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1461368136]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_8vdnq")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon7" unique_id=667669313]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title7" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1096100378]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "SQL Queryable Database in Google Sheets"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title7" unique_id=706375711]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date7" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1107442648]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Apr 11, 2023"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date7" unique_id=1785557032]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status7" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1045272282]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Done but haven't been update and the game it's meant to be used for is currently in the process of acquisition hence offline."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status7" unique_id=816126174]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description7" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=29717242]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Didn't know back then if there were any online archive of this game's monsters or a compendium. So I made one in Google Sheets with Search and Filtering Options. Using SQL in Google Sheets."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description7" unique_id=1492210176]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon8" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1657349496]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("11_btgkm")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon8" unique_id=1707698446]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title8" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=896979854]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "My first App uploaded to Google Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title8" unique_id=2052887417]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date8" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1744311469]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Jan 16, 2022"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date8" unique_id=1353961612]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status8" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=26462630]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Removed - Only 1 Downloaded it."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status8" unique_id=926684132]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description8" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=867719249]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "The app is just a simple Cara-y-Cruz game in RPGMakerMV style, it's 100% fair and serves as just a utility for it without ads or subscriptions. Was selling it for 1$ per Google Account. Unfortunately the Google Play Developer account I paid for this got deactivated for inactivity."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description8" unique_id=752555712]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon9" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1388818711]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("12_sxdlu")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon9" unique_id=571185296]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title9" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=800701762]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Online Buy
+and Selling"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title9" unique_id=906585850]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date9" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=527510169]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Been doing this since
+OLX/Sulit.com days
+- Present"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date9" unique_id=177329865]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status9" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1277188173]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Still got a lot of stuff to get rid off/sell."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status9" unique_id=1270402081]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description9" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=637145473]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Since I was ending up getting into toy hobbies and gadgets, I got into online buying and selling to turn some of them that I no longer want to keep back into money. Or find ways to get some stuff for cheap for reselling..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description9" unique_id=656195271]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon10" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=461057354]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("2_a72lm")
+expand_mode = 5
 
-[node name="lbl_date2" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=162554222]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon10" unique_id=93194228]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title10" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1687363158]
+custom_minimum_size = Vector2(120, 12)
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-text = "May 13, 2021"
-
-[node name="lbl_status2" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=1845227780]
-layout_mode = 2
-text = "Surprised it's still holding up
-through game patches despite
-last update time. That was intentional.
-Needs updating for Console Players."
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Elder Scrolls Online
+Addon/Mod"
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
 
-[node name="lbl_description2" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=1469757423]
-layout_mode = 2
-text = "A highly customizable and simplistic
-Experience Points Tracking Visual
-Indicator that the player can place
-anywhere on their HUD."
-horizontal_alignment = 1
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title10" unique_id=1875808838]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
 
-[node name="img_icon3" type="TextureRect" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=1014313540]
+[node name="lbl_proj_date10" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=162554222]
+custom_minimum_size = Vector2(130, 12)
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "May 13,
+2021"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="lbl_date3" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=759568057]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date10" unique_id=1597943376]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status10" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1845227780]
+custom_minimum_size = Vector2(1, 0)
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 2
-text = "To be added.."
-
-[node name="lbl_status3" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=1941641516]
-layout_mode = 2
-text = "To be added.."
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Surprised it's still holding up through game patches despite last update time. That was intentional via selective usage of barely-changing functions. Needs updating for Console Players."
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="lbl_description3" type="Label" parent="ProjectsScreen/VBoxContainer/ScrollContainer/PanelContainer/GridContainer" unique_id=2134711176]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status10" unique_id=117535139]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description10" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=1469757423]
+custom_minimum_size = Vector2(1, 0)
+propagate_maximum_size = true
+clip_contents = true
 layout_mode = 2
-text = "To be added.."
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "A highly customizable and simplistic Experience Points Tracking Visual Indicator that the player can place anywhere on their HUD."
 horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[connection signal="pressed" from="ProjectsScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description10" unique_id=1951541022]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="img_proj_icon11" type="TextureRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=315120215]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("14_2rei6")
+expand_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/img_proj_icon11" unique_id=1350310660]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_title11" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=543965890]
+custom_minimum_size = Vector2(120, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Computer Book
+Collecting"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_7mfu5")
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_title11" unique_id=644322752]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_date11" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=927815348]
+custom_minimum_size = Vector2(130, 12)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+text = "Around 2018~
+- Present"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_date11" unique_id=435998488]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 5
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_status11" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=835771838]
+custom_minimum_size = Vector2(1, 0)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Some I've given away like 1 or 2. Still have a lot of them on me. Keeping mostly for preservation."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_status11" unique_id=616522191]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[node name="lbl_proj_description11" type="Label" parent="Control/VBoxContainer/ScrollContainer/GridContainer" unique_id=481955417]
+custom_minimum_size = Vector2(1, 0)
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "My kinds of books were always technical or educational rather than literature."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Control/VBoxContainer/ScrollContainer/GridContainer/lbl_proj_description11" unique_id=1425681033]
+show_behind_parent = true
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.46666667)
+
+[connection signal="button_up" from="Control/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[connection signal="mouse_entered" from="Control/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_mouse_entered"]
+[connection signal="mouse_exited" from="Control/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_mouse_exited"]

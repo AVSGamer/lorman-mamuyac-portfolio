@@ -35,7 +35,6 @@ func _on_item_list_clicked(index: int, _at_position: Vector2, _mouse_button_inde
 
 # --- Cell-Level Unique Database Matrix ---
 func _get_cell_data(row: int, column: int) -> Dictionary:
-	
 	if row == 0:
 		if column == 0:
 			return {

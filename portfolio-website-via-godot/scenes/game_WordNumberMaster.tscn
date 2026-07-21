@@ -131,7 +131,7 @@ theme_override_font_sizes/font_size = 30
 text = "TIME: 60"
 
 [node name="Control" type="Control" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar" unique_id=1214902036]
-custom_minimum_size = Vector2(20, 0)
+custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="GameUI/Control/MarginContainer/VBoxContainer/TopBar/Control" unique_id=1323239071]
