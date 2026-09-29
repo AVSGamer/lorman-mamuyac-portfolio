@@ -80,289 +80,502 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_5e015")
 bbcode_enabled = true
-text = "PRESENT
-Currently living in Pampanga of Philippines since August 10th of 2025 with my mother’s younger sister and her business' driver. Facebook Marketplace listings of some devices that I barely use now since moving here from the rented apartment. Posting gaming/tech content online to Facebook and YouTube while looking out for Cashbacks/Promos from legal registered platforms like PDAX (Philippines Digital Assets Exchange) or my previous involvement with the Local Crypto/Web3 Community. Accepting requests for laptop/cellphone repairs from aunt’s friends or acquaintances here. First time doing thermal paste replacement on a computer’s dedicated graphics card earlier today: youtu.be/zFa8XLHAn0c
-PDAX Promos: facebook.com/share/p/18AftaaiBg/
-Facebook Marketplace Profile: facebook.com/marketplace/profile/100055752107854/
+text = "[center][font_size=24][b]PERSONAL LOGS FROM MEMORY & TIMELINE[/b][/font_size][/center]
+[center]________________________________________________________________________________[/center]
 
-Current IDs:
-Birth Certificate
-Philippine Driver’s License (Expired since 2022)
-Philippine Passport (Valid until August 27, 2028)
-NBI Clearance
+[center][font_size=18][b]✨   PRESENT STATUS ✨[/b][/font_size][/center]
 
-Taking maintenance medication since 2005 after first diagnosis in Al Khobar, Saudi Arabia. Granted there were times where I would skip doses and suffer the consequence of that. Been doing my best to manage without spending much on the medicines. I never went through applying for PWD ID.
+[b]📍   Location & Living Situation:[/b] Currently residing in Pampanga, Philippines since [i]August 10, 2025[/i]. Living with my mother’s younger sister (aunt) and her business driver.
 
-Feb. 14, 2026
-Deliverables were a cellphone that I handled SIM card registration for a minor as requested by that minor’s father. Created Google/Gmail with Parental Controls connected to the father’s Google Account. Mobile Legends game installed as requested and a Facebook account. This device is a gift to his son.
+[b]🛠️   Activities & Side Hustles:[/b]
+• Local Repairs: Accepting requests for laptop and cellphone repairs from my aunt’s friends and acquaintances.
+• Content Creation: Posting gaming and tech content online via Facebook and YouTube.
+• Marketplace: Managing [url=www.facebook.com/marketplace/profile/100055752107854/]Facebook Marketplace Listings[/url] to sell unused devices.
+• Crypto/Fintech: Tracking Cashbacks/Promos from registered platforms like PDAX (Philippine Digital Asset Exchange) and maintaining ties to the Local Crypto/Web3 Community.
 
-Dec. 1, 2025
-First time rehousing of a cellphone’s components to solve the LCD issue as buying the housing or frame with the LCD was cheaper on the online shopping platform I use compared to just the LCD. Reference: facebook.com/share/r/16mVpAsLxZ/
+[b]📹   Recent Projects:[/b]
+• [b]First-Time GPU Repasting:[/b] Completed my very first thermal paste replacement and deep clean on a dedicated graphics card (Zotac GTX 1070 Mini with Backplate) earlier today. YouTube Video: [url=youtu.be/zFa8XLHAn0c]MyYouTubeChannel[/url]
+• Promo Tracking: [url=www.facebook.com/share/p/18AftaaiBg/]PDAX Promos & Updates[/url].
+• Showing how it's done... Giving it away for free when you realize, we're all just kind of ripping each other off anyways so whatever... LOL
+• Somehow I'm still getting some money flowing in via connections and private contracts. Too \"laissez-faire\" at this point..
 
-Nov. 10-19, 2025
-Laptop (HP Pavilion dv6-2102TX) fixed with battery pack replacement. Extracted installed 64-bit Windows 7 Professional’s License key and included it in the deliverable via repair log. Upgraded to Windows 10 with Microsoft Office 2016. Advised to replace CMOS battery. Client was aunt’s friend.
+[center]________________________________________________________________________________[/center]
 
-Oct. 22-Nov. 6, 2025
-Laptop (Acer Aspire 4739) needed charging adapter cable replacement then battery pack replacement. BIOS Admin Password present, used Windows 7’s vulnerability to install EasyBCD in order to be able to boot into the Windows Installer Pen Drive and install Windows 10. Later on, found the laptop’s original BIOS Firmware online and flashed it to remove the BIOS Password. Client was aunt’s business acquaintance. Reference: facebook.com/share/v/1CUn23sHsU/
+[center][font_size=18][b]🪪   DOCUMENTATION & IDENTIFICATION[/b][/font_size][/center]
 
-Sept. 15, 2025 – Local AI/LLM on GTX1070
-Started experimenting with running LLM and Video Generation AI on my personal Desktop PC.
-Reference: facebook.com/share/v/1ByrMqz9qs/
+[b]Current Valid IDs & Papers:[/b]
+• [color=green]Philippine Passport[/color] (Valid until August 27, 2028)
+• Birth Certificate
+• NBI Clearance
+• [color=red]Philippine Driver’s License[/color] (Expired since 2022)
 
-Aug. 9, 2025 – Moved to Pampanga
-Had to move residence because the previous apartment needed after-repairs, specifically leaking during heavy rains. The house in Pampanga where my aunt does her Dry Goods or Clothing Store business in with her supposedly son’s wife’s cousin in Floridablanca. Her 2 offsprings used to live here too. Soon after moving I bought and set-up IPCameras for our house and helped a neighbor set-up theirs.
-Reference: facebook.com/share/v/1GY5xrhWQh/
-IPCAM & Internet Router Setup: facebook.com/share/p/17uxZpM5vN/
+[center]________________________________________________________________________________[/center]
 
-Aug. 2, 2025 - Modded a Keyboard on Gamepad Solution
-Modified virtual keyboard solution for gamepad or console controller software solution to comply with an online article about better implementation of it.
-References:
-Facebook post: facebook.com/share/p/1DNsvqHn1k/
-Original Forked from (Nirklars):
-github.com/Nirklars/XBoxMouse
-My Modded Github Repo:
-github.com/AVSGamer/XBoxMouseSQuEDSOSK-Mod
-Better Gamepad Keyboard Original Concept: 
-gamedeveloper.com/design/towards-better-gamepad-text-input
+[center][font_size=18][b]🏥   HEALTH & MEDICAL MANAGEMENT[/b][/font_size][/center]
 
-Aug, 2025 – Endlessly overflowing Palette
-Started development on a replication of a color puzzle game from Wuthering Waves. Current Version (Not Yet Finished) can be sampled:
-vsgamer57.itch.io/endlessly-overflowing-palette-by-papire
-This was my first time trying Unreal Engine. UI and Front-End Web Development is not my strong suit. And alas, I plan to just rework this in GoDot to be part of this website.
-youtube.com/playlist?list=PLRcbi_hW-V3c2poizETAPXOBVzsepr51f&si=3eNbtDBvvCPEd2Rm
+[b]History:[/b] Taking maintenance medication since [i]2005[/i] following an initial diagnosis in Al Khobar, Saudi Arabia.
+[b]Current Status:[/b] Managing health costs closely without spending heavily on prescriptions. Skipped doses in the past have caused health consequences. I have not applied for an official PWD (Person with Disability) ID yet.
 
-May, 2025 – Radial Nerve Palsy on left arm
-Soon after the below entry I got Radial Nerve Palsy for another bizarre case of my body failing to protect itself via sleeping on the arm. Like the Lasik After-Surgery in the coming entries. It was my left arm to hand. It got better and able to move 100% again by the time I am writing this, though still feeling a little stiffness when I stretch up the fingers. There should be digital records in my messages with my mom on Facebook Messenger about it.
+[center]________________________________________________________________________________[/center]
 
-May 25, 2025 – Using RegEx a few times since College for “email format validation” and others
-Just a personal curiosity driven investigation after catching news online of a local lawyer publicly calling out that the voting machine software versions in the official records served to the public via the government website and what’s actually showing up on people’s ballots are not the same.
-GitHub Repository with the Related Files:
-github.com/AVSGamer/May_2025_General_Elections_ACM_File_Hashes_Between_Versions/tree/main
-Originally livestreamed on Facebook but got deleted so re-uploaded to YouTube:
-youtube.com/watch?v=X60bojJXn4s
+[center][font_size=18][b]🗓️   HISTORICAL LOGS[/b][/font_size][/center]
 
-Mar. 9, 2025 – DECIDED TO TAKE A BREAK FROM WEB3 GAMING
-Decided to take a break from videogames that has cryptocurrencies and YGG which is a Filipino Developer Co-founded Legal Entity of multiple guilds, whose vision is to help gamers learn and earn while playing or doing tasks in the game using the verification of the blockchain integrated into the partnered games. As of writing this I am still in those communities albeit only checking in from time to time if there’s something I wanted to check like some news or updates about the games I spent a good amount of time, effort and involvement in. I mostly expect people to send me a direct private message. This is after getting the prize money from the tournament earlier and to go back to traditional Web2 or games that doesn’t have cryptocurrency for the reason of how blockchain technology is still new and top traditional game producer companies are skeptical of its scalability, I guess. Hence the design of a lot of the Web3 Games at the time wasn’t up to par with the types of games I used to play, which a lot of are not Free-to-Play games. The earning aspect for regular gamers is amazing, that’s not allowed on most web2 games. For about 3 years I was doing this Play-to-Earn and here is the link to my YGG Profile where all my NFTs indicating I have completed the GAP Tasks and claimed the corresponding monetary/crypto reward. This is not the same as online gambling/casino games though I had a share of experience working as OJT for one aspiring to host those. The achievements are supposedly NFTs tied to my YGG account. By that I mean they are still not visible in OpenSea website where you can see NFTs and Cryptocurrencies in a person’s crypto wallet:
-yieldguild.io/player/2udu0p4y
-YGG-linked-crypto-wallet-on-OpenSea:
-opensea.io/0x35d388f6cf504082f59341ee13680b8a64696e85
-Spreadsheets tracking my YGG GAP Tasks:
-GAP (Guild Advancement Program) Season 4: I didn’t use or make a tracker.
-GAP S5: I can’t remember if I participated but the tracker isn’t there in my Google Sheets, most likely because GensoKishi which I was heavily playing that time wasn’t part of this season.
-GAP S6: Point where I still play GensoKishi but started exploring YGG. docs.google.com/spreadsheets/d/1hIhSxk6JvT2T9zPobZlpL014AGamFoQwO3w1xZ_5ci8/
-GAP S7:
-docs.google.com/spreadsheets/d/1K_mdN0kxvyAZGktAfMfqLX8p6hYodpqpxtiLlqFNEK0/
-GAP S8:
-https://docs.google.com/spreadsheets/d/1sS--GQF-8zJE9A_YfcmPF0zz1Tlh4Jn7scP970eKncg/
-GAP S9:
-docs.google.com/spreadsheets/d/18HwG_4inQshvgy9oM4nhR_WCjvCwSYHmNzVBTcoU1_k/
-Game Testing via YGG-GameTesters Department:
-docs.google.com/spreadsheets/d/1ZK4G-aTUF33WeDGA833v8FWBTkgYOOExZi7ads2iANg/
-FB Post on Oct.13,2025 showing Some of the Rewards:
-facebook.com/share/p/1GMjRzBcmF/
+[b]📅   February 14, 2026[/b]
+• [b]Project Deliverable:[/b] Setup and deployment of a client smartphone given as a gift to a minor by his father.
+• [b]Configuration:[/b] Handled SIM card registration for the minor, configured a Google account with Parental Controls linked to the father's account, and installed Mobile Legends along with a Facebook profile.
 
-Feb. 2, 2025 – THE POTASSIUM IV INJECTION IS Painful
-I’ve never felt anything as painful as this so far within a short amount of time. I forgot the metrics given by the diagnosis but let’s just say climbing up 1 step was impossible alone. I would lose all energy from my legs the moment I try to lift myself up then have trouble standing back up. They had to call the ambulance and, in the hospital, administer the IV infusion. It was the IV infusion that was painful, and if I remember correctly, one of my loving aunts took a video recording of that exact moment.
-Facebook Post: facebook.com/share/p/1CnnK7fNCf/
+[center]________________________________________________________________________________[/center]
 
-Feb. 13, 2025 – Internet connection
-Since I moved residence again and realized I might keep moving residences I bought myself a 5G Mobile Router from PLDT and modified its antenna connections to be able to attach a stronger external antenna. Still have this router to this day as backup. Aware that after a device is at least 2 years old from the date of purchase, that you can request for an openline code to legally have these devices work with any sim cards.
-Reference: facebook.com/share/v/1Dp83x6wwr/
+[b]📅   Dec. 1, 2025[/b]
+•   [b]Project Deliverable:[/b] First time rehousing of a cellphone’s components to solve the LCD issue.
+•   [b]Strategy:[/b] Buying the housing or frame with the LCD was cheaper on the online shopping platform I use compared to just the LCD.
+•   [b][url=www.facebook.com/share/r/16mVpAsLxZ/]Reference[/url][/b]
 
-Jan. 30, 2025 – Near Cabrera Road, Taytay, Rizal, PH
-Moved from Montevista Subd., Rizal, PH Apartment to a Noel’s Village apartment per aunt’s referral. 100% living by myself but with support from mother, local relatives and doing crypto/web3. Reason for moving was that landlord’s relative was going to use the space.
-Reference: facebook.com/share/p/17wWNR6XSj/
+[center]________________________________________________________________________________[/center]
 
-Nov. 20 - Dec. 2, 2024 – 3RD PLACE WEB3 PROGRAMMING COMPETITION [PROFESSIONAL TRACK]
-During the YPS (Yellow Panther Summit) then re-branded to Yield Guild Games Play Summit, participated as a 2-person team with myself as the sole coder/programmer, the other person who was a college student then had a good proposal for the project we brainstormed on what could be in a 14-Day Programming Competition about Games or Software that can be integrated with cryptocurrencies. We won a cash prize of PHP50,000 as 3rd Placer.
-References:	
-bit.ly/GameJamCertLormanMamuyac (Certificate)
-youtube.com/live/GH5HDL_AgRs?si=RTB_wDiRtl9hek5H&t=21301 (Awarding Ceremony)
-facebook.com/share/p/1CTPRAV8Fy/ (My Facebook Post)
-Deliverable of that project can be sampled here:
-avsgamer.github.io/PapiRE_Studio_YPSGameJamFiles/
-Files/Documentation to that project:
-github.com/AVSGamer/PapiRE_Studio_YPSGameJamFiles
+[b]📅   Nov. 10-19, 2025[/b]
+•   [b]Project Deliverable:[/b] Laptop (HP Pavilion dv6-2102TX) repair and system upgrade.
+•   [b]Configuration:[/b] Fixed with battery pack replacement. Extracted installed 64-bit Windows 7 Professional’s License key and included it in the deliverable via repair log. Upgraded to Windows 10 with Microsoft Office 2016. Advised to replace CMOS battery as system time was getting out of sync when not connected to the internet. Client was aunt’s friend.
 
-Sep. 26, 2024 – SHIN MEGAMI TENSEI: IMAGINE ONLINE (NP-PRESERVATION SERVER)
-This game used to be officially hosted and published by ATLUS in Japan and by Playpark in Global or SEA Server; It’s an MMORPG game that made a lasting impact on my life. I was in homeschooling for 4th Year of my High-School at the time. I played this game a lot back then and where I met online, Aki who was using the Gamer Handle 'Syusuke' back then, a Japanese guy working in the field of IT, he was around 20 years old back then from what I can remember him telling me through the in-game chat system and eventually became part of my Facebook Friends to this day. Now there are some of us who miss this game and want to preserve it so they took it upon themselves to re-host the game. New Moon is the name of the new server that I became an intern for and was part of 1 patch. I was tasked to change some items’ category tags (about 7~ items) and increase their inventory stack sizes and did it with a little help at the start.
-New Moon Server’s Home Website:
-http://54.39.131.171:3000/home
+[center]________________________________________________________________________________[/center]
 
-Aug. 19, 2024 – WINDOWS OS LICENSE UPGRADED
-Don’t remember the exact details but I guess at one point I applied to be part of the Windows Insider Program and this is the date of appointment showing in my account. I bought an OEM License Key as it’s cheaper than Physical Installers.
+[b]📅   Oct. 22-Nov. 6, 2025[/b]
+•   [b]Project Deliverable:[/b] Laptop (Acer Aspire 4739) repair, bios bypass, and reformat/installation of WindowsOS.
+•   [b]Configuration:[/b] Needed charging adapter cable replacement then battery pack replacement. BIOS Admin Password was present, used Windows 7’s vulnerability to install EasyBCD in order to be able to boot into the Windows Installer Pen Drive and install Windows 10. Because somehow I can't utilize a supposed a Bios Reset Pin-Jumping or even removing the CMOS Battery doesn't reset it. Later on, found the laptop’s original BIOS Firmware online and flashed/overwrote it to remove the BIOS Password. Client was aunt’s business acquaintance.
+•   [b][url=www.facebook.com/share/v/1CUn23sHsU/]Reference[/url][/b]
+•   [b][url=www.youtube.com/watch?v=W0PipmGv4E8]Windows 7 Vulnerability/Backdoor[/url]
 
-Apr, 2024 – 1st time doing modification of a SIM Router
-Bought a cheap albeit fake GT990+ Pro Sim Router then later modified it to accommodate an external antenna and did the same to a PLDT 5G Router.
-Reference: facebook.com/share/p/1BxABNVKG4/
+[center]________________________________________________________________________________[/center]
 
-Apr. 5, 2024 - WON MY 2ND RAMEN CARD NFT
-Supposedly only 1 Ramen Card per player if they got it from events or promos. But you can buy as much of them as you want from the marketplace. The NFT Card has benefits tied to it which is being able to buy and sell exclusive in-game items (“food buffs” in most games). At initial release the price for that was around $800 and I was one of lucky winners of it then. I decided to not sell mine yet at that price which I later kind of regretted since now I don’t have any of those Ramen Cards though 2 went through my possession. I sold them at around $100; the other was like $250-300. I still log into the game from time to time but only to farm tokens ($1~/6days currently, back then $10/day for me and for others even more). Reference: youtube.com/live/29u_R8qiuRs?t=616s
+[b]📅   Sept. 15, 2025[/b]
+•   [b]Personal Endeavor:[/b] Local AI/LLM deployment on GTX1070.
+•   [b]Configuration:[/b] Started experimenting with running LLM and Video Generation AI on my personal Desktop PC.
+•   [b][url=www.facebook.com/share/v/1ByrMqz9qs/]Reference[/url][/b]
 
-Dec. 31, 2023 - GENSOKISHI -METAWORLD- VIDEOGAME SPEEDRUN TOURNAMENT CHAMPION
-The team compositions were decided randomly in 3 players per team. We won $340 as 1st Place and split it among us evenly. My role in this mostly served as a coordinator for the team to schedule time to practice and collaborate on how we should do the performance.
-Pre-eliminations footage:
-youtu.be/cFY55CzWGlQ
-My Point-of-View during the winning performance:
-youtu.be/lj0hrjfmTUo
-Competition Results Video/Awarding:
-youtu.be/qVPMvoi8Mg4
-My Facebook Post about it:
-facebook.com/share/p/188zeVZmx8/
+[center]________________________________________________________________________________[/center]
 
-Jul. 7, 2023 – Doing my own Haircut
-Started doing my own haircut influenced by COVID Pandemic. Depending on the mood I would go semi-bald or undercut on myself.
-Reference: facebook.com/share/v/1Aqhjj46Lo/
+[b]📅   Aug. 9, 2025[/b]
+•   [b]Relocation:[/b] Moved to Pampanga. Had to move residence because the previous apartment needed after-repairs, specifically leaking during heavy rains. The house in Pampanga where my aunt does her Dry Goods or Clothing Store business in with her supposedly son’s wife’s cousin in Floridablanca. Her 2 offsprings used to live here too.
+•   [b]Personal Endeavor:[/b] Soon after moving I bought and set-up cheap IPCameras which soon started showing issues for the house and helped a neighbor set-up theirs at first until I figured it could be little be troublesome when someone else might be managing their internet/network where the IPCamera is connected to. This was my first time trying those cheap IPCams.
+•   [b]References:[/b]
+•   [url=www.facebook.com/share/v/1GY5xrhWQh/]Moving Vlog[/url]
+•   [url=www.facebook.com/share/p/17uxZpM5vN/]IPCAM & Internet Router Setup[/url]
 
-Jul, 2023 – Joined YGG (Yield Guild Games)
-I became aware of YGG when they started interacting with GensoKishi which was the first web3 videogame that I was really amazed with because so far, all the other play-to-earn I encountered didn’t seem that much profitable and it had better quality as a videogame because of being an official web3 port of the original web2 game from Japan. During this time, I was designated to join the Sub-Guild/Group “ALLGUDSINDAHOOD” later shortened to “ALLGUDS”. Our leader and his girlfriend(apparently married now) helped me later on with GCash concerning an issue with my bounced transaction. YGG frequently collaborates with other Philippine Tech Financial companies, such as CoinsPH, GCash, Smart and Smart’s Paymaya, etc. E-wallets that I have accounts on and even attended a one-time demo/seminar with/by invitation of a friend I made from living in the boarding house at Quezon City during my freshman year in T.I.P. QC. Since joining YGG, we’ve been doing a lot of “Airdrops” and “Tasks/Compete/Complete” to earn. While other task-scammers were trying to imitate or masquerade as something like them. Also became a member of the Game Testers part of YGG.
+[center]________________________________________________________________________________[/center]
 
-Jun, 2023 – Montevista Heighs Subd., Beside Ortigas Ext.
-Moved residence from Grandparent’s Ancestral Home to an apartment in Montevista Heights Subd., Reason for leaving is that the ancestral home needs repairing, leakages from the roof, etc. A high school friend introduced me to the landlord of the apartment. Living by myself, it’s pretty easy for me to forgo cleaning much when living by myself even in apartments so I guess it was a bit dirty but I absolutely avoid having anything that may expire or stink. First time experiencing the sink getting clogged by instant noodles by-product liquid and having to re-attach the toilet bowl because a mollusk shell clogged it. Gave my acoustic guitar as a show of appreciation to the guy who worked the toilet, since I think we didn’t really pay him much and he took interest in it. Cool dude said he used to be a dancer too until life happened. I was mostly just a dancer in school settings as well in terms of other non-academic pursuits.
+[b]📅   Aug. 2, 2025[/b]
+•   [b]Personal Endeavor:[/b] Modded a Keyboard on Gamepad Solution.
+•   [b]Configuration:[/b] Modified virtual keyboard solution for gamepad or console controller software solution to comply with an online article about better implementation of it.
+•   [b]References:[/b]
+•   [url=www.facebook.com/share/p/1DNsvqHn1k/]Facebook Post[/url]
+•   [url=github.com/Nirklars/XBoxMouse]Original Forked from (Nirklars)[/url]
+•   [url=github.com/AVSGamer/XBoxMouseSQuEDSOSK-Mod]My Modded Version Github Repo[/url]
+•   [url=www.gamedeveloper.com/design/towards-better-gamepad-text-input]Better Gamepad Keyboard Original Concept[/url]
 
-Apr. 11, 2023 – GENSOKISHI MONSTER COMPENDIUM
-An implementation of a query-able database on Google Sheets with sorting and filtering options. This is not the first time I’ve made this sort of project using Google Sheets. I chose to make it on this platform because it is free and has the capability to be used like so. Coincidentally the game was having an event/contest for UGCs (User Generated Content) so I submitted this as my entry and they did accept, it just didn’t win if I remember correctly. There’s also a Japanese developer who have more advanced tools on their website pertaining to the game. And the goal of creating this has always been a way for myself but also for other players to use it whenever they want to. It’s a self-initiated project, just like a lot of the other coding projects here.
-Can be sampled here:
-docs.google.com/spreadsheets/d/1AoOrVXtKCoIY5Fv1FS4sY9G4hTHnqmfLGumQazG5KLI/
-I probably should rename that option “Don’t Care” into “Irrelevant”.
-My Facebook Post: facebook.com/share/p/1afAWTMgV9/
+[center]________________________________________________________________________________[/center]
 
-Dec. 19, 2022 – Finally found a WEB3 VideoGame I liked
-I came across a Facebook advertisement/post about this game called GensoKishi
--MetaWorld- claiming to be a web3/play-to-earn/crypto-game. It looked like something I can enjoy playing as it has 3D graphics. Vastly different from the other play-to-earn games I tried before. A lot of the other play-to-earn games were 2D and the earnings aren’t that substantial in terms of time and investment, aside from “Axie” which I started hearing about back in college and was skeptical off at the time. The YGG entity mentioned here in this document apparently started in that game as well. GensoKishi is a web3 port of a Japanese-exclusive MMORPG videogame called Elemental Knights Online. Web3 is a term used to describe videogames that incorporates cryptocurrencies. Some of the User Generated Contents from the web3 version gets put into the web2 version after winning contests. At first, I won 5$ from a raffle from them. It got me invested and when the game released, I played it and even made video contents about it from the perspective of a newbie in the web3 scene. Got recognition not just from the players/community but part of the moderation team of the game as well. My earnings from this game were about 10$/daily just by playing it alongside joining events and raffles about it. And even attended a in-real-life gathering hosted by them, got a USB Flash Drive and Power Bank with their logo as memorabilia.
-References: youtu.be/watch?v=gRs_cEMXUBo&list=PLRcbi_hW-V3de6FgfVLGa3hotRPrVumWz&pp=sAgC
+[b]📅   Aug, 2025[/b]
+•   [b]Personal Endeavor:[/b] Endlessly overflowing Palette game development.
+•   [b]Configuration:[/b] Started development on a replication of a color puzzle game from Wuthering Waves. Current Version (Not Yet Finished) can be sampled [url=vsgamer57.itch.io/endlessly-overflowing-palette-by-papire]here[/url].
+•   [b]Strategy:[/b] This was my first time trying Unreal Engine. UI and Front-End Web Development is not my strong suit. And alas, I plan to just rework this in GoDot to be part of this website.
+•   [b][url=www.youtube.com/playlist?list=PLRcbi_hW-V3c2poizETAPXOBVzsepr51f&si=3eNbtDBvvCPEd2Rm]Reference Video Playlist[/url][/b]
 
-Sep. 13, 2022 – MirkoTik Router Configuration
-Set up my MikroTik hAP Lite to send an email notification to my email address upon anyone possibly trying to login to the WinBox which is the utility to configure the said router. My uncle who I lived with at this time used to be a professor of IT at a University so he has his own CCTV setup and so on using VCR etc.
-Reference: facebook.com/share/v/1B4g8NCTWd/
+[center]________________________________________________________________________________[/center]
 
-After May 22, 2022 – Mother-Side's Grandparents’ Home
-This happened 2 years after my college graduation, after my first actual employment experience that culturally shocked me little a bit, which I guess was normal for that company of great significance. But also because of the COVID Pandemic causing me to stay at home beforehand as relatives advised and news of recruitments dropping because of people adjusting to the new normal of working from home. Reason for leaving was that I was really stressed from the aforementioned details and that there were now plenty of residents in the apartment’s complex and it was getting noisy. I was the first resident in that apartment complex, but probably second in reservation, witnessing the construction of the other parts of it. Couldn’t find any other nearby apartments to go to so opted to live with my uncle here in the ancestral home temporarily since by this time I just know I will just keep moving places again.
+[b]📅   May, 2025[/b]
+•   [b]Health Status:[/b] Radial Nerve Palsy on left arm.
+•   [b]Description:[/b] Soon after the below entry(chronologically) I got Radial Nerve Palsy for another bizarre case of my body failing to protect itself which is rare unless intended because since a kid I was always moving and even inline skated, via sleeping on the arm. Like the Lasik after-surgery in the coming entries where my hand jerked to dislocate my left eye's healing 'flaps', this time it was my left arm to hand where I couldn't move my wrist to hand at all. It got better and able to move 100% again by the time I am writing this, though still feeling a little stiffness when I stretch up the fingers. There should be digital records in my messages with my mom on Facebook Messenger about it. Since we had it Electromyography-ed(EMg). During this time saw a video about it that said it would take about 6-9 Months to heal with theraphy. So I just switched from using Computer Keyboard to Gamepad/Controller for gaming as theraphy after my medicine for it ran out.
 
-May 22, 2022 – Getting into Pokemon TCG
-Ever since I got back to my home country, whenever I needed some cash I would sell some of my belongings. These goes as far back as the days of OLX.com or Sulit.ph or HanapUsapDeal websites. So I do this with items that I no longer need.
-Reference: facebook.com/marketplace/profile/100055752107854/?product_id=5493322714025670
+[center]________________________________________________________________________________[/center]
 
-Mar. 12, 2022 - Participated in an Online Pokémon TCG Tournament
-Since it was still around the time of the Pandemic I got back into playing the online official live service game of the Pokemon Trading Card Game. And started looking at platforms who share the same interest.
-web.archive.org/web/20220701141936/https://play.limitlesstcg.com/tournament/622600fcb0d52449227dc73c/standings
-play.limitlesstcg.com/tournament/622600fcb0d52449227dc73c/standings
+[b]📅   May 25, 2025[/b]
+•   [b]Personal Endeavor:[/b] Investigating voting machine software versions using RegEx.
+•   [b]Configuration:[/b] Just a personal curiosity-driven investigation after catching news online of a local lawyer publicly calling out that the voting machine software versions in the official records served to the public via the government website and what’s actually showing up on people’s ballots/receipts are not the same. Used RegEx a few times since College for “email format validation” and others. Used it again in this case to make the file hash records' format which was in PDF, match each other for easy comparison. After the election, it was reported anyway that the general populace was content with the results, so public acceptance is fine then, meaning they deem it consistent with cross-checking their fellow countrymen.
+•   [b]References:[/b]
+•   [url=github.com/AVSGamer/May_2025_General_Elections_ACM_File_Hashes_Between_Versions/tree/main]GitHub Repository with the Related Files[/url]
+•   [url=www.youtube.com/watch?v=X60bojJXn4s]Video Re-upload[/url]
 
-Jan. 16 2022 – Kara-O-Kruz, Published on Google Play
-I did pay the developer account fee for this and later on, the app wasn’t really getting any traction so I just took it off until my developer account got suspended. No violations, mostly just due to in-activity. The app was priced at 1$ and wasn’t taking any data from users, merely a simulation of a that coin-toss game.
-Reference: facebook.com/share/p/14b1ib4Ap6w/
+[center]________________________________________________________________________________[/center]
 
-Dec. 7 2021 – Photo of My Employee ID
-I resigned mainly because of the stress as mentioned above aside from having barely any experience with car’s ECUs. After leaving I asked if I would be able to come back if ever and my superior said that I may but only once. During the application process I took the time to read the contract and luckily, I was able to leave without having to pay them back for the training fees. This is where I learned about Training Bonds. You see, almost my entire young adult life since I was taught to read, write, even in cursive, and do math. I’ve been left alone mostly to study on my own… And I’m not really close to my father who would probably be the one who would know these things better.
-Reference: facebook.com/share/p/1Abakg1ua8/
 
-Nov. 8, 2021 – Exam Results for DensoTen Employment
-In the reference provided are my post about it and scores. The exam was done online, with strict rules to follow such as not alt-tabbing and keeping the operating system’s focus on the exam window/application. They wouldn’t want cheaters in this exam and I didn’t cheat. Not sure how complex their measures are for detecting cheating but this is a company mainly dealing with manufacturing Japanese Car Parts. And I wouldn’t want to find out what would happen if I cheated. I didn’t even know about the company before honestly. I just answered a Facebook Puzzle post and got messaged about it then went through the interviews and hiring process.
-Reference: facebook.com/share/p/1DcDekvmNV/
+[b]📅   Mar. 9, 2025[/b]
+•   [b]After winning as 3rd Placer in the 14-Day Web3 Game Jam/Hackathon:[/b] Decided to take a break from Web3 gaming.
+•   Decided to take a break from videogames that has cryptocurrencies and YGG which is a Filipino Developer Co-founded Legal Entity of multiple guilds, whose vision is to help gamers learn and earn while playing or doing tasks in the game using the verification of the blockchain integrated into the partnered games. As of writing this I am still in those communities albeit only checking in from time to time if there’s something I wanted to check like some news or updates about the games I spent a good amount of time, effort and involvement in. I mostly expect people to send me a direct private message if I am even needed. This is after getting the prize money from the tournament earlier and to go back to traditional Web2 or games that doesn’t have cryptocurrency for the reason of how blockchain technology is still new and top traditional game producer companies are skeptical of its scalability, I guess. Hence the design of a lot of the Web3 Games at the time wasn’t up to par with the types of games I used to play, which a lot of are not Free-to-Play games or High-Grossing Gacha/Games. The earning aspect for regular gamers is amazing, that’s not allowed on most Web2 games and treated as breaking the TOS. For about 3 years I was doing this Play-to-Earn and here is the link to my YGG Profile where all my NFTs indicating I have completed the GAP Tasks and claimed the corresponding monetary/crypto reward. This is not the same as online gambling/casino games though I had a share of experience working as OJT for one aspiring to host those. The achievements are supposedly NFTs tied to my YGG account. By that I mean some of them are still not visible in OpenSea website where you can see NFTs and Cryptocurrencies in a person’s crypto wallet:
+•   [b]References:[/b]
+•   [url=web.archive.org/web/20260217125045/https://www.yieldguild.io/player/2udu0p4y]My YGG Player Profile[/url]
+•   [url=www.opensea.io/0x35d388f6cf504082f59341ee13680b8a64696e85]OpenSea Wallet Tracking[/url]
+•   [b]Guild Advancement Programs:[/b]
+•   GAP Season 4 - I didn't use a tracker spreadsheet and was just going by the portal's lists.
+•   GAP Season 5 - Didn't participate much.
+•   [url=docs.google.com/spreadsheets/d/1hIhSxk6JvT2T9zPobZlpL014AGamFoQwO3w1xZ_5ci8/]GAP Season 6 Tasks Tracker that I made[/url]
+•   [url=docs.google.com/spreadsheets/d/1K_mdN0kxvyAZGktAfMfqLX8p6hYodpqpxtiLlqFNEK0/]GAP Season 7 Tasks Tracker Template provided by the Guild(AllGudsInDaHood) I was in.[/url]
+•   [url=docs.google.com/spreadsheets/d/1sS--GQF-8zJE9A_YfcmPF0zz1Tlh4Jn7scP970eKncg/]GAP Season 8 Tracker[/url]
+•   [url=docs.google.com/spreadsheets/d/18HwG_4inQshvgy9oM4nhR_WCjvCwSYHmNzVBTcoU1_k/]GAP Season 9 Tracker[/url]
+•   [url=docs.google.com/spreadsheets/d/1ZK4G-aTUF33WeDGA833v8FWBTkgYOOExZi7ads2iANg/]YGG Game Testers Records[/url]
+•   [url=www.facebook.com/share/p/1GMjRzBcmF/]Rewards Facebook Post[/url]
+•   [url=www.facebook.com/share/p/1B6u2Kq6GA/]Physical Item Freebies gotten from attending the YPS once, including the Game Tester Uniform[/url]
 
-May 15, 2021 – Addon for Elder Scrolls Online Videogame
-Made and uploaded my very first add-on using APIs for Elder Scrolls Online. The addon is a simple text overlay depicting Experience Points gain and tracking with plenty of customization options. It is currently sitting at a total of 12,172 downloads with a monthly download rate of 61. I need to update this addon soon for the PlayStation Console Platform. Khayeel is a pen name I use for Programming Passion Projects. It is a lengthened and arabicized form of ‘KL’ which is ‘Kuya Lorman’ given by a high-school classmate.
-Reference: esoui.com/downloads/info3072-XPTracker.html
+[center]________________________________________________________________________________[/center]
 
-Mar. 1, 2021 – Computer Books Collection Summary
-I don’t’ really read much books anymore due to the internet. But back then, the kinds of books I would read are all about academics but I did start out with fairy tales too like “Turtle and the Hare”. When I got some allowance while studying in college, I would frequent the local second-hand bookstore for computer books. Just in case of an apocalyptic setting that we lose access to internet and some of our technologies today. I used to always go check the Ripley's Believe It Or Not and Guinness World Records Books at Jarir Bookstore back in Saudi Arabia when I was still living there with the family and we choose that destination for a weekend family activity.
-Reference: facebook.com/photo/?fbid=222921229576279
+[b]📅   Feb. 13, 2025[/b]
+•   [b]Personal Endeavor:[/b] Modified a Mobile Router to have External Antennae Cable Connection.
+•   [b]Configuration:[/b] Purchased a PLDT 5G Mobile Router due to frequent residence changes, portability and the faster 5G Network as a backup internet connection with planned openlining for sim cards that can hold un-expiring mobile data load. Modified internal physical antenna hookups to support high-gain external hardware array.
+•   [b][url=www.facebook.com/share/v/1Dp83x6wwr/]Reference[/url][/b]
 
-Dec. 27, 2020 – The Desktop PC I am currently using
-Right around the time of the COVID Pandemic, I decided that Laptop’s are just too flimsy and not powerful enough for my use case so I had to get back on a Desktop PC. I started buying up parts second hand and brand new depending on my priorities. I didn’t cheap out on the Power Supply Unit, bought a second-hand GPU since I had experience with the buy-and-sell scene already. My first CPU + Ram Bundle was from my close high school friend who upgraded until I later on upgraded it as well. More about my other Desktop PC Builds further down these records.
+[center]________________________________________________________________________________[/center]
 
-May 30, 2020 – Graduate from BSCS
-Take note of how this is during the peak of the pandemic. Social gatherings are banned. My mother couldn’t come home from Saudi Arabia. Lost motivation to even attend the re-scheduled Graduation Ceremony. Went to the Registrar’s Office to claim my Diploma instead and surprisingly there was a medal in there which I tried to research on and only explanation I can find is that it is a St. Lorenzo Ruiz award but I am not sure. Our thesis project was supposed to be presented on a Colloqium as well but because of the pandemic it just didn't seem to follow through.
+[b]📅   Feb. 2, 2025[/b]
+•   [b]Health Status:[/b] Critical Potassium deficit medical emergency.
+•   [b]Description:[/b] Experienced sudden, severe muscle weakness when going up or down steps, falling and unable to stand by myself. Transferred via emergency ambulance for immediate clinical intervention. Received high-intensity intravenous Potassium infusions at the hospital facility.
+•   [b][url=www.facebook.com/share/p/1CnnK7fNCf/]Reference[/url][/b]
 
-Dec. 27 – May. 30, 2020 – College Organizations
-Became an Auditor for SITES which is the Society of Information and Technology Engineering Students. Also became a staff of the College Student Council when my classmate won the election. On-The-Job Training at MISOUT. Leaving all other details that you can find on my LinkedIn profile. For the most part I was a sole developer in projects. The thesis we accomplished was my proposal. There were just 2 of us in our batch to graduate. That other student is a friend and I let him handle most of the documentation and writing while I do the theses project with a lot of help from him as well in the map making of the project, but mostly the proposal was mine with directive/advice from the professor for it to be something the college could use and when I did the proposal, I already had a plan of action as well, all that was left was to execute it. Website Development, availing of actual Web Hosting and buying Domain Names. Programming in SQL, connecting front-end to back-end and working on both. On our Mock-Theses project during 3rd year. I was the only proponent and what I did was a Point-of-Sale system as per the professor’s request of making them for different businesses per grouping, I stood out and already knew that I actually wanted to work on it alone. The Hardware Store POS task was given to me. Fortunately, my mom does have friends in this locality since it’s their hometown. That friend was my sister’s ‘Ninang’. I probably could have asked the professor as well if they know anyone I can make a system for but I don’t remember. The system I presented came with a Barcode Scanner and a Thermal Receipt Printer. I even bought a Fingerprint Scanner and also planned to include a Cash Register and a Product Statistics View. But the only ones I got to work with the time I had was the Printer and the Barcode Scanner along with the basic functionalities of a POS and built-in event logging. This project is uploaded to my GitHub currently but outdated. The Mock-Theses went fine with Minor Revisions Advised such as not allowing direct editing into the product tables from the POS software. No second takes. For that project as well, we were able to meet up with the local supplier of POS to SM Taytay Hypermarket to help us get familiarized with the machine and software.
+[center]________________________________________________________________________________[/center]
 
-Sometime around college - Built a PC for a close High School friend
-Friend bought parts and asked me to help build it while our friend group was doing it's usual get together and all I can say is they were surprised when it booted up and worked. Hehe.. I was of course doing my best to be careful since this is the first time I had to do it again since coming back from Saudi Arabia. Thankfully stuff haven't changed that much aside from the SSDs and IDEs getting replaced with SATA connections. The cabling was hell though as that is something I've never worked on before that time. PCs back then weren't having their insides displayed...
+[b]📅   Jan. 30, 2025[/b]
+•   [b]Residence Relocation:[/b] Moved apartment from Montevista Subdivision to Noel's Village in Taytay, Rizal, Philippines near Cabrera Road.
+•   Moved residence based on family referrals following an early space reclamation by the previous residence's landlord's relative. Supported continuously by local family networks while still doing the Web3/crypto projects living by myself.
+•   [b][url=facebook.com/share/p/17wWNR6XSj/]Reference[/url][/b]
 
-Before Dec. 27, 2020 – BUKAL DOS, SMART CIR. EXT, TAYTAY
-Lived here until Graduation from the course of Bachelor of Science in Computer Science majoring in programming/software development. Initially moved in here with my mom’s cousin’s family. Until about a year before my graduation which by then I was back to living by myself. Most memorable experiences are that I broke the metallic faucet by bumping into it with my knee and carrying the 1 Horse Power Air Conditioning Unit from the second floor down to the ground floor through a tight spiral staircase for cleaning then carrying it back up all by myself without any special tools. We moved here around my 3rd Year standing in my course. Around this time I went with colleagues in the Computer Engineering Dept. to be a 'mamamasa' during amba \"religious ritual\" in Taytay. Dual booted my laptop with ParrotOS. Had Lasik Eye Surgery during my On-The-Job Training since there wasn't really any other time to do this because mom was only going to be with us during that for a short time. Learned some basic Lock-picking from YouTube videos of \"The Lockpicking Lawyer\" and made use of it about 3 times, 1 in school to retrieve a key inside and 2 on my apartment room. First time earning from crypto-currency through Electroneum, buying worth PHP500 of ICO or Initical Coin Offering and then dumping/selling it for around PHP5000 the moment it became available for selling on online exchanges. It was supposed to be the first crypto-mobile-mining platform that apparently had some hype around it from what I've read online. Surprisingly the project is still alive to this date?
+[center]________________________________________________________________________________[/center]
 
-Before moving to BUKAL DOS - ISAGANI STREET, TAYTAY, RIZAL - Continued studies in Siena College of Taytay as a College Student
-Started buying secondhand computer books and Gundam Plastic Models and continued my college studies in Siena, first enrolling as E.C.E. then switching to Computer Science since finding out just how expensive the dissertation project can be. This is where I started living with my mom's cousin's family as guardians and when I started studying in Siena College of Taytay. During these time I got into Gundam Plastic Models and I would do that and make videos of it while going to college as my free time aside from the laptop. While studying, every feeling of winning in the classroom due to stuff like leaving laboratory first, I would go for Starbucks and just hang out while playing with my phone online, a little people-watching and good coffee. 2 Venti's of Caramel Macchiato with Breve Milk as suggested by the barista. I would sit there and smoke my cigs for like 5 hours or more even.
+[b]📅   Nov. 20 - Dec. 2, 2024[/b]
+•   [b]14-Day Programming Competition:[/b] 3rd Place Finish at YGG Play Summit Web3 Game Jam [Professional Track].
+•   [b]Configuration:[/b] Operated as the lone software engineer and programmer within a 2-man project team during a 14-day software sprint. My partner in this was the one who came up with the project idea and created the presentation material. Developed a 2D JRPG style online-events' gathering hub where hosts could create rooms and input a YouTube Video/Stream Link for the room to watch, and some mini-games with room-localized leaderboards. Secured a cash prize of PHP 50,000 which we splitted 70:30.
+•   [b]References:[/b]
+•   [url=www.linkedin.com/in/lorman-mamuyac/overlay/1733389981544/single-media-viewer/?profileId=ACoAAAudps0BVMM_99GaI2VgcYs_TUh4adkGVoQ]Official Certification and others at my LinkdIn where I don't Sh-Post in..[/url]
+•   [url=www.youtube.com/live/GH5HDL_AgRs?si=RTB_wDiRtl9hek5H&t=21301]YPS Awarding Broadcast[/url]
+•   [url=www.facebook.com/share/p/1CTPRAV8Fy/]My Facebook Post About It[/url]
+•   [url=github.com/AVSGamer/PapiRE_Studio_YPSGameJamFiles]GitHub Repository[/url]
+•   [url=avsgamer.github.io/PapiRE_Studio_YPSGameJamFiles/]Live Demo Sandbox[/url]
 
-RESTART - This is actually where the Positive Directed Restart happened.
-Finally got to talk to my mom again while I was in Baguio and told her I would pursue my dream since childhood of becoming a programmer. That I needed her help and that I wouldn't mess it up again because of papi-'LOVE'. Got her support, incredible right? Do I deserve this?
+[center]________________________________________________________________________________[/center]
 
-Before moving to ISAGANI STREET, TAYTAY, RIZAL - BAGUIO, PH
-Went back to Philipines, boarding a plane back by myself again, after a 10 Month Duration under Visit Visa with the family. I was 21? years old during this time so I couldn't be under Dependent Visa anymore when they tried to re-apply that from the Visit Visa. Got taken in by the same aunt I am currently living with's family who were doing their clothing business in Baguio. I would for the first time experience a little selling of clothes here despite swearing to myself that I abhor front-desk type of jobs as I don't think I am fluent enough to deal with certain types of people. Much prefer the company of a device and internet as it is something I don't have to argue with as long as I know what makes it tick and how to configure it.
+[b]📅   Sep. 26, 2024[/b]
+•   [b]Still an intern until now unfortunately been doing other things:[/b] Online Game Server programmer internship for Shin Megami Tensei: Imagine Online preservation server.
+•   [b]Motives:[/b] This game used to be officially hosted and published by ATLUS in Japan and by Playpark in Global or SEA Server; It’s an MMORPG game that made a lasting impact on my life. I was in homeschooling for 4th Year of my High-School at that time. I played this game a lot back then and where I met online, Aki who was using the Gamer Handle 'Syusuke' back then, a Japanese guy working in the field of IT, he was around 20 years old back then from what I can remember him telling me through the in-game chat system and eventually became part of my Facebook Friends to this day. Now there are some of us who miss this game and want to preserve it so they took it upon themselves to re-host the game after the official servers went down. New Moon is the name of the new server that I became an intern for and I was part of 1 patch. I chose a task to get me started that was supposedly relatively easy to help me get accustomed to what actual codebase did the developers that ATLUS hired for this game. The team was kind to show me the ropes in finding which files to look in then I studied the code structure to find what I needed to change. The task was to change some items’ (about 7~ items) inventory stack sizes and their category to be put in the other in-game storage/bank like the other items. I don't think it's a secret since it should be obvious that someone did release the encrypted files' decrypter and re-encrypter so we use those for the changes. This is a Non-Profit game server since the original game files' licenses are still owned by the original makers. Main reason why I couldn't get into it much, but hoping to get back to it eventually, probably soon after my plans this website is mostly done since I can feel my interest in gaming waning recently.
+•   [b][url=54.39.131.171:3000/home]Game's Website[/url][/b]
 
-Before going back to K.S.A (Kingdom of Saudi Arabia) - 20th Avenue, QC, Cubao - Studio Room
-Parents went for vacation in Philippines to see where I was staying while studying for E.C.E(Electronics and Communications Engineer) in \"T.I.P. Q.C.\" and immediately decided to move me to a Studio Room nearby, renting, closer to the academia. Kind of messed up my living quarters here for keeping open alcoholic beverage bottles just lying around and ended up affecting my health and getting hospitalized for it having to drop my studies abruptly and go back to my family in K.S.A on a Visit Visa.
+[center]________________________________________________________________________________[/center]
 
-Before moving to the Studio Room - Cubao, Boarding House
-Before the Academic Year started, went here with some friends to look for a place I can stay in while attending college/university and we found a boarding house. I lived here for a while, sharing bedroom with like 5+ industry workers mostly office jobs or Call Center Agents. Some of the students also opted to stay here. Made a close friend here. Learned from them about the Sony Brand Cellphone Line and Custom Cellphone Operating Systems or ROMS. They told me of the rule there about socializing which is like \"No spoiling the fun of others.\" or in tagalog \"Walang basagan ng trip.\". Which to me was fine as long as no-one is like getting hurt too bad since a lot of us there were men with different backgrounds albeit... And I was never the bully type, quite the contrary, there was a time I extended my hand to a newly transferred girl getting teased by the other girls. :X That was in Saudi though long before this timeframe.
+[b]📅   Aug. 19, 2024[/b]
+•   [b]Still have the License but on Full-Linux mode now:[/b] WindowsOS Insider Program.
+•   [b]Upgraded License Capability:[/b] The Insider Program upgrade allows me to use my licensed WindowsOS installation to preview features that are still in the experimental phase, not yet released to the stable/standard build version.
 
-FRESHMAN SCHOLAR OF T.I.P. CUBAO, Q.C.
-My first choice of College or University was actually PUP or Polytechnical University of the Philippines but honestly I don't know much about them, I was just going by what I could read about them. Went to \"Technological Institute of the Philippines, Cubao\" instead, since I learned that is where my Sienan high school friends were going. After the entrance examinations, I was qualified and availed of the scholarship. When asked what course I would take, I countered with a question asking what would be the hardest IT related course. So I took up, Electronics and Communications Engineering as my first course or (E.C.E.). The schedule was pretty rough as a block student with some going into like 7PM-8PM. By then I would even just sleep on my desk and the professor would allow picture taking or joke about it I guess. Didn't help that our little friend group loves cutting classes to the computer shop... A classmate in Solid Mensuration class was surprised he had me as a classmate from the Freshmen. Honestly did have a little bit of trouble following through with the lessons there as their terminologies/formulae formats and methods in mathematics were something I wasn't used to.
+[center]________________________________________________________________________________[/center]
 
-Before moving to Cubao, Boarding House - Aunt's Home in Beverly Hills, Antipolo
-Nothing much happened here other than me thinking it thoroughly why the World was the way it is. Mostly always just trying to sell something to someone or peddle an agenda, while in the background everything is being held together by very fragile relationships build on trust. What I've seen and why was so. And in front of a Mansion-Wall-Sized Mirror thought to make the bet formal with the powers that be, that every man should know \"Life is a gamble and we bet with our lives every time. What do you want and what are you willing to give?\" I thought I was fine just wasting the days away in peace. Was I young? Didn't really feel like so but seems like I still had what it takes so I took it and decided to finish my homeschooling and continue to pursue college, my goal, the diploma and actually learning how to make the programs on the computer and so on. Was supposed to come back to my family in K.S.A around this time but the plane ticket's schedule sat on top of a H.S. classmate girl's birthday and I opted to attend that instead, got a scar on my right wrist for having a ceramic plate thrown at me when I got back from the party.
+[b]📅   Apr, 2024[/b]
+•   [b]Personal Endeavor:[/b] First custom modification of hardware SIM router antennas.
+•   [b]Configuration:[/b] Modified a budget \"GT990+ Pro\" sim router, rewiring internal RF paths to feed directly into a high-gain external antennae. This was due to not yet having a cable internet in the apartment I was staying in which somehow has low mobile network signal indoors.
+•   [b][url=www.facebook.com/share/p/1BxABNVKG4/]Reference[/url][/b]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Apr. 5, 2024[/b]
+•   [b]NFT worth around \\$800 at first release:[/b] Acquired second promotional Ramen Card NFT via community event raffle.
+•   Supposedly only 1 Ramen Card per player if they got it from events or promos. But you can buy as much of them as you want from the marketplace. If I remember correctly this one was from a community event raffle rather than a official game event, hence I was allowed to keep another. The NFT Card has benefits tied to it which is being able to buy and sell exclusive in-game items (“food buffs” in most games). At initial release the price for that was around \\$800 and I was one of lucky winners of it then. The other player I met then who won as well sold it for that price and got himself a better computer set from it. I decided to not sell mine yet at that price which I later kind of regretted since now I don’t have any of those Ramen Cards though 2 went through my possession. I sold this one for \\$70, Transaction Details/Blockchain Record in the link below. [s]I still log into the game from time to time but only to farm tokens($1~/6days currently, back then $10/day for me and for others even more).[/s] Currently the game has just finished transferring ownership and management and I haven't tried getting back to it yet.
+•   [b][url=www.youtube.com/live/29u_R8qiuRs?t=616s]Video of the Raffle Event[/url][/b]
+•   [b][url=polygonscan.com/tx/0xb37c30d6885370114e37b72898056fbed21f3088a5ca66f373a5705135245a09]Blockchain Record of This(2nd Time) NFT when I sold it.\\$70[/url][/b]
+•   [b][url=polygonscan.com/tx/0x8381e313faef2b82fa372d1e59f7d68c267541474194d371cfa18dc19e123605]Blockchain Record of my 1st of this NFT sold.\\$390[/url] [/b]
+•   If you can trace transactions on the blockchain scanners. You'll notice that I use multiple wallet addresses and I will state this now that during those times, KYC on crypto wallets, wasn't a thing yet. It's something anyone on the internet can just get/generate and use freely. And if you trace the NFT's history, it's minted(airdropped/given/rewarded) to those 2 wallets that sold them as well which are mine.
+
+[center]________________________________________________________________________________[/center]
+
+[center][b]EVERYTING BELOW THIS LINE IS NOT YET PROOFREAD BY ME. IT IS WHAT THE AI TRANSFORMED MY MANUALLY COMPOSED ACCOUNTS INTO HAHA. IT MAKES IT SOUND AS IF IT'S THAT CLEAR CUT AND DRY. BUT WE ALL KNOW LIFE IS RARELY REALLY LIKE THAT. UNLESS YOU'VE LIVED WITH GREAT PRIVILEGE AND SUPPORT SYSTEM, LUCKY AS HECK TO EVEN STILL BE COHESIVE AT THIS POINT. IF \"YOU\" and not some rock CAN ACTUALLY READ THIS, HATS OFF TO YOU. NO IDEA IF WE WILL \"WIN THIS FIGHT\", BUT HONESTLY I THINK I'VE ALREADY WON WITH WHAT I HAD, SO IF YOU STILL NEED IT. KNOW I'M ON YOUR SIDE.[/b][/center]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Dec. 31, 2023[/b]
+•   [b]Project Deliverable:[/b] 1st Place Champion - GensoKishi MetaWorld Speedrun Tournament.
+•   [b]Configuration:[/b] Led a randomly grouped 3-player competitive unit as team coordinator. Handled task scheduling, collaborative performance modeling, and practice run optimization. Secured a \\$340 prize split equally among the team.
+•   [b]References:[/b]
+•   Pre-Elimination Footage: https://youtu.be]youtu.be/cFY55CzWGlQ
+•   Tournament POV Stream: https://youtu.be]youtu.be/lj0hrjfmTUo
+•   Awarding Ceremony Broadcast: https://youtu.be]youtu.be/qVPMvoi8Mg4
+•   Tournament Win Post: https://www.facebook.com/share/p/188zeVZmx8/
+•
+[center]________________________________________________________________________________[/center]
+
+
+[b]📅   Jul. 7, 2023[/b]
+•   [b]Project Deliverable:[/b] Switched completely over to self-administered personal grooming.
+•   [b]Configuration:[/b] Initial transition influenced by structural COVID-19 pandemic dynamics. Alternated between semi-bald cuts and undercut styles based on preference.
+•   [b]Reference:[/b] [url=https://facebook.com]facebook.com/share/v/1Aqhjj46Lo/[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Jul, 2023[/b]
+•   [b]Project Deliverable:[/b] Formal integration into Yield Guild Games (YGG) community frameworks.
+•   [b]Configuration:[/b] Discovered the entity through its integration with GensoKishi, an official high-fidelity Web3 port of an established Japanese MMORPG. Assigned directly to the \"ALLGUDSINDAHOOD\" (\"ALLGUDS\") sub-guild cohort. Leveraged community-based financial channels to clear stuck e-wallet transactions. Ran multiple platform activities, cross-platform airdrops, and deep Web3 game task completions while joining the official YGG Game Testers branch.
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Jun, 2023[/b]
+•   [b]Relocation:[/b] Moved out from Grandparents’ Ancestral Home to an apartment in Montevista Heights Subdivision, near Ortigas Extension.
+•   [b]Description:[/b] Left the ancestral house due to urgent roof repairs and structural leaks. Maintained solo household setups, addressing standard utility overhauls including manual drainage clearing and custom bathroom plumbing assemblies.
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Apr. 11, 2023[/b]
+•   [b]Project Deliverable:[/b] GensoKishi Monster Compendium data infrastructure deployment.
+•   [b]Configuration:[/b] Engineered a fully queryable, filter-capable data table tool hosted on a free cloud environment. Submitted the technical project asset directly as an open User Generated Content contest entry to help community players look up monster stats.
+•   [b]References:[/b]
+•   Live Dataset Tool: [url=https://google.com]docs.google.com/spreadsheets/d/1AoOrVXtKCoIY5Fv1FS4sY9G4hTHnqmfLGumQazG5KLI/[/url]
+•   Project Post: [url=https://facebook.com]facebook.com/share/p/1afAWTMgV9/[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Dec. 19, 2022[/b]
+•   [b]Project Deliverable:[/b] Discovered and built content for GensoKishi -MetaWorld-.
+•   [b]Configuration:[/b] Found the 3D play-to-earn ecosystem via digital ads, presenting a massive upgrade over older 2D formats like Axie. Played actively at launch, earning around \\$10 daily. Earned community recognition and mod status, culminating in attending an in-real-life meetup event and taking home custom brand memorabilia.
+•   [b]Reference Video Playlist:[/b] [url=https://youtu.be]youtu.be/watch?v=gRs_cEMXUBo&list=PLRcbi_hW-V3de6FgfVLGa3hotRPrVumWz[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Sep. 13, 2022[/b]
+•   [b]Project Deliverable:[/b] Automated email alerts for MikroTik network infrastructure.
+•   [b]Configuration:[/b] Configured a MikroTik hAP Lite unit to send instant SMTP script notifications to my inbox upon any unauthorized WinBox login attempts. Worked on network parameters inside a tech-oriented household equipped with VCR CCTV monitoring arrays.
+•   [b]Reference:[/b] [url=https://facebook.com]facebook.com/share/v/1B4g8NCTWd/[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   After May 22, 2022[/b]
+•   [b]Relocation:[/b] Temporary move to Mother-Side's Grandparents' Ancestral Home to live with my uncle.
+•   [b]Description:[/b] Relocated two years post-college graduation following intense corporate culture shock and pandemic-related hiring drops. Left the previous noisy apartment complex as construction wrapped and new tenants took over.
+[center]________________________________________________________________________________[/center]
+
+[b]📅   May 22, 2022[/b]
+•   [b]Project Deliverable:[/b] Entered Pokemon TCG secondary market spaces.
+•   [b]Configuration:[/b] Handled personal asset liquidations across local digital marketplace platforms to free up immediate capital from unneeded personal inventory.
+•   [b]Reference Profile:[/b] [url=https://facebook.com]facebook.com/marketplace/profile/100055752107854/[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Mar. 12, 2022[/b]
+•   [b]Project Deliverable:[/b] Participated in the official Online Pokémon TCG live-service tournament.
+•   [b]Configuration:[/b] Returned to high-level digital card battles via online live platforms during pandemic conditions, establishing standings in competitive card groups.
+•   [b]Reference Standings:[/b] [url=https://archive.org]play.limitlesstcg.com/tournament/622600fcb0d52449227dc73c/standings[/url]
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Jan. 16, 2022[/b]
+•   [b]Project Deliverable:[/b] Developed and published \"Kara-O-Kruz\" on Google Play Store.
+•   [b]Configuration:[/b] Financed the individual developer account setup fee out of pocket. Built a lightweight \\$1 premium coin-toss simulation running zero user data collection routines. Asset was later taken offline due to standard platform inactivity rules.
+•   [b]Reference Project:[/b] [url=https://facebook.com]facebook.com/share/p/14b1ib4Ap6w/[/url]
+[center]________________________________________________________________________________[/center]
+
+
+[b]📅   Dec. 07, 2021 — Employment Resignation & Contract Insight[/b]
+•   [b]Event Detail:[/b] Resigned from Denso Ten due to career stress and limited initial experience handling automotive ECUs.
+•   [b]Key Takeaway:[/b] Reviewed employment contract terms thoroughly to bypass training bond fee repayment liabilities safely.
+•   [b]Personal Note:[/b] Shifted to independent self-directed learning models outside of traditional family guidance networks early in youth.
+•   [b]Reference Link:[/b] [url=https://facebook.com]://facebook.com[/url]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Nov. 08, 2021 — Denso Ten Employment Examination[/b]
+•   [b]Event Detail:[/b] Completed the rigorous online entry testing phase required for automotive part manufacturing employment.
+•   [b]Configuration:[/b] Monitored environment utilizing strict anti-cheat window focus tracking configurations to block OS alt-tabbing actions.
+•   [b]Project Origins:[/b] Recruited directly through custom interactions following performance on a localized Facebook logic puzzle.
+•   [b]Reference Link:[/b] [url=https://facebook.com]://facebook.com[/url]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   May 15, 2021 — Elder Scrolls Online Addon Launch: XP Tracker[/b]
+•   [b]Project Deliverable:[/b] Programmed and published an automated interface mod showcasing real-time experience metrics over game displays.
+•   [b]Configuration:[/b] Integrated custom font selections, coordinate scaling, movable elements, and scene change handling panels via LibAddonMenu-2.0.
+•   [b]Project Status:[/b] Tracked over 12,000 total active community downloads with structural plans to port logic over to console platforms.
+•   [b]Personal Note:[/b] Utilized development handle 'Khayeel' derived from an arabicized nickname given by a high school classmate.
+•   [b]Reference Link:[/b] [url=https://esoui.com]://esoui.com[/url]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Mar. 01, 2021 — Computer Books Collection Archive[/b]
+•   [b]Description:[/b] Maintained a physical second-hand library focused on historical hardware documentation and system architecture topics.
+•   [b]Personal Note:[/b] Cultivated literature preservation practices during weekend family visits to Jarir Bookstore during years spent in Saudi Arabia.
+•   [b]Reference Link:[/b] [url=https://facebook.com]://facebook.com[/url]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Dec. 27, 2020 — Desktop Hardware Construction[/b]
+•   [b]Configuration:[/b] Assembled custom workstation leveraging high-grade power delivery units mixed with carefully vetted second-hand components.
+•   [b]Description:[/b] Transited primary production environment from portable laptops back to traditional desktop frameworks during pandemic periods.
+•   [b]Hardware Sourcing:[/b] Deployed core processor and memory components sourced directly from peer networks to maximize price-to-performance metrics.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   May 30, 2020 — BSCS University Graduation[/b]
+•   [b]Academic Milestones:[/b] Formally concluded Bachelor of Science in Computer Science degree milestones amidst strict pandemic protocols.
+•   [b]Description:[/b] Retrieved official documentation directly from the registrar containing an unverified institutional St. Lorenzo Ruiz honor medal.
+•   [b]Project Impact:[/b] Finished the final program tracks cleanly as one of only two active students to graduate within the cohort batch.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Dec. 27, 2019 – May 30, 2020 — College Leadership & Capstone Project[/b]
+•   [b]Roles Assigned:[/b] Served as internal organizational auditor for SITES and joined the College Student Council staff infrastructure.
+•   [b]Project Deliverable:[/b] Designed and deployed a custom client-server thesis architecture using local SQL relational schemas and web hosting.
+•   [b]Collaboration:[/b] Engineered the programmatic base functions independently while allocating documentation duties to an archive partner.
+•   [b]Mock Thesis POS:[/b] Built an autonomous hardware store point-of-sale system powered by integrated barcode scanners and receipt printers.
+•   [b]Field Research:[/b] Conducted hands-on evaluations with real SM Taytay Hypermarket terminal vendor machinery to improve stability.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Sometime Around College — Legacy Desktop Computer Assembly Project[/b]
+•   [b]Configuration:[/b] Directed full hardware configuration and layout for a close high-school friend during a group meeting.
+•   [b]Description:[/b] Managed internal cable layouts inside traditional enclosed non-display chassis designs typical of early computer cases.
+•   [b]Technical Evolution:[/b] Verified architectural interface modifications noting the industry transition from older IDE ribbon cables to modern SATA ports.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Before Dec. 27, 2020 — Residential Shift & Academic Completion (Bukal Dos, Taytay)[/b]
+•   [b]Description:[/b] Relocated to Bukal Dos, Smart Cir. Ext. during 3rd-year university standing, transitioning to solo living a year before graduation.
+•   [b]Configuration:[/b] Configured production laptop to dual-boot ParrotOS as a secondary secure operating system environment.
+•   [b]Financial Milestone:[/b] Achieved first cryptocurrency revenue via Electroneum (ETN) Initial Coin Offering (ICO), buying 500 PHP worth of tokens and selling for 5,000 PHP at exchange launch.
+•   [b]Health Update:[/b] Underwent corrective LASIK eye surgery during the On-the-Job Training phase while mother was briefly visiting the Philippines.
+•   [b]Technical Skill:[/b] Self-taught core physical lock-picking mechanics through online resources, successfully bypassing locks on three occasions (one academic facility, two domestic apartments).
+•   [b]Personal Note:[/b] Participated as a \"mamamasa\" during an Amba cultural religious ritual alongside Computer Engineering colleagues.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2017 — Computer Science Transition & Creative Hobbyism (Isagani Street, Taytay)[/b]
+•   [b]Academic Milestones:[/b] Changed academic tracks from ECE to Bachelor of Science in Computer Science at Siena College of Taytay to eliminate high ECE dissertation expenditures.
+•   [b]Description:[/b] Began residency under the guardianship of maternal relatives; curated a physical collection of second-hand software architecture texts and plastic scale models.
+•   [b]Creative Content:[/b] Produced and uploaded custom videography documenting Gundam Plastic Model assembly procedures as a secondary technical hobby.
+•   [b]Personal Note:[/b] Developed a routing study habit at Starbucks after clean academic laboratory runs, ordering dual Venti Caramel Macchiatos with Breve milk.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Pre-Siena Transition — Positive Directed Restart Activation (Baguio, PH)[/b]
+•   [b]Project Deliverable:[/b] Initiated a decisive lifestyle and career pivot via direct parental consultation while stationed in Baguio.
+•   [b]Description:[/b] Secured critical maternal backing to commit to long-term software engineering goals, vowing to eliminate external personal relationship disruptions.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2016 — Visit Visa Transition & Local Logistics (Baguio, PH)[/b]
+•   [b]Event Detail:[/b] Returned to the Philippines alone following a 10-month tourist visa stay in Saudi Arabia after aging out of traditional dependent family visas at age 21.
+•   [b]Description:[/b] Sheltered by maternal relatives operating a regional clothing firm in Baguio, managing basic retail tasks.
+•   [b]Personal Note:[/b] Solidified preference for digital machine interfaces over public-facing customer roles, favoring deterministic hardware configurations.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2015 — Health Emergency & Academic Disruption (20th Avenue, Cubao)[/b]
+•   [b]Event Detail:[/b] Relocated to a dedicated rented studio space adjacent to the Technological Institute of the Philippines (T.I.P.) during parental visitations.
+•   [b]Health Update:[/b] Suffered severe systemic health degradation stemming from poor workspace sanitation and unsealed beverage containers, requiring emergency hospitalization.
+•   [b]Academic Milestones:[/b] Formally suspended active ECE program studies due to medical conditions, executing emergency extraction back to Saudi Arabia on a visit visa.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2014 — Shared Communal Living & ROM Modding (Cubao Boarding House)[/b]
+•   [b]Description:[/b] Sourced a local multi-tenant boarding house ahead of the academic term, sharing a workspace unit with 5+ commercial office and call center employees.
+•   [b]Technical Skill:[/b] Introduced to Sony mobile hardware capabilities and custom smartphone firmware architectures (Android Custom ROM flashing).
+•   [b]Personal Note:[/b] Adopted the communal tenant social guideline of \"No spoiling the fun of others\" (Walang basagan ng trip) to preserve workspace harmony.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2014 — T.I.P. Cubao Matriculation & Freshman Scholarship[/b]
+•   [b]Academic Milestones:[/b] Qualified for an institutional academic scholarship at the Technological Institute of the Philippines (T.I.P.) Cubao branch following entrance exams.
+•   [b]Configuration:[/b] Enrolled in Electronics and Communications Engineering (E.C.E.) after requesting the most mathematically demanding IT-adjacent track.
+•   [b]Description:[/b] Encountered early interface difficulties adapting to unfamiliar local math formula formats and structural terminologies within the Solid Mensuration tracks.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Pre-College Era — Homeschooling Conclusion & Philosophy (Beverly Hills, Antipolo)[/b]
+•   [b]Academic Milestones:[/b] Concluded formal home-based secondary school programs to prepare for traditional engineering university admissions.
+•   [b]Description:[/b] Formulated foundational personal philosophies on systemic trust networks, risk allocation, and individual trade-offs while residing at paternal aunt's home.
+•   [b]Health Update:[/b] Sustained a permanent physical injury scar on the right wrist from a thrown ceramic plate after bypassing a flight to K.S.A. to attend a high school peer's social gathering.
+
+[center]________________________________________________________________________________[/center]
 
 ###WAS HIGHLY PSYCHOTIC-DELUSIONAL AT THIS TIME############################
-###Living in Taguig at another aunt's family home.
+###Living in Montalban at another aunt's family home.
 ###Even remember seeing Itachi's Tsukoyomi on the street... XDD
 ###And staring at the Sun directly...
 ###I can't remember exactly where in the timeline this is, fuzzy memory.
 ###########################################################################
 
-SIENA COLLEGE OF TAYTAY AS A HIGHSCHOOLER 2009
-Was part of the dance troupe during the Sportsfest. Only stayed here for 1 year.
-Reference: youtube.com/watch?v=6TreBLUQ_FM, I was the one who jumped at the back near the end..
-Some classmates would wonder I guess how am I passing subject when I mostly just sleep in class because I am always up at the apartment on my computer. Lost all motivation in society at this point. Wondering whether if I actually made friends at all or not in the past. Maybe I just didn't know the social landscape that well as an innocent kind hearted friendly almost ma-epal na kid in my previous schools, that all changed here. I started keeping to myself as much as possible and my friends from here now are actually the ones who came up to me to get to know me... My headspace that time was just, I'mma try all these things they don't want us to try just to see why do people do these things. I already started smoking anyway. So alcohol, women and maybe even a little drugs. Thankfully though, I never got into rocks. LOL. But despite these I would confront my friends from here as a pretentious cool guy, I was more like just a financer to the drinking sessions and we would talk about stuff and I would always remind them to be skeptic about why things are the way they are.. We were all young but I was like the eldest so I felt a little bit of responsibility too... It is a treasure all the stuff we came up with in our talks and bonding... FOSFOS - Friends Of Saus
+[b]📅   Circa 2009 — Siena College of Taytay (High School Year 4 Transition)[/b]
+•   [b]Academic Milestones:[/b] Enrolled for a single year at Siena College of Taytay, shifting toward a detached, highly introverted social demeanor.
+•   [b]Creative Content:[/b] Joined the official Blue Team dance troupe performance during the institutional Sportsfest events.
+•   [b]Personal Note:[/b] Maintained passing grades despite chronic classroom exhaustion caused by late-night computer operations.
+•   [b]Social Network:[/b] Formed the foundational peer network \"FOSFOS\" (Friends of Saus), serving as a philosophical skeptic and financial anchor for group gatherings.
+•   [b]Reference Media:[/b] [url=https://youtube.com]://youtube.com[/url]
 
-MOVED RESIDENCE - R. Valle, Little Baguio, Taytay, Rizal
-After exiting Saudi Arabia as a 3rd Year High School Drop Out, starting living here with my younger sister, some uncles and a maid. Continued High Schooling in Siena College of Taytay where I met my most recent closest friends eva~!
-Because we would drink alcohol almost after every after school. Even got blacklisted out of 4th Year HS for this... So did homeschooling at Victory Elijah Schooling Systems instead at Mambugan, Antipolo?, Rizal. Around this time was when I was also assisting mom in the papers for the properties she wanted. It was always her dream to have her own House & Lot and she got it by her own efforts and some help from the facilitators/processors of course as part of process. All that's left is for us to actually live together in it... This is also around the time Facebook become more popular so I made my first account here which later got banned for Copyright Issue of Streaming Anime. Currently on my second Facebook Account. Making accounts back then wasn't that 'secure' was even aware of quick email account makers back then through a website called DarkYahoo.Net(first learned about it from high school students in IPSA). The first personal PC Desktop I built for myself as a gift from my mom and dad was with me here, brought from Saudi Arabia where we bought and built it. After getting blacklisted from 4th Year of HighSchool at Siena I started playing this video game Shin Megami Tensei: Imagine Online and this is where I met a Japanese IT Guy, Aki Asai. Until now we are still in connection but barely talk to each other, most recent was like a few days ago. He inspired me to do better when I told him I wanted to be in his shoes. \"I want you to be better than me.\" Something like that. Ain't that the best advice you can respond with right? Poor fella's still not settling down until now damn it LMAO... Just grateful he's still there.
+[center]________________________________________________________________________________[/center]
 
-IPSA, Alkhobar - Sections; Noble then requested to transfer to Humility because GF was there.
- Studied 1st Year High School until I dropped out on the middle of 3rd Year due to papi loves LOL
-No issue whatsoever as far as I know in terms of academics. Maybe some professors or school staff would have something to say, Got called in to Guidance Counseling for not greeting the Councillor around the same time I guess that I had a girlfriend here. First time reaction upon moving to this school was like \"Why are the girls screaming upon seeing me?\" I was slender and features like collarbone and jawline.. already started growing some mustache here I think. Choreographed some dances here as well but cannot really remember being part of the Dance Troupe, I did audition for it IIRC. This is also where I learned to play some Guitar and Read Tabs/Chords off of UltimateGuitar.com . Battle of the Bands here are fun. A lot of the students here are into Punk Rock and it's variants. Afte dropping out of highschool here. I would sneak out at night to go to the nearby computer shop and one night I happen to pick up a sealed Davidoff Cigarette Pack and just started smoketh'! Been addicted to it since and even tried vaping now but nope, I am currently looking into natural tobacco tough. Was tasked to translate and write a script from Tagalog to Baybayin for the Filipino Month Decorations.
+[b]📅   Circa 2009 — Alternative Homeschooling Enrollment & SMT: Imagine (Little Baguio, Taytay)[/b]
+•   [b]Academic Milestones:[/b] Blacklisted from standard attendance during the 4th-year high school track at Siena due to persistent after-school drinking infractions.
+•   [b]Description:[/b] Transferred program paths to complete secondary credentials via Victory Elijah Schooling Systems in Mambugan, Antipolo.
+•   [b]Project Deliverable:[/b] Coordinated administrative documentation pipelines to assist mother in securing independent local properties.
+•   [b]Configuration:[/b] Deployed first custom-built personal desktop chassis brought directly from Saudi Arabia. Managed an early anime streaming profile on Facebook until platform copyright sanctions occurred.
+•   [b]Technical Evolution:[/b] Utilized transient email generators via DarkYahoo.Net. Established a long-term technical mentorship with Japanese IT professional Aki Asai while playing Shin Megami Tensei: Imagine Online.
 
-MOVED RESIDENCES
-Alkhobar, SAUDI ARABIA from Jeddah due to dad's work starting at SECUTRONIC.
-For the first academic year moving here, I was late for enrollment so I didn't go to school yet and was held back by a year. Somehow that also attributed to my diagnosis of Extreme Depression around this time as all I can think about was the girlfriend I left behind in Jeddah... I could have died here if the wind blew me off the edge of the rooftop of that 8 story apartment flats... Had a little booklet about KungFu and I would try to read and practice it in my free time. The trigger for the mental illness was that one night. I heard rushing footsteps around our rooftop flat. But when I chased to see where I couldn't see them. I was worried somehow that there were people peeping on us and such so I told my parents and I was like hyperventilating that time and eventually thought they wouldn't believe me so I rushed out into the streets trying to chase the voices I was hearing until they took me by car and brought me to the hospital where I was confied while being diagnosed. Tried to punch a male nurse here in the process... While confined I was having delusions/visions of my sister in danger. Not knowing what's real or not, I would rather do all I can in my power to ensure that everything is okay so I would scream at the top of my lungs and bang on everything everytime I am awake so they had to sedate me to sleep. The diagnosis then was Extreme Depression and while under the influence of the medicines, I would see people's aura's/colors and even felt like I could understand their languages. Weird. We got into a church community here and I also started attending Legion of Mary here with the other Philippine School Students. Plenty of Chruch Activities, weekly and yearly. Even got to dance like in a ballroom with the girlfriend I had here but as a chruch performance... One Way Jesus!~ Found out about DTXMania, the Drum Simulation Arcade Game here as a Computer Software. And that the highschool batch I was originally supposed to be in as tech-savvy as well, even more so as they were the ones to show me stuff like, Operating Systems on an External Harddrive. The website DarkYahoo.Net and Custom Windows/OS Boot Logos. Si kuya Yuri... This is also where I was cicrcumcised in a hospital under anaesthesia with lasers- yeah it's a different method there- as I requested because I was teased by a gurl at the previous location for being un-so. LOL. Knot-tying Champion. Itachi cosplayer as campaign manager for my girlfriend at the time who was running for PRO. Dad taught us how to fish without Rod, shore spear-crabbing, and some basic electronics and components concepts like AC and DC. Some I already know since he did have me as ajunior tainee at the previous company. Got to ride on a big ATV at the Desert.
+[center]________________________________________________________________________________[/center]
 
-IPSJ, Jeddah
-Grade 5 - Grade 6 - Sections; Del Pilar
-The music culture here is more R&B, HipHop and Rap. The first time ever I felt something weird that I believed was love. Her name flashed before my eyes while we were walking in the streets near the school and all of a sudden my heart started beating 'loudly'. Couldn't explain it but the next time I saw her I was like 'smiling'? At first she kinda shooed me off but eventually, I knocked on their class' door during a lecture and sent a love letter then that's it.
-Still don't know much about this whole gf/bf thing honestly. Other pairs were already kissing in front of us LMAO. Math competition contestant. 3rd Placer English Declamation.
+[b]📅   Circa 2007 — IPSA Alkhobar (High School Years 1–3)[/b]
+•   [b]Academic Milestones:[/b] Attended the International Philippine School in Alkhobar (IPSA), transferring sections from Noble to Humility to align schedules with a personal relationship. Drop-out executed mid-way through 3rd year.
+•   [b]Technical Skill:[/b] Learned to interpret musical tabs and chord sheets utilizing UltimateGuitar.com platforms; participated in local guitar instruction and band events.
+•   [b]Project Deliverable:[/b] Commissioned by staff to translate localized script elements from conversational Tagalog into traditional Baybayin script scripts for Filipino Month events.
+•   [b]Personal Note:[/b] Developed long-term smoking habits following a nocturnal routine of visiting local net cafes after hours. Bypassed disciplinary warnings for non-compliance with school counselor greeting customs.
 
-Jeddah Reef Int'l School
-Grade 3 and Grade 4
-Pakistani friend who showed me how passwords should be- with symbols and even incomprehensible. First time seeing Sandstorm. Mom was a computer/english teacher here while I was a student. Got jealous of a guy's hair being so straight and just like how Trunks has his hair. All of a sudden hair is a big deal because there's this one guy who loves making this gesture of swiping his hands across his forehead to his hair. So I started using Hairstyling gel a lot more too. LOL. Top2
+[center]________________________________________________________________________________[/center]
 
-MOVED RESIDENCES
-JEDDAH, SAUDI ARABIA
-Finally my Dad brought us with him to abroad, me, my mom and my sister. Apparently my dad was doing a side-business here as Media Discs Private Peddler. CDs Burning/Copying of Movies, Audio Discs, Concerts, etc.. We had a 3 storey cabinet filled to the brim with these. And I would watch whatever I felt like watching from these. Guess he downloaded these stuff from his showroom at Alesayi&AlsawadiGroup where he worked as a Board Level Electrionics Technician. Due to the difference in Academic Timelines int he Philippines and Saudi Arabia, I was also held back a year in here upon moving. So I would help mom deliver food as catering service to my dad's coworkers as dad's work was at a mall just accross the road from our residence. Then eventually dad would let me train as a junior in that company, fixing computer power supplies and assembling desktop PCs, guided by dad's indian and bangladesh coworker, Shakeed and I forgot the other guy's name, that guy is more disciplined while Shakeeb is a wild Degenerate but funny LMFAO, Shakeeb is fine, just makulit paminsan hahaha nothing bad actually happened LOL. Got addicted to Albaik broasted chicken, it was jsut behind our residence. Loved the nuggets and fries. Mom found a CD that contains flirtatious remarks to a woman supposedly in London supposedly by Dad. Mom got furious because dad was her first ever at all. He almost stabbed him so I hid all the sharp objects at the kitchen and talked to mom about it... She also threw/thrashed the CD Collections at him. Also the first time I encountered porn both from home and school, yeah, found my dad's stash LOL. Internet connection during this time was still throgh the telephone and Cards you had to redeem. Dad taught me about Google Searching around this time. Dad taught us a little self-defense such as katas and forms. He filled a soccerball with sand and hung it for us to hit.
+[b]📅   Circa 2006 — Relocation & Extreme Mental Health Crisis (Alkhobar, Saudi Arabia)[/b]
+•   [b]Health Update:[/b] Diagnosed with Extreme Depression and severe auditory delusions following an abrupt relocation from Jeddah to Alkhobar driven by father's employment at Secutronic.
+•   [b]Description:[/b] Delayed academic enrollment by a full calendar year. Experienced severe hyperventilation and a localized mental health event that led to emergency vehicle extraction and hospital confinement.
+•   [b]Technical Skill:[/b] Discovered DTXMania drum simulation software environments. Introduced to advanced system modding workflows—such as booting custom operating systems via external hard drives and changing Windows boot logos—by tech-savvy peers like Yuri.
+•   [b]Personal Note:[/b] Active in parish youth initiatives, the Legion of Mary, and choreographed church ballroom performances. Underwent custom hospital laser circumcision under anesthesia.
+•   [b]Hardware Training:[/b] Received technical mentorship from father regarding foundational AC/DC electronics concepts, shore spear-crabbing, and rod-free fishing methods.
 
-MOVED RESIDENCE
-Matimtiman & Makisig St. (1stComputer <- Windows 95 or Millenium or 2000,
-Gameboy Emulator. Used to Igib Tubig with the cart, Flying/Making Kites from Walis Tingting, Newspaper or Paper Plastic, Tape and Threads.
-Nearby basketball court was not yet a covered-court, this is where I first rode a bicycle, got pushed then let-go until I fell LMAO. Used to grab some
-wood plank and apply candle wax at the bottom to use as a sled downhill near this basketball court. First billiard sort of thing but not spherical balls
-rather flat circles. Earliest memory of Dad coming back to the Philippines -> Later my sister was born.) I wanted Lego back then but I got giant block legos instead. XD
+[center]________________________________________________________________________________[/center]
 
-MOVED RESIDENCE
-Camachile (E.I. Cruz (1st ?Girlfriend? <- just kept asking me for lunch money until I said no LMAO at Grade 3? XD Just curiousity.)
-then Atis (Choked on Peso Coin [unsure if still in my body now.])
+[b]📅   Circa 2004–2005 — IPSJ Jeddah & Early Relationships (Grade 5 – Grade 6)[/b]
+•   [b]Academic Milestones:[/b] Enrolled in the Del Pilar section at the International Philippine School in Jeddah (IPSJ), qualifying as a localized mathematics competition contestant and securing a 3rd-place finish in English Declamation.
+•   [b]Description:[/b] Experienced early emotional and social transitions within the contemporary regional youth music culture, which was heavily dominated by R&B, Hip-Hop, and Rap.
+•   [b]Personal Note:[/b] Initiated a first personal relationship by directly delivering a written love letter to a classmate during active lecture periods.
 
-TUMCS - Taytay United Methodist Christians School
-Kinder - Grade 3
-Grade 3 - First girlfriend, was just curious because in the school service we were put in, they would tease this guy and girl and the guy was always so responded to them. So I asked the girl if she would be my girlfriend and surprisingly she just said okay. But then every during break times, she would come to our room and ask me for me. Until I eventually just said I can't and on the spot we broke up LOL Nothing actually happened LMAO. If anything I might have just made enemies with that guy who was actually a neighborhood playmate of mine? This is where I was taught by the student Marlon who was teh chess champion back then about the 3 or 4 moves to check in chess.
-Boyscout of the Year, Best Patrol Leader, Cleanest Cabin during outing. During the outing we just threw the trash out the back-window and during the practicumm somehow I was able to make fire with the tools they provided.. Sticks and Rocks... We didn't carve the sticks though, we just had to rub them correctly to start the fire and somehow I did it.
-Was accelerated once. 9th Honors. Spelling bee? Top 2 in the classroom. Sections; Horeb, Nile
+[center]________________________________________________________________________________[/center]
 
-Muzon (Some Woman attacked Mom with a knife at home and then they
-reconciled (WE could have died then)... Neighbor was Teacher Joy <- quite sure is not the one who attacked us but more like our ?landlord?, behind the
-Vulcanizing Shop)
+[b]📅   Circa 2002–2004 — Jeddah Reef International School Era (Grade 3 – Grade 4)[/b]
+•   [b]Academic Milestones:[/b] Achieved a Top 2 classroom academic standing; attended the institution while mother operated as a campus Computer and English instructor.
+•   [b]Technical Skill:[/b] Introduced to advanced character-based security standards and non-dictionary symbolic password architecture by a Pakistani classmate.
+•   [b]Personal Note:[/b] Experienced a major Middle Eastern regional sandstorm for the first time; adopted early personal style choices using specialized hairstyling gels.
 
-Mom-Side's Grandparent's Home (Dad making a ?Ham Radio? in a Kid's Lunchbox)"
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 2001 — International Relocation & Tech Hardware Apprenticeship (Jeddah, K.S.A.)[/b]
+•   [b]Description:[/b] Executed a major international move from the Philippines to Saudi Arabia to reunite the immediate family, absorbing a one-year academic delay due to conflicting international calendar timelines.
+•   [b]Hardware Training:[/b] Formally deployed as a junior technical trainee under father's commercial workshop team at Alesayi & Alsawadi Group, mastering manual computer power supply unit (PSU) repair and modular desktop assembly alongside regional technicians Shakeeb and his partner.
+•   [b]Technical Evolution:[/b] Mastered early dial-up networking procedures utilizing physical pre-paid telephone scratch cards; received foundational directives from father regarding Google advanced searching techniques.
+•   [b]Project Deliverable:[/b] Managed local operations for a large-scale private media disc duplication business, indexing thousands of custom burned movie, audio, and concert CDs stored in a multi-tier archive. Assistered mother with a commercial food catering service for local mall workers.
+•   [b]Personal Note:[/b] Managed severe internal family disputes by systematically removing sharp objects from the domestic quarters; discovered an unvetted local adult media stash. Trained in foundational defensive martial arts katas utilizing a sand-filled soccer ball suspension rig.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 1999–2001 — Micro-Computing Foundations & Local Infrastructure (Matimtiman & Makisig St., Rizal)[/b]
+•   [b]Configuration:[/b] Deployed first home computing workstation running early legacy Windows iterations (95, Millennium Edition, or 2000), utilizing low-level Gameboy emulator software to run mobile ROM assets.
+•   [b]Description:[/b] Managed local manual water distribution logistics (igib tubig) utilizing custom-built wheeled transport carts. Formed structural kites from scratch using broomsticks (walis tingting), newspapers, plastics, and high-tension threads.
+•   [b]Technical Skill:[/b] Learned early bicycle navigation and built improvised downhill wooden sleds optimized with low-friction candle wax coatings for dirt tracks near an uncovered public sports facility.
+•   [b]Personal Note:[/b] Witnessed the birth of younger sister following father's temporary return to the Philippines. [i]*Note: Pending validation with maternal records regarding timeline sequence preceding K.S.A. relocation.*[/i]
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 1998 — Residential Shifts & Foreign Object Ingestion (Camachile to Atis St., Rizal)[/b]
+•   [b]Health Update:[/b] Suffered an acute domestic emergency by accidentally choking on a solid 1 PHP currency coin during residency along Atis Street.
+•   [b]Description:[/b] Transited multiple temporary residential sectors including Camachile (E.I. Cruz) and Atis Street during early primary school phases. Workspace contained no computing hardware assets.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Circa 1995–1998 — TUMCS Foundations & Scouts Distinctions (Kindergarten – Grade 3)[/b]
+•   [b]Academic Milestones:[/b] Attended Taytay United Methodist Christian School (TUMCS) across the Horeb and Nile sections; achieved 9th Honors distinction, an accelerated promotion, and a Top 2 placement in the school spelling bee.
+•   [b]Technical Skill:[/b] Mentored in competitive chess strategy by campus champion Marlon, mastering the foundational 3-move and 4-move checkmate openings. Successfully generated friction-based combustion using primitive outdoor tools during field practice.
+•   [b]Project Deliverable:[/b] Awarded Boy Scout of the Year, Best Patrol Leader, and Cleanest Cabin honors during official wilderness outings.
+•   [b]Personal Note:[/b] Concluded an early curiosity-driven relationship during Grade 3 recess blocks after resolving to halt the allocation of personal lunch allowances.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Early Primary School Era — Muzon Residential Phase (Muzon, Rizal)[/b]
+•   [b]Description:[/b] Maintained domestic residency behind a roadside vulcanizing shop located along the main thoroughfare while actively pursuing early childhood education tracks.
+•   [b]Configuration:[/b] Workspace contained zero digital computing assets during this active phase.
+
+[center]________________________________________________________________________________[/center]
+
+[b]📅   Earliest Living Memory — Foundational Residence & Hardware Introduction (Maternal Grandparent's Home)[/b]
+•   [b]Description:[/b] Established first verifiable childhood memory parameters while residing at the maternal grandparent's family homestead (Age unverified).
+•   [b]Hardware Training:[/b] Observed early low-level engineering practices via father's project building a functional custom Ham Radio transmitter inside a standard child's lunchbox enclosure.
+
+[center]________________________________________________________________________________[/center]
+"
 fit_content = true
 scroll_active = false
 
