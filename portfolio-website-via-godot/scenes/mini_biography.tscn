@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vdascboccdvt"]
 
 [ext_resource type="Script" uid="uid://bm1sqg506kjnf" path="res://scenes/mini_biography.gd" id="1_5e015"]
+[ext_resource type="Script" uid="uid://dvdjx3kewolsw" path="res://scenes/cv_container_rtl.gd" id="2_5e015"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5e015"]
 bg_color = Color(0.073837645, 0.12058798, 0.15997508, 1)
@@ -578,5 +579,6 @@ text = "[center][font_size=24][b]PERSONAL LOGS FROM MEMORY & TIMELINE[/b][/font_
 "
 fit_content = true
 scroll_active = false
+script = ExtResource("2_5e015")
 
 [connection signal="pressed" from="BiographyScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
