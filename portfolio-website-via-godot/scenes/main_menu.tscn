@@ -128,8 +128,6 @@ theme_override_constants/margin_bottom = 110
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="StaticUIOverlayMain/MainMenuScreen" unique_id=2112669229]
 clip_contents = true
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
 offset_transform_enabled = true
 offset_transform_scale = Vector2(1.6, 1)
 
@@ -141,7 +139,7 @@ theme_override_constants/separation = 1
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 4
-text = "][][][ Under Construction ][][]["
+text = "Under Construction"
 label_settings = SubResource("LabelSettings_xhs4j")
 horizontal_alignment = 1
 script = ExtResource("5_jk1qb")

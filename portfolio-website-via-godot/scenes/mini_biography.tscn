@@ -6,6 +6,8 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5e015"]
 bg_color = Color(0.073837645, 0.12058798, 0.15997508, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_chxp2"]
+
 [node name="StaticUIOverlay" type="CanvasLayer" unique_id=2010287763]
 follow_viewport_enabled = true
 script = ExtResource("1_5e015")
@@ -73,12 +75,14 @@ propagate_maximum_size = true
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
+scroll_hint_mode = 3
 
 [node name="cv_containerRtl" type="RichTextLabel" parent="BiographyScreen/VBoxContainer/ScrollContainer" unique_id=706637971]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_5e015")
 bbcode_enabled = true
 text = "[center][font_size=24][b]PERSONAL LOGS FROM MEMORY & TIMELINE[/b][/font_size][/center]
@@ -581,4 +585,24 @@ fit_content = true
 scroll_active = false
 script = ExtResource("2_5e015")
 
+[node name="WebToolTip" type="PanelContainer" parent="BiographyScreen/VBoxContainer/ScrollContainer" unique_id=203164134]
+unique_name_in_owner = true
+visible = false
+top_level = true
+propagate_maximum_size = false
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="BiographyScreen/VBoxContainer/ScrollContainer/WebToolTip" unique_id=2067232700]
+layout_mode = 2
+color = Color(0.3453224, 0.3453222, 0.34532225, 1)
+
+[node name="ToolTipLabel" type="Label" parent="BiographyScreen/VBoxContainer/ScrollContainer/WebToolTip" unique_id=855465046]
+unique_name_in_owner = true
+layout_mode = 2
+text = "test"
+label_settings = SubResource("LabelSettings_chxp2")
+
 [connection signal="pressed" from="BiographyScreen/VBoxContainer/btn_backToMenu" to="." method="_on_btn_back_to_menu_pressed"]
+[connection signal="meta_clicked" from="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" to="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" method="_on_meta_clicked"]
+[connection signal="meta_hover_ended" from="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" to="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" method="_on_meta_hover_ended"]
+[connection signal="meta_hover_started" from="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" to="BiographyScreen/VBoxContainer/ScrollContainer/cv_containerRtl" method="_on_meta_hover_started"]
