@@ -261,7 +261,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_hover_color = Color(0, 0.5882353, 0, 1)
 text = ">>ToBeReplacedWithLatestFBPost<<"
 
-[node name="AdContainer" type="MarginContainer" parent="StaticUIOverlayMain" unique_id=1671254161]
+[node name="FontSizeAdjustment" type="MarginContainer" parent="StaticUIOverlayMain" unique_id=1671254161]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 offset_left = 252.0
@@ -273,22 +273,22 @@ grow_vertical = 0
 size_flags_vertical = 8
 theme_override_constants/margin_bottom = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="StaticUIOverlayMain/AdContainer" unique_id=1963705706]
+[node name="HBoxContainer" type="HBoxContainer" parent="StaticUIOverlayMain/FontSizeAdjustment" unique_id=1963705706]
 layout_mode = 2
 
-[node name="lblGlobalFontSize" type="Label" parent="StaticUIOverlayMain/AdContainer/HBoxContainer" unique_id=938561675]
+[node name="lblGlobalFontSize" type="Label" parent="StaticUIOverlayMain/FontSizeAdjustment/HBoxContainer" unique_id=938561675]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Font Sizes Adjustment"
 label_settings = SubResource("LabelSettings_chxp2")
 
-[node name="btnGFontU" type="Button" parent="StaticUIOverlayMain/AdContainer/HBoxContainer" unique_id=2028717321]
+[node name="btnGFontU" type="Button" parent="StaticUIOverlayMain/FontSizeAdjustment/HBoxContainer" unique_id=2028717321]
 propagate_maximum_size = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Up"
 
-[node name="btnGFontD" type="Button" parent="StaticUIOverlayMain/AdContainer/HBoxContainer" unique_id=73104160]
+[node name="btnGFontD" type="Button" parent="StaticUIOverlayMain/FontSizeAdjustment/HBoxContainer" unique_id=73104160]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Down"
@@ -310,5 +310,5 @@ text = "Down"
 [connection signal="mouse_exited" from="StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_mouse_exited"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/ProjectsMM" to="." method="_on_projects_mm_pressed"]
 [connection signal="pressed" from="StaticUIOverlayMain/MainMenuScreen/AspectRatioContainer/VBoxContainer/VBoxContainer/ToBeReplacedMM" to="." method="_on_to_be_replaced_mm_pressed"]
-[connection signal="button_down" from="StaticUIOverlayMain/AdContainer/HBoxContainer/btnGFontU" to="." method="_on_btn_g_font_u_button_down"]
-[connection signal="button_down" from="StaticUIOverlayMain/AdContainer/HBoxContainer/btnGFontD" to="." method="_on_btn_g_font_d_button_down"]
+[connection signal="button_down" from="StaticUIOverlayMain/FontSizeAdjustment/HBoxContainer/btnGFontU" to="." method="_on_btn_g_font_u_button_down"]
+[connection signal="button_down" from="StaticUIOverlayMain/FontSizeAdjustment/HBoxContainer/btnGFontD" to="." method="_on_btn_g_font_d_button_down"]
